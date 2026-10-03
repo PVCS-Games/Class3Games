@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinese Pinyin Bubble Pop</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Arial Rounded MT Bold","Trebuchet MS",Arial,sans-serif;
+  min-height:100vh;
+  background:
+    linear-gradient(#f3dfbf 0 78%, #caa472 78% 100%);
+  color:#27314d;
+  overflow-x:hidden;
+}
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:22px;
+}
+h1{
+  text-align:center;
+  margin:0 0 6px;
+  font-size:clamp(32px,5vw,54px);
+  color:#6a3fd2;
+  text-shadow:2px 2px 0 #fff;
+}
+.subtitle{
+  text-align:center;
+  font-weight:800;
+  margin-bottom:16px;
+}
+.topbar{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:14px;
+}
+.pill,.control{
+  border:0;
+  border-radius:999px;
+  padding:10px 17px;
+  font-weight:900;
+  font-size:16px;
+  box-shadow:0 4px 0 rgba(0,0,0,.09);
+}
+.pill:nth-child(1){background:#ffe082}
+.pill:nth-child(2){background:#a5d6a7}
+.pill:nth-child(3){background:#ffccbc}
+.control{
+  background:#7e57c2;
+  color:white;
+  cursor:pointer;
+}
+.clue-card{
+  background:#fffdf8;
+  border:4px solid #c69b6d;
+  border-radius:22px;
+  padding:16px;
+  text-align:center;
+  margin-bottom:16px;
+  box-shadow:0 7px 0 rgba(0,0,0,.07);
+}
+.clue-label{
+  font-size:16px;
+  font-weight:800;
+  color:#6b7392;
+}
+.clue{
+  font-size:clamp(26px,4vw,40px);
+  font-weight:900;
+  color:#5b3cc4;
+  margin-top:4px;
+}
+.game-area{
+  position:relative;
+  height:620px;
+  border-radius:20px;
+  border:14px solid #8b5a2b;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255,255,255,.035), transparent 22%),
+    radial-gradient(circle at 75% 38%, rgba(255,255,255,.025), transparent 24%),
+    linear-gradient(180deg,#1f5a43,#184b39);
+  overflow:hidden;
+  box-shadow:
+    inset 0 0 24px rgba(0,0,0,.28),
+    0 9px 0 rgba(0,0,0,.08);
+}
+.cloud{
+  position:absolute;
+  color:rgba(255,255,255,.72);
+  font-family:"Comic Sans MS","Arial Rounded MT Bold",sans-serif;
+  pointer-events:none;
+  opacity:.9;
+}
+.c1{left:4%;top:3%;font-size:28px}
+.c2{right:5%;top:4%;font-size:26px}
+.c3{left:42%;top:2%;font-size:24px}
+.bubble{
+  position:absolute;
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:4px solid rgba(255,255,255,.95);
+  background:
+    radial-gradient(circle at 32% 28%,rgba(255,255,255,.9) 0 12%,rgba(255,255,255,.25) 13% 20%,transparent 21%),
+    radial-gradient(circle at 65% 75%,rgba(255,255,255,.5),transparent 35%),
+    rgba(255,255,255,.55);
+  box-shadow:
+    inset 0 0 20px rgba(255,255,255,.8),
+    0 6px 14px rgba(57,87,138,.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:12px;
+  font-size:28px;
+  font-weight:900;
+  color:#24304f;
+  cursor:pointer;
+  user-select:none;
+  transition:transform .15s, opacity .2s;
+}
+.bubble:hover{transform:scale(1.06)}
+.bubble.correct{
+  background:#b9f2bf;
+  border-color:#43a047;
+  animation:pop .35s forwards;
+}
+.bubble.wrong{
+  background:#ffd2d2;
+  border-color:#e53935;
+  animation:shake .35s;
+}
+@keyframes pop{
+  0%{transform:scale(1)}
+  55%{transform:scale(1.28)}
+  100%{transform:scale(.1);opacity:0}
+}
+@keyframes shake{
+  0%,100%{transform:translateX(0)}
+  25%{transform:translateX(-7px)}
+  75%{transform:translateX(7px)}
+}
+.message{
+  text-align:center;
+  min-height:38px;
+  margin-top:14px;
+  font-size:22px;
+  font-weight:900;
+}
+.win{
+  display:inline-block;
+  background:#dcf8de;
+  border:3px solid #6bc878;
+  color:#197b32;
+  padding:10px 16px;
+  border-radius:16px;
+}
+
+.review-box{
+  margin:18px auto 0;
+  max-width:760px;
+  background:#fffdf8;
+  border:3px solid #c69b6d;
+  border-radius:20px;
+  padding:16px 20px;
+  box-shadow:0 6px 0 rgba(0,0,0,.07);
+  display:none;
+}
+.review-box h3{
+  margin:0 0 10px;
+  color:#6a3fd2;
+  text-align:center;
+}
+.review-list{
+  margin:0;
+  padding-left:24px;
+  font-size:19px;
+  font-weight:800;
+}
+.review-list li{ margin:6px 0; }
+.mastery{
+  display:inline-block;
+  background:#dcf8de;
+  border:3px solid #6bc878;
+  color:#197b32;
+  padding:12px 18px;
+  border-radius:16px;
+}
+
+
+
+.clue-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.speaker-btn{
+  border:0;
+  border-radius:50%;
+  width:52px;
+  height:52px;
+  font-size:26px;
+  background:#7e57c2;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 4px 0 rgba(0,0,0,.12);
+}
+.speaker-btn:hover{transform:scale(1.06)}
+.speaker-btn:active{transform:scale(.96)}
+
+.board-review{
+  position:absolute;
+  inset:28px;
+  z-index:20;
+  background:rgba(255,253,248,.98);
+  border:4px solid #c69b6d;
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 8px 24px rgba(0,0,0,.22);
+  display:none;
+  overflow:auto;
+}
+.board-review h2{
+  margin:0 0 10px;
+  text-align:center;
+  color:#6a3fd2;
+}
+.board-review p{
+  text-align:center;
+  font-weight:800;
+  margin:6px 0 14px;
+}
+.board-review ul{
+  margin:0 auto 18px;
+  max-width:520px;
+  padding-left:28px;
+  font-size:20px;
+  font-weight:800;
+}
+.board-review li{ margin:8px 0; }
+.continue-btn{
+  display:block;
+  margin:0 auto;
+  border:0;
+  border-radius:999px;
+  padding:12px 22px;
+  font-size:18px;
+  font-weight:900;
+  background:#7e57c2;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 4px 0 rgba(0,0,0,.12);
+}
+.continue-btn:hover{ transform:translateY(-1px); }
+
+
+.student-box{
+  display:flex;align-items:center;gap:8px;background:#e1f5fe;border-radius:999px;
+  padding:7px 13px;font-weight:900;box-shadow:0 4px 0 rgba(0,0,0,.09);
+}
+.student-box input{
+  border:2px solid #90caf9;border-radius:999px;padding:7px 11px;
+  font-size:16px;font-weight:800;width:180px;outline:none;
+}
+.student-box input:focus{border-color:#5b3cc4}
+.save-status{
+  text-align:center;min-height:24px;margin-top:8px;font-size:15px;
+  font-weight:800;color:#5f6783;
+}
+@media(max-width:700px){
+  .game-area{
+  position:relative;
+  height:620px;
+  border-radius:20px;
+  border:14px solid #8b5a2b;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255,255,255,.035), transparent 22%),
+    radial-gradient(circle at 75% 38%, rgba(255,255,255,.025), transparent 24%),
+    linear-gradient(180deg,#1f5a43,#184b39);
+  overflow:hidden;
+  box-shadow:
+    inset 0 0 24px rgba(0,0,0,.28),
+    0 9px 0 rgba(0,0,0,.08);
+}
+</style>
+</head>
+<body>
+<iframe name="hiddenSubmitFrame" style="display:none;"></iframe>
+<div class="wrap">
+  <h1>🫧 第一课：上课了 / Back to School 🫧</h1>
+  <div class="subtitle">Read or listen to the Pinyin, then pop the correct Chinese bubble!</div>
+
+  <div class="topbar">
+    <label class="student-box">👤 Student:
+      <input id="studentName" type="text" placeholder="Enter name" autocomplete="name">
+    </label>
+    <div class="pill">✅ Correct: <span id="correct">0</span> / <span id="roundTotal">9</span></div>
+    <div class="pill">💡 Mistakes: <span id="mistakes">0</span></div>
+    <button class="control" id="restart">🔄 Restart</button>
+  </div>
+
+  <div class="clue-card">
+    <div class="clue-label">Find the Chinese word for this Pinyin:</div>
+    <div class="clue-row">
+      <div class="clue" id="clue">huí lái</div>
+      <button class="speaker-btn" id="speakerBtn" type="button" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>
+    </div>
+  </div>
+
+  <div class="game-area" id="gameArea">
+    <div class="cloud c1">A B C ✏️</div>
+    <div class="cloud c2">1 + 1 = 2</div>
+    <div class="cloud c3">中文课</div>
+    <div style="position:absolute;left:4%;bottom:3%;color:rgba(255,255,255,.72);font-size:24px;font-family:'Comic Sans MS',sans-serif;">你好！</div>
+    <div style="position:absolute;right:4%;bottom:3%;color:rgba(255,255,255,.7);font-size:22px;font-family:'Comic Sans MS',sans-serif;">★ 学习 ★</div>
+    <div class="board-review" id="boardReview">
+      <h2 id="reviewTitle">Mistakes to Review</h2>
+      <p id="reviewSummary"></p>
+      <ul id="reviewList"></ul>
+      <button class="continue-btn" id="continueBtn">Continue ▶</button>
+    </div>
+  </div>
+
+  <div class="message" id="message" aria-live="polite"></div>
+  <div class="save-status" id="saveStatus" aria-live="polite"></div>
+</div>
+
+<script>
+const vocab = [
+  {zh:"回来", py:"huí lái", en:"come back"},
+  {zh:"上课", py:"shàng kè", en:"begin class"},
+  {zh:"放假", py:"fàng jià", en:"on vacation / holiday"},
+  {zh:"上午", py:"shàng wǔ", en:"morning"},
+  {zh:"练习", py:"liàn xí", en:"practice"},
+  {zh:"写字", py:"xiě zì", en:"write"},
+  {zh:"下午", py:"xià wǔ", en:"afternoon"},
+  {zh:"天天", py:"tiān tiān", en:"every day"},
+  {zh:"书法", py:"shū fǎ", en:"calligraphy"},
+  {zh:"下棋", py:"xià qí", en:"play chess"},
+  {zh:"开始", py:"kāi shǐ", en:"begin"},
+  {zh:"游戏", py:"yóu xì", en:"game"},
+  {zh:"等一下", py:"děng yí xià", en:"wait a moment"},
+  {zh:"打开", py:"dǎ kāi", en:"open"},
+  {zh:"课本", py:"kè běn", en:"textbook"},
+  {zh:"念", py:"niàn", en:"read; study"}
+];
+
+let remaining=[];
+let current=null;
+let correct=0;
+let mistakes=0;
+let locked=false;
+
+let roundWords=[];
+let roundMistakes=new Map();
+let retryCount=0;
+const MAX_RETRIES=2;
+let pendingRetryWords=[];
+
+// Tracking variables
+let attemptNumber=0;
+let firstPassCorrect=0;
+let finalCorrectAfterRetries=0;
+let totalMistakes=0;
+let allWrongAttempts=[];
+let resultSaved=false;
+
+// ===== MANUAL SETTINGS =====
+const CHAPTER_NUMBER = "1";       // Change to "2", "3", etc.
+const GAME_NAME = "Pinyin-CN";    // Change if you want a different game label
+
+// ===== GOOGLE FORM SETTINGS =====
+const GOOGLE_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdA-6ThaXZM7QIrDymPav9nn2Os1pSjaYRl4kt1cn3vru35Rw/formResponse";
+
+const FORM_FIELDS = {
+  studentName: "entry.1773016944",
+  chapter: "entry.963617395",
+  gameName: "entry.314201808",
+  attempt: "entry.1928885175",
+  correct: "entry.718266946",
+  total: "entry.418208898",
+  finalCorrectAfterRetries: "entry.1601326480",
+  mistakes: "entry.1733284090",
+  retries: "entry.655228971",
+  wrongAnswers: "entry.165810826"
+};
+
+const area=document.getElementById("gameArea");
+const clue=document.getElementById("clue");
+const correctEl=document.getElementById("correct");
+const roundTotalEl=document.getElementById("roundTotal");
+const mistakesEl=document.getElementById("mistakes");
+const message=document.getElementById("message");
+const speakerBtn=document.getElementById("speakerBtn");
+const studentNameEl=document.getElementById("studentName");
+const saveStatus=document.getElementById("saveStatus");
+
+const boardReview=document.getElementById("boardReview");
+const reviewTitle=document.getElementById("reviewTitle");
+const reviewSummary=document.getElementById("reviewSummary");
+const reviewList=document.getElementById("reviewList");
+const continueBtn=document.getElementById("continueBtn");
+
+function shuffle(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+function updateStats(){
+  correctEl.textContent = retryCount === 0 ? firstPassCorrect : correct;
+  roundTotalEl.textContent=roundWords.length;
+  mistakesEl.textContent=mistakes;
+}
+
+function randomPosition(index,count){
+  const positions = [
+    {left:20, top:22},
+    {left:62, top:22},
+    {left:20, top:58},
+    {left:62, top:58}
+  ];
+  return positions[index] || {left:40, top:40};
+}
+
+function showReview(missedWords, finalRound=false){
+  speakerBtn.disabled=true;
+  speakerBtn.style.opacity=".45";
+  [...area.querySelectorAll(".bubble")].forEach(b=>b.remove());
+  reviewList.innerHTML="";
+
+  missedWords.forEach(item=>{
+    const li=document.createElement("li");
+    const count=roundMistakes.get(item.zh) || 0;
+    li.textContent=`${item.zh} — ${item.py} — ${item.en}${count > 1 ? ` (${count} mistakes)` : ""}`;
+    reviewList.appendChild(li);
+  });
+
+  if(finalRound){
+    reviewTitle.textContent="Final Review";
+    reviewSummary.textContent =
+      missedWords.length === 0
+        ? "Great job! No mistakes in this round."
+        : `You still missed ${missedWords.length} word${missedWords.length===1?"":"s"}. You have used all 2 retries.`;
+    continueBtn.textContent="Finish";
+  }else{
+    reviewTitle.textContent="Mistakes to Review";
+    reviewSummary.textContent =
+      `You missed ${missedWords.length} word${missedWords.length===1?"":"s"}. Retry ${retryCount + 1} of ${MAX_RETRIES}.`;
+    continueBtn.textContent="Continue ▶";
+  }
+
+  boardReview.style.display="block";
+}
+
+function finishRound(){
+  const missedWords = roundWords.filter(item => roundMistakes.has(item.zh));
+
+  if(missedWords.length===0){
+    finalCorrectAfterRetries = vocab.length;
+    [...area.querySelectorAll(".bubble")].forEach(b=>b.remove());
+    clue.textContent="Great job!";
+    speakerBtn.disabled=true;
+    speakerBtn.style.opacity=".45";
+    boardReview.style.display="none";
+    message.innerHTML='<span class="mastery">🏆 Excellent! No mistakes this round! 🎉</span>';
+    saveResult("Mastered");
+    return;
+  }
+
+  if(retryCount >= MAX_RETRIES){
+    finalCorrectAfterRetries = vocab.length - missedWords.length;
+    pendingRetryWords=[];
+    clue.textContent="Review Complete";
+    speakerBtn.disabled=true;
+    speakerBtn.style.opacity=".45";
+    showReview(missedWords, true);
+    message.textContent="";
+    return;
+  }
+
+  pendingRetryWords=[...missedWords];
+  clue.textContent="Review your mistakes";
+  showReview(missedWords, false);
+  message.textContent="";
+}
+
+function beginRetry(){
+  retryCount++;
+  roundWords=[...pendingRetryWords];
+  remaining=shuffle(roundWords);
+  roundMistakes=new Map();
+  correct=0;
+  mistakes=0;
+  updateStats();
+  boardReview.style.display="none";
+  clue.textContent="";
+  message.textContent=`🔁 Retry ${retryCount} of ${MAX_RETRIES}`;
+  setTimeout(makeRound,500);
+}
+
+function makeRound(){
+  speakerBtn.disabled=false;
+  speakerBtn.style.opacity="1";
+  if(remaining.length===0){
+    finishRound();
+    return;
+  }
+
+  locked=false;
+  message.textContent="";
+  current=remaining[0];
+  clue.textContent=current.py;
+
+  [...area.querySelectorAll(".bubble")].forEach(b=>b.remove());
+
+  const others=shuffle(vocab.filter(v=>v.zh!==current.zh)).slice(0,3);
+  const choices=shuffle([current,...others]);
+
+  choices.forEach((item,i)=>{
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="bubble";
+    b.textContent=item.zh;
+    b.dataset.zh=item.zh;
+
+    const pos=randomPosition(i,choices.length);
+    b.style.left=pos.left+"%";
+    b.style.top=pos.top+"%";
+
+    b.addEventListener("click",()=>checkBubble(b,item));
+    area.appendChild(b);
+  });
+}
+
+function checkBubble(button,item){
+  if(locked) return;
+
+  if(item.zh===current.zh){
+    locked=true;
+    button.classList.add("correct");
+    correct+=1;
+
+    // First-pass Correct = correct on the very first try for that word.
+    if(retryCount === 0 && !roundMistakes.has(current.zh)){
+      firstPassCorrect += 1;
+    }
+
+    remaining.shift();
+    updateStats();
+    message.textContent="🎉 Correct! Pop!";
+
+    setTimeout(makeRound,500);
+  }else{
+    button.classList.add("wrong");
+    mistakes+=1;
+    totalMistakes+=1;
+    roundMistakes.set(current.zh,(roundMistakes.get(current.zh)||0)+1);
+
+    allWrongAttempts.push({
+      expectedChinese: current.zh,
+      cluePinyin: current.py,
+      selectedChinese: item.zh,
+      retry: retryCount
+    });
+
+    updateStats();
+    message.textContent="🌟 Try another bubble!";
+    setTimeout(()=>button.classList.remove("wrong"),400);
+  }
+}
+
+function submitToGoogleForm(data){
+  const form=document.createElement("form");
+  form.method="POST";
+  form.action=GOOGLE_FORM_URL;
+  form.target="hiddenSubmitFrame";
+  form.style.display="none";
+
+  const values={
+    studentName:data.studentName,
+    chapter:data.chapter,
+    gameName:data.gameName,
+    attempt:data.attempt,
+    correct:data.correct,
+    total:data.total,
+    finalCorrectAfterRetries:data.finalCorrectAfterRetries,
+    mistakes:data.mistakes,
+    retries:data.retries,
+    wrongAnswers:data.wrongAnswers.map(x =>
+      `${x.expectedChinese || ""} | pinyin ${x.cluePinyin || ""} | chose ${x.selectedChinese || ""} | retry ${x.retry ?? ""}`
+    ).join("; ")
+  };
+
+  Object.entries(values).forEach(([key,value])=>{
+    const input=document.createElement("input");
+    input.type="hidden";
+    input.name=FORM_FIELDS[key];
+    input.value=value ?? "";
+    form.appendChild(input);
+  });
+
+  document.body.appendChild(form);
+  form.submit();
+  setTimeout(()=>form.remove(),1000);
+}
+
+function saveResult(finalStatus){
+  if(resultSaved) return;
+
+  const studentName=(studentNameEl.value || "").trim();
+  if(!studentName){
+    saveStatus.textContent="⚠️ Please enter your name.";
+    studentNameEl.focus();
+    return;
+  }
+
+  const data={
+    studentName:studentName,
+    chapter:CHAPTER_NUMBER,
+    gameName:GAME_NAME,
+    attempt:attemptNumber,
+    correct:firstPassCorrect,
+    total:vocab.length,
+    finalCorrectAfterRetries:finalCorrectAfterRetries,
+    mistakes:totalMistakes,
+    retries:retryCount,
+    wrongAnswers:allWrongAttempts
+  };
+
+  try{
+    submitToGoogleForm(data);
+    resultSaved=true;
+    saveStatus.textContent="✅ Result submitted.";
+  }catch(error){
+    saveStatus.textContent="⚠️ Result could not be submitted. Please tell your teacher.";
+    console.error(error);
+  }
+}
+
+function speakCurrent(){
+  if(!current) return;
+  if(!("speechSynthesis" in window)){
+    message.textContent="Audio is not supported in this browser.";
+    return;
+  }
+
+  window.speechSynthesis.cancel();
+
+  // Speak the Chinese word in Mandarin so students hear the correct pronunciation
+  // corresponding to the displayed Pinyin.
+  const utterance=new SpeechSynthesisUtterance(current.zh);
+  utterance.lang="zh-CN";
+  utterance.rate=0.8;
+  utterance.pitch=1;
+
+  const voices=window.speechSynthesis.getVoices();
+  const zhVoice=voices.find(v =>
+    v.lang && (v.lang.toLowerCase().startsWith("zh-cn") ||
+               v.lang.toLowerCase().startsWith("zh"))
+  );
+  if(zhVoice) utterance.voice=zhVoice;
+
+  window.speechSynthesis.speak(utterance);
+}
+
+speakerBtn.addEventListener("click",speakCurrent);
+
+
+function restart(){
+  attemptNumber+=1;
+  retryCount=0;
+  pendingRetryWords=[];
+  roundWords=[...vocab];
+  remaining=shuffle(roundWords);
+  roundMistakes=new Map();
+  correct=0;
+  firstPassCorrect=0;
+  finalCorrectAfterRetries=0;
+  mistakes=0;
+  totalMistakes=0;
+  allWrongAttempts=[];
+  resultSaved=false;
+  saveStatus.textContent="";
+  locked=false;
+  speakerBtn.disabled=false;
+  speakerBtn.style.opacity="1";
+  boardReview.style.display="none";
+  reviewList.innerHTML="";
+  continueBtn.textContent="Continue ▶";
+  updateStats();
+  makeRound();
+}
+
+continueBtn.addEventListener("click",()=>{
+  if(continueBtn.textContent==="Finish"){
+    boardReview.style.display="none";
+    clue.textContent="Finished";
+    message.innerHTML='<span class="win">✅ Practice complete. You used the maximum of 2 retries.</span>';
+    saveResult("Completed after maximum retries");
+    return;
+  }
+  beginRetry();
+});
+
+document.getElementById("restart").addEventListener("click",restart);
+restart();
+</script>
+</body>
+</html>
