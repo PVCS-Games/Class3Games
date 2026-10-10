@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第四课 · Chapter 4</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#1f2937;--muted:#667085;--border:#d9dee8;--accent:#315efb;--soft:#eef2ff;--good:#137a45;--goodbg:#eaf7ef;--bad:#b42318;--badbg:#fff0ee}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",Arial,sans-serif;line-height:1.6}
+.app{max-width:940px;margin:auto;padding:22px 16px 40px}
+header{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:14px}
+h1{font-size:clamp(25px,4vw,34px);margin:0 0 3px}.sub{font-size:14px;color:var(--muted)}
+.controls,.page-tabs{display:flex;gap:8px;flex-wrap:wrap}
+button,select{min-height:44px;border:1px solid var(--border);border-radius:10px;background:#fff;color:var(--text);padding:9px 13px;font-size:15px;cursor:pointer}
+button:focus,select:focus{outline:3px solid rgba(49,94,251,.18);outline-offset:2px}
+.toggle.on,.page-tab.active{background:var(--soft);border-color:var(--accent);color:#1939aa;font-weight:700}
+.page-tab.active{background:var(--accent);color:#fff}
+.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.page-tabs{margin:0 0 16px}
+.page{display:none}.page.active{display:block}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;margin-bottom:16px}
+.panelhead{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.panel h2{margin:0;font-size:21px}.score{font-size:14px;color:var(--muted);font-weight:600}
+.vocab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.vocab-card{border:1px solid var(--border);border-radius:14px;padding:14px;background:#fff;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start}
+.vocab-word{font-size:25px;font-weight:700;line-height:1.4}.vocab-py{font-size:15px;color:#667085;margin-top:2px}.vocab-en{font-size:15px;color:#475467;margin-top:4px}
+.vocab-card .listen{min-width:46px;padding:7px 10px}
+.passage{font-size:19px;line-height:2;margin-top:12px}.para{margin-bottom:14px}
+.pinyin,.english{display:none;color:#6b7280;font-size:14px;line-height:1.7;margin-top:2px}.english{color:#475467;font-style:italic}
+.show-pinyin .pinyin{display:block}.show-english .english{display:block}
+.ttsrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 2px}.small{font-size:14px;min-height:40px;padding:7px 11px}
+.question{background:#fff;border:1px solid var(--border);border-radius:14px;padding:14px;margin:12px 0}
+.qtop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.qtext{font-size:18px;line-height:1.8;flex:1}
+.answers{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.answer{min-width:116px}
+.answer.selected{background:var(--soft);border-color:var(--accent);font-weight:700}
+.answer.correct{background:var(--goodbg);border-color:var(--good);color:var(--good)}
+.answer.wrong{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.note{margin-top:8px;font-size:14px;font-weight:700}.good{color:var(--good)}.bad{color:var(--bad)}
+.footer{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:16px}.feedback{min-height:24px;margin-top:12px;font-weight:700}
+.review-note{color:var(--muted);font-size:14px;margin-top:5px}
+@media(max-width:650px){.vocab-grid{grid-template-columns:1fr}.passage{font-size:18px}.qtext{font-size:17px}}
+
+.matching-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+.match-col{display:flex;flex-direction:column;gap:9px}
+.match-head{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:3px}
+.match-item{width:100%;text-align:left;min-height:50px}
+.match-item.selected{background:var(--soft);border-color:var(--accent);font-weight:700}
+.match-item.matched{background:var(--goodbg);border-color:var(--good);color:var(--good);font-weight:700;cursor:default}
+.match-item.wrongflash{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.match-py{display:none;font-size:13px;color:#667085;margin-top:2px;font-weight:400}
+.show-pinyin .match-py{display:block}
+.match-status{min-height:25px;margin-top:12px;font-weight:700}
+.match-controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+@media(max-width:650px){.matching-grid{grid-template-columns:1fr}}
+
+
+.vocab-card{cursor:pointer;transition:border-color .15s ease,background .15s ease}
+.vocab-card:focus{outline:3px solid rgba(49,94,251,.18);outline-offset:2px}
+.vocab-card .vocab-py,.vocab-card .vocab-en{display:none}
+.vocab-card.revealed .vocab-py,.vocab-card.revealed .vocab-en{display:block}
+.vocab-hint{font-size:13px;color:var(--muted);margin-top:6px}
+.vocab-card.revealed .vocab-hint{display:none}
+
+</style>
+</head>
+<body>
+<div class="app" id="app">
+<header>
+<div><h1>第四课 · Chapter 4</h1><div class="sub">Vocabulary Review + Reading Comprehension</div></div>
+<div class="controls">
+<button id="pinyinToggle" class="toggle" type="button">拼音 Pinyin: OFF</button>
+<button id="englishToggle" class="toggle" type="button">English: OFF</button>
+<select id="rateSelect" aria-label="Speech speed"><option value="0.9">🔊 Normal</option><option value="0.65">🐢 Slow</option></select>
+<button id="stopSpeech" type="button">⏹ Stop</button>
+</div>
+</header>
+
+<div class="page-tabs" aria-label="Page navigation">
+<button class="page-tab active" data-page="vocabPage" type="button">1. 词汇复习 Vocab Review</button>
+<button class="page-tab" data-page="matchingPage" type="button">2. 词汇配对 Matching</button>
+<button class="page-tab" data-page="readingPage" type="button">3. 阅读理解 Reading</button>
+</div>
+
+<section id="vocabPage" class="page active">
+  <div class="panel">
+    <div class="panelhead"><div><h2>词汇复习 · Vocabulary Review</h2><div class="review-note">Click each Chinese word to reveal its Pinyin and English meaning.</div></div><div id="vocabCount" class="score"></div></div>
+    <div class="ttsrow">
+      <button id="readVocab" class="small" type="button">🔊 Listen to All Vocabulary</button>
+      <button id="goMatching" class="primary small" type="button">Start Matching →</button>
+    </div>
+    <div id="vocabGrid" class="vocab-grid"></div>
+  </div>
+</section>
+
+
+<section id="matchingPage" class="page">
+  <div class="panel">
+    <div class="panelhead">
+      <div>
+        <h2>词汇配对 · Vocabulary Matching</h2>
+        <div class="review-note">Match each Chinese word with its English meaning.</div>
+      </div>
+      <div id="matchScore" class="score"></div>
+    </div>
+
+    <div class="matching-grid">
+      <div>
+        <div class="match-head">中文 Chinese</div>
+        <div id="matchChinese" class="match-col"></div>
+      </div>
+      <div>
+        <div class="match-head">英文 English</div>
+        <div id="matchEnglish" class="match-col"></div>
+      </div>
+    </div>
+
+    <div id="matchStatus" class="match-status" aria-live="polite"></div>
+
+    <div class="match-controls">
+      <button id="shuffleMatch" type="button">↻ Shuffle / Restart</button>
+      <button id="backToVocab" type="button">← Vocab Review</button>
+      <button id="matchingToReading" class="primary" type="button">Reading →</button>
+    </div>
+  </div>
+</section>
+
+<section id="readingPage" class="page">
+  <section class="panel">
+    <div class="panelhead"><h2>课文 Reading</h2><div id="score" class="score"></div></div>
+    <div class="ttsrow"><button id="readPassage" class="small" type="button">🔊 Listen to Passage</button></div>
+    <div id="passage" class="passage"></div>
+  </section>
+  <section class="panel">
+    <div class="panelhead"><h2>判断对错 · True / False</h2><div id="qcount" class="score"></div></div>
+    <div id="questions"></div>
+    <div id="feedback" class="feedback" aria-live="polite"></div>
+    <div class="footer"><button id="backVocab" type="button">← 词汇复习 Vocab</button><div><button id="retry" type="button">↻ 重做 Retry</button> <button id="check" class="primary" type="button">✓ 检查答案 Check</button></div></div>
+  </section>
+</section>
+</div>
+
+<script>
+const data = {"passage": [["大文的生日是十一月二十八号，他请了心美、东明和一些朋友来家里玩，因为大家都喜欢吃冰淇淋蛋糕，所以大文请爸爸帮他们准备了一个冰淇淋蛋糕。", "dà wén de shēng rì shì shí yī yuè èr shí bā hào, tā qǐng le xīn měi, dōng míng hé yì xiē péng you lái jiā lǐ wán, yīn wèi dà jiā dōu xǐ huan chī bīng qí lín dàn gāo, suǒ yǐ dà wén qǐng bà ba bāng tā men zhǔn bèi le yí ge bīng qí lín dàn gāo.", "Dawen's birthday is November 28. He invited Xinmei, Dongming, and some friends to his house. Because everyone likes ice cream cake, Dawen asked his dad to prepare one for them."], ["生日会的时候，他们还吃了炸鸡和春卷，喝了可乐和汽水。", "shēng rì huì de shí hou, tā men hái chī le zhá jī hé chūn juǎn, hē le kě lè hé qì shuǐ.", "At the birthday party, they also ate fried chicken and spring rolls and drank cola and soda."], ["大家都玩得很开心，也给了大文生日礼物。", "dà jiā dōu wán de hěn kāi xīn, yě gěi le dà wén shēng rì lǐ wù.", "Everyone had a great time and gave Dawen birthday gifts."], ["大文最喜欢心美给他的漫画书和东明给他的玩具。", "dà wén zuì xǐ huan xīn měi gěi tā de màn huà shū hé dōng míng gěi tā de wán jù.", "Dawen especially liked the comic book from Xinmei and the toy from Dongming."]], "qs": [["大文的生日是十一月二十八号。", "dà wén de shēng rì shì shí yī yuè èr shí bā hào.", "Dawen's birthday is November 28.", true], ["大家都喜欢吃巧克力蛋糕。", "dà jiā dōu xǐ huan chī qiǎo kè lì dàn gāo.", "Everyone likes chocolate cake.", false], ["大文的生日会有炸鸡和春卷。", "dà wén de shēng rì huì yǒu zhá jī hé chūn juǎn.", "There were fried chicken and spring rolls at Dawen's birthday party.", true], ["生日会的饮料有可乐，也有汽水。", "shēng rì huì de yǐn liào yǒu kě lè, yě yǒu qì shuǐ.", "The drinks at the birthday party included cola and soda.", true], ["大文没有生日礼物。", "dà wén méi yǒu shēng rì lǐ wù.", "Dawen did not receive any birthday gifts.", false], ["大文喜欢漫画书，也喜欢玩具。", "dà wén xǐ huan màn huà shū, yě xǐ huan wán jù.", "Dawen likes comic books and toys.", true]]};
+const vocab = [["生日会", "shēng rì huì", "birthday party"], ["星期天", "xīng qī tiān", "Sunday"], ["请", "qǐng", "ask; invite"], ["准备", "zhǔn bèi", "prepare"], ["一些", "yì xiē", "some"], ["炸鸡", "zhá jī", "fried chicken"], ["洋芋片", "yáng yù piàn", "potato chip"], ["饮料", "yǐn liào", "drink"], ["汽水", "qì shuǐ", "soda; pop"], ["或是", "huò shì", "or"], ["可乐", "kě lè", "cola"], ["能", "néng", "can (helping verb)"], ["春卷", "chūn juǎn", "spring roll"], ["珍珠奶茶", "zhēn zhū nǎi chá", "boba tea"], ["沙拉", "shā lā", "salad"], ["草莓", "cǎo méi", "strawberry"]];
+let pinyinOn=false, englishOn=false, checked=false;
+let answers=Array(data.qs.length).fill(null);
+
+let selectedChinese=null;
+let selectedEnglish=null;
+let matchedIds=new Set();
+let englishOrder=[];
+
+const app=document.getElementById("app");
+const passage=document.getElementById("passage"), questions=document.getElementById("questions");
+const feedback=document.getElementById("feedback"), score=document.getElementById("score");
+const pinyinToggle=document.getElementById("pinyinToggle"), englishToggle=document.getElementById("englishToggle");
+const rateSelect=document.getElementById("rateSelect"), vocabGrid=document.getElementById("vocabGrid");
+const matchChinese=document.getElementById("matchChinese");
+const matchEnglish=document.getElementById("matchEnglish");
+const matchStatus=document.getElementById("matchStatus");
+const matchScore=document.getElementById("matchScore");
+
+function speak(text){
+  if(!("speechSynthesis" in window)){feedback.textContent="Text-to-speech is not supported in this browser.";return;}
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);u.lang="zh-CN";u.rate=Number(rateSelect.value)||0.9;
+  const voices=speechSynthesis.getVoices();
+  const zh=voices.find(v=>/^zh[-_](CN|Hans)/i.test(v.lang))||voices.find(v=>/^zh/i.test(v.lang));
+  if(zh)u.voice=zh;speechSynthesis.speak(u);
+}
+function showPage(id){
+  document.querySelectorAll(".page").forEach(x=>x.classList.toggle("active",x.id===id));
+  document.querySelectorAll(".page-tab").forEach(x=>x.classList.toggle("active",x.dataset.page===id));
+  if("speechSynthesis" in window)speechSynthesis.cancel();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function shuffledIndexes(){
+  const arr=vocab.map((_,i)=>i);
+  for(let j=arr.length-1;j>0;j--){
+    const k=Math.floor(Math.random()*(j+1));
+    [arr[j],arr[k]]=[arr[k],arr[j]];
+  }
+  return arr;
+}
+
+function resetMatching(){
+  selectedChinese=null;
+  selectedEnglish=null;
+  matchedIds=new Set();
+  englishOrder=shuffledIndexes();
+  matchStatus.textContent="";
+  renderMatching();
+}
+
+function chooseChinese(id){
+  if(matchedIds.has(id)) return;
+  selectedChinese=id;
+  checkMatch();
+  renderMatching();
+}
+
+function chooseEnglish(id){
+  if(matchedIds.has(id)) return;
+  selectedEnglish=id;
+  checkMatch();
+  renderMatching();
+}
+
+function checkMatch(){
+  if(selectedChinese===null || selectedEnglish===null) return;
+  if(selectedChinese===selectedEnglish){
+    matchedIds.add(selectedChinese);
+    matchStatus.textContent="✓ 配对正确！ Correct match!";
+    selectedChinese=null;
+    selectedEnglish=null;
+    if(matchedIds.size===vocab.length){
+      matchStatus.textContent="🎉 太棒了！All vocabulary matched!";
+    }
+  }else{
+    matchStatus.textContent="✗ 再试一次。Try again.";
+    const wrongC=selectedChinese, wrongE=selectedEnglish;
+    selectedChinese=null;
+    selectedEnglish=null;
+    setTimeout(()=>{
+      const c=document.querySelector(`[data-match-c="${wrongC}"]`);
+      const e=document.querySelector(`[data-match-e="${wrongE}"]`);
+      if(c)c.classList.remove("wrongflash");
+      if(e)e.classList.remove("wrongflash");
+    },450);
+  }
+}
+
+function renderMatching(){
+  if(!englishOrder.length) englishOrder=shuffledIndexes();
+  matchChinese.innerHTML="";
+  matchEnglish.innerHTML="";
+
+  vocab.forEach((v,id)=>{
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="match-item";
+    b.dataset.matchC=id;
+
+    const word=document.createElement("div");
+    word.textContent=v[0];
+    const py=document.createElement("div");
+    py.className="match-py";
+    py.textContent=v[1];
+    b.append(word,py);
+
+    if(matchedIds.has(id)) b.classList.add("matched");
+    else if(selectedChinese===id) b.classList.add("selected");
+
+    b.addEventListener("click",()=>{
+      if(matchedIds.has(id)) return;
+      selectedChinese=id;
+      if(selectedEnglish!==null && selectedEnglish!==id){
+        b.classList.add("wrongflash");
+        const other=document.querySelector(`[data-match-e="${selectedEnglish}"]`);
+        if(other)other.classList.add("wrongflash");
+      }
+      checkMatch();
+      renderMatching();
+    });
+    matchChinese.appendChild(b);
+  });
+
+  englishOrder.forEach(id=>{
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="match-item";
+    b.dataset.matchE=id;
+    b.textContent=vocab[id][2];
+
+    if(matchedIds.has(id)) b.classList.add("matched");
+    else if(selectedEnglish===id) b.classList.add("selected");
+
+    b.addEventListener("click",()=>{
+      if(matchedIds.has(id)) return;
+      selectedEnglish=id;
+      if(selectedChinese!==null && selectedChinese!==id){
+        b.classList.add("wrongflash");
+        const other=document.querySelector(`[data-match-c="${selectedChinese}"]`);
+        if(other)other.classList.add("wrongflash");
+      }
+      checkMatch();
+      renderMatching();
+    });
+    matchEnglish.appendChild(b);
+  });
+
+  matchScore.textContent=`Matched: ${matchedIds.size} / ${vocab.length}`;
+}
+
+function renderVocab(){
+  vocabGrid.innerHTML="";
+  vocab.forEach((v,i)=>{
+    const card=document.createElement("div");
+    card.className="vocab-card";
+    card.tabIndex=0;
+    card.setAttribute("role","button");
+    card.setAttribute("aria-expanded","false");
+    card.setAttribute("aria-label","Reveal Pinyin and English for "+v[0]);
+
+    const left=document.createElement("div");
+
+    const w=document.createElement("div");
+    w.className="vocab-word";
+    w.textContent=(i+1)+". "+v[0];
+
+    const hint=document.createElement("div");
+    hint.className="vocab-hint";
+    hint.textContent="Tap / click to reveal";
+
+    const py=document.createElement("div");
+    py.className="vocab-py";
+    py.textContent=v[1];
+
+    const en=document.createElement("div");
+    en.className="vocab-en";
+    en.textContent=v[2];
+
+    left.append(w,hint,py,en);
+
+    const b=document.createElement("button");
+    b.type="button";
+    b.className="listen";
+    b.textContent="🔊";
+    b.setAttribute("aria-label","Listen to "+v[0]);
+    b.addEventListener("click",(e)=>{
+      e.stopPropagation();
+      speak(v[0]);
+    });
+
+    const toggleReveal=()=>{
+      const revealed=card.classList.toggle("revealed");
+      card.setAttribute("aria-expanded",revealed?"true":"false");
+    };
+
+    card.addEventListener("click",toggleReveal);
+    card.addEventListener("keydown",(e)=>{
+      if(e.key==="Enter"||e.key===" "){
+        e.preventDefault();
+        toggleReveal();
+      }
+    });
+
+    card.append(left,b);
+    vocabGrid.appendChild(card);
+  });
+  document.getElementById("vocabCount").textContent=vocab.length+" words";
+}
+function render(){
+  app.classList.toggle("show-pinyin",pinyinOn);app.classList.toggle("show-english",englishOn);
+  pinyinToggle.textContent="拼音 Pinyin: "+(pinyinOn?"ON":"OFF");englishToggle.textContent="English: "+(englishOn?"ON":"OFF");
+  pinyinToggle.classList.toggle("on",pinyinOn);englishToggle.classList.toggle("on",englishOn);
+
+  passage.innerHTML="";
+  data.passage.forEach(item=>{
+    const wrap=document.createElement("div");wrap.className="para";
+    const cn=document.createElement("div");cn.textContent=item[0];
+    const py=document.createElement("div");py.className="pinyin";py.textContent=item[1];
+    const en=document.createElement("div");en.className="english";en.textContent=item[2];
+    wrap.append(cn,py,en);passage.appendChild(wrap);
+  });
+
+  questions.innerHTML="";
+  data.qs.forEach((q,i)=>{
+    const box=document.createElement("div");box.className="question";
+    const top=document.createElement("div");top.className="qtop";
+    const tw=document.createElement("div");tw.style.flex="1";
+    const qt=document.createElement("div");qt.className="qtext";qt.textContent=(i+1)+". "+q[0];
+    const py=document.createElement("div");py.className="pinyin";py.textContent=q[1];
+    const en=document.createElement("div");en.className="english";en.textContent=q[2];
+    tw.append(qt,py,en);
+    const listen=document.createElement("button");listen.type="button";listen.className="small";listen.textContent="🔊";listen.setAttribute("aria-label","Listen to question "+(i+1));listen.addEventListener("click",()=>speak(q[0]));
+    top.append(tw,listen);box.appendChild(top);
+    const row=document.createElement("div");row.className="answers";
+    [["对 True",true],["错 False",false]].forEach(([label,val])=>{
+      const b=document.createElement("button");b.type="button";b.className="answer";b.textContent=label;
+      if(answers[i]===val)b.classList.add("selected");
+      if(checked&&answers[i]===val)b.classList.add(val===q[3]?"correct":"wrong");
+      b.addEventListener("click",()=>{answers[i]=val;checked=false;feedback.textContent="";render();});
+      row.appendChild(b);
+    });
+    box.appendChild(row);
+    if(checked){const note=document.createElement("div");note.className="note";if(answers[i]===q[3]){note.classList.add("good");note.textContent="✓ 正确 Correct";}else{note.classList.add("bad");note.textContent="✗ 再想一想 Try again";}box.appendChild(note);}
+    questions.appendChild(box);
+  });
+  const answered=answers.filter(v=>v!==null).length;
+  score.textContent=checked?`Score: ${answers.reduce((s,a,i)=>s+(a===data.qs[i][3]?1:0),0)} / ${data.qs.length}`:`Answered: ${answered} / ${data.qs.length}`;
+  document.getElementById("qcount").textContent=data.qs.length+" 题";
+}
+pinyinToggle.addEventListener("click",()=>{pinyinOn=!pinyinOn;render();});
+englishToggle.addEventListener("click",()=>{englishOn=!englishOn;render();});
+document.querySelectorAll(".page-tab").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+document.getElementById("goMatching").addEventListener("click",()=>showPage("matchingPage"));
+document.getElementById("backVocab").addEventListener("click",()=>showPage("vocabPage"));
+document.getElementById("backToVocab").addEventListener("click",()=>showPage("vocabPage"));
+document.getElementById("matchingToReading").addEventListener("click",()=>showPage("readingPage"));
+document.getElementById("shuffleMatch").addEventListener("click",resetMatching);
+
+document.getElementById("readVocab").addEventListener("click",()=>speak(vocab.map(v=>v[0]).join("，")));
+document.getElementById("readPassage").addEventListener("click",()=>speak(data.passage.map(x=>x[0]).join(" ")));
+document.getElementById("stopSpeech").addEventListener("click",()=>{if("speechSynthesis" in window)speechSynthesis.cancel();});
+document.getElementById("retry").addEventListener("click",()=>{answers=Array(data.qs.length).fill(null);checked=false;feedback.textContent="本课已重做。Chapter reset.";render();});
+document.getElementById("check").addEventListener("click",()=>{
+  const missing=answers.filter(v=>v===null).length;if(missing){feedback.textContent=`还有 ${missing} 题没有回答。Please answer all questions first.`;return;}
+  checked=true;const s=answers.reduce((sum,a,i)=>sum+(a===data.qs[i][3]?1:0),0);feedback.textContent=`得分 Score: ${s} / ${data.qs.length}`;render();
+});
+if("speechSynthesis" in window){speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>speechSynthesis.getVoices();}
+renderVocab();resetMatching();render();
+</script>
+</body>
+</html>
