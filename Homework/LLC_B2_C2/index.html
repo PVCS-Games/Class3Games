@@ -675,10 +675,10 @@ for(const n of [6,7,8,9]){
     const details='Quiz: LLC b2 | Student: '+name+' | Class: '+className+' | Correct: '+correct+' | Total: '+all.length+' | Teacher review: '+review+' | Teacher review responses: '+all.filter(r=>r.review).map(r=>r.question+' = '+r.response).join('; ');
     // Explicit confirmation before the one-way Test Mode Google Forms submission.
     const confirmed=window.confirm(
-      'Submit your Test Mode answers? / 确定提交测验吗？\\n\\n'+
-      'Student / 姓名: '+name+'\\n'+
-      'Class / 班级: '+className+'\\n'+
-      'Pages / 页数: 9\\n\\n'+
+      'Submit your Test Mode answers? / 确定提交测验吗？\n\n'+
+      'Student / 姓名: '+name+'\n'+
+      'Class / 班级: '+className+'\n'+
+      'Pages / 页数: 9\n\n'+
       'Press OK to submit, or Cancel to keep editing. / 按确定提交；按取消继续修改。'
     );
     if(!confirmed){message.textContent='Submission cancelled. Your answers have not been sent. / 已取消提交，答案尚未发送。';return;}
