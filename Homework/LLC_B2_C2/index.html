@@ -963,9 +963,25 @@ header:has(select[id^="mode"] option[value="test"]:checked) button[id^="hide"] {
       section.querySelectorAll('.rest-bank .rest-option').forEach((tile,j)=>{
         const item=groups[i]?.bank?.[j],span=tile.querySelector(':scope > span');
         if(!item||!span||span.dataset.pinyinAligned)return;
-        const ruby=document.createElement('ruby');ruby.textContent=item[0];
-        const rt=document.createElement('rt');rt.textContent=item[1];ruby.append(rt);
-        span.replaceChildren(ruby);span.dataset.pinyinAligned='1';
+        // Separate ruby for each character: Pinyin must align to its own Hanzi.
+        const hanzi=Array.from(item[0]);
+        const syllables=String(item[1]||'').trim().split(/\\s+/u).filter(Boolean);
+        const fragment=document.createDocumentFragment();
+        if(syllables.length===hanzi.length){
+          hanzi.forEach((han,k)=>{
+            const ruby=document.createElement('ruby');
+            ruby.textContent=han;
+            const rt=document.createElement('rt');
+            rt.textContent=syllables[k];
+            ruby.append(rt);
+            fragment.append(ruby);
+          });
+        }else{
+          // Unaligned data: preserve Chinese and do not guess syllable-to-character mappings.
+          fragment.append(document.createTextNode(item[0]));
+          console.warn('Page 8 Pinyin syllable count mismatch:',item[0],item[1]);
+        }
+        span.replaceChildren(fragment);span.dataset.pinyinAligned='1';
       });
     });
   }
