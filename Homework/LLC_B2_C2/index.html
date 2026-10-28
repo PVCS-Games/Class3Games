@@ -673,6 +673,15 @@ for(const n of [6,7,8,9]){
     const correct=all.filter(r=>!r.review&&r.correct).length;
     const review=all.filter(r=>r.review).length;
     const details='Quiz: LLC b2 | Student: '+name+' | Class: '+className+' | Correct: '+correct+' | Total: '+all.length+' | Teacher review: '+review+' | Teacher review responses: '+all.filter(r=>r.review).map(r=>r.question+' = '+r.response).join('; ');
+    // Explicit confirmation before the one-way Test Mode Google Forms submission.
+    const confirmed=window.confirm(
+      'Submit your Test Mode answers? / 确定提交测验吗？\\n\\n'+
+      'Student / 姓名: '+name+'\\n'+
+      'Class / 班级: '+className+'\\n'+
+      'Pages / 页数: 9\\n\\n'+
+      'Press OK to submit, or Cancel to keep editing. / 按确定提交；按取消继续修改。'
+    );
+    if(!confirmed){message.textContent='Submission cancelled. Your answers have not been sent. / 已取消提交，答案尚未发送。';return;}
     const target=document.createElement('iframe');target.name='quiz_form_'+Date.now();target.style.display='none';target.title='Google Form response target';document.body.append(target);
     const form=document.createElement('form');form.method='POST';form.action=FORM_ACTION;form.target=target.name;form.style.display='none';form.acceptCharset='UTF-8';
     addField(form,ENTRY.student,name);addField(form,ENTRY.classroom,className);addField(form,ENTRY.quiz,'LLC b2');addField(form,ENTRY.correct,correct);addField(form,ENTRY.total,all.length);addField(form,ENTRY.details,details);
