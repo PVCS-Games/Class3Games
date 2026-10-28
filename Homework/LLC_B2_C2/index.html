@@ -461,8 +461,10 @@ const $=id=>document.getElementById(id);
 const report=(n,txt)=>{$('result'+n).textContent=txt;$('result'+n).classList.add('show')};
 const speak=(t)=>{if(!('speechSynthesis'in window))return; speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.82; const zh=speechSynthesis.getVoices().find(v=>v.lang.toLowerCase().startsWith('zh'));if(zh)u.voice=zh;speechSynthesis.speak(u)};
 const play=(t)=>{let b=document.createElement('button');b.type='button';b.className='rest-audio';b.textContent='🔊';b.title='Read aloud';b.onclick=(e)=>{e.stopPropagation();speak(t)};return b};
-const state={6:{matched:Array(8).fill(null),active:null,rad:Array(window.QUIZ_DATA.content.page6_radicalQuestions.length).fill(''),show:false,locked:false},7:{answers:Array(window.QUIZ_DATA.content.page7_charRows.reduce((n,q)=>n+(q.py?.length||0),0)).fill(''),show:false,locked:false},8:{filled:[Array(3).fill(''),Array(3).fill('')],sel:null,show:false,locked:false},9:{answers:Array(7).fill(null),show:false,locked:false}};
+const state={6:{matched:Array(window.QUIZ_DATA.content.page6_matches.length).fill(null),active:null,rad:Array(window.QUIZ_DATA.content.page6_radicalQuestions.length).fill(''),show:false,locked:false},7:{answers:Array(window.QUIZ_DATA.content.page7_charRows.reduce((n,q)=>n+(q.py?.length||0),0)).fill(''),show:false,locked:false},8:{filled:[Array(3).fill(''),Array(3).fill('')],sel:null,show:false,locked:false},9:{answers:Array(7).fill(null),show:false,locked:false}};
 const matches=window.QUIZ_DATA.content.page6_matches;
+const pinyinBank6=window.QUIZ_DATA.content.page6_pinyinBank;
+const matchedText6=i=>Number.isInteger(i)?pinyinBank6[i]:null;
 let boardResizeObserver6=null;
 function draw6(){
  const S=state[6],root=$('match6');root.replaceChildren();
@@ -475,7 +477,7 @@ function draw6(){
  const leftButtons=[],rightButtons=[];
  matches.forEach(([han],i)=>{
    const btn=document.createElement('button');btn.type='button';
-   btn.className='matching-choice6 han6'+(S.active===i?' selected6':'')+(S.matched[i]?' linked6':'');
+   btn.className='matching-choice6 han6'+(S.active===i?' selected6':'')+(S.matched[i]!==null?' linked6':'');
    btn.textContent=han;btn.disabled=S.locked;
    btn.setAttribute('aria-label','Match '+han);
    btn.onclick=()=>{
@@ -486,17 +488,18 @@ function draw6(){
    };
    left.append(btn);leftButtons.push(btn);
  });
- window.QUIZ_DATA.content.page6_pinyinBank.forEach(py=>{
+ pinyinBank6.forEach((py,j)=>{
    const btn=document.createElement('button');btn.type='button';
-   btn.className='matching-choice6 pinyin6'+(S.matched.includes(py)?' linked6':'');
+   btn.className='matching-choice6 pinyin6'+(S.matched.includes(j)?' linked6':'');
    btn.textContent=py;btn.disabled=S.locked;
    btn.setAttribute('aria-label','Connect to '+py);
    btn.onclick=()=>{
      if(S.locked)return;
      if(S.active===null)return;
-     // A Pinyin card can connect to only one character.
-     S.matched.forEach((used,i)=>{if(used===py)S.matched[i]=null;});
-     S.matched[S.active]=py;S.active=null;S.show=false;draw6();
+     // Track the specific Pinyin card position, not its text.
+     // Duplicate spellings remain separate selectable cards.
+     S.matched.forEach((used,i)=>{if(used===j)S.matched[i]=null;});
+     S.matched[S.active]=j;S.active=null;S.show=false;draw6();
    };
    right.append(btn);rightButtons.push(btn);
  });
@@ -508,9 +511,9 @@ function draw6(){
    if(!width||!height)return;
    svg.setAttribute('viewBox','0 0 '+width+' '+height);
    svg.replaceChildren();
-   S.matched.forEach((py,i)=>{
-     if(!py)return;
-     const j=window.QUIZ_DATA.content.page6_pinyinBank.indexOf(py);
+   S.matched.forEach((j,i)=>{
+     if(j===null)return;
+     const py=pinyinBank6[j];
      if(j<0)return;
      const a=leftButtons[i].getBoundingClientRect();
      const b=rightButtons[j].getBoundingClientRect();
@@ -542,9 +545,9 @@ const passage=window.QUIZ_DATA.content.page9_passage;
 const tf=window.QUIZ_DATA.content.page9_trueFalse;
 function draw9(){let S=state[9],p=$('passage9');p.replaceChildren();let passageBox=document.createElement('div');passageBox.className='rest-essay';passageBox.textContent=passage;let audio=play(passage);p.append(passageBox,audio);let qs=$('questions9');qs.replaceChildren();tf.forEach(([q,key,en],i)=>{let line=document.createElement('div');line.className='rest-panel';let question=document.createElement('div');question.className='rest-line';question.textContent=(i+1)+'. '+q;question.append(play(q));line.append(question);let opts=document.createElement('div');opts.className='rest-bank';[['对',true],['错',false]].forEach(([label,v])=>{let b=document.createElement('button');b.type='button';b.className='rest-option'+(S.answers[i]===v?' chosen':'')+(S.show&&S.answers[i]===v?(v===key?' good':' bad'):'');b.textContent=label;b.onclick=()=>{if(S.locked)return;S.answers[i]=v;S.show=false;draw9()};opts.append(b)});line.append(opts);let eng=document.createElement('div');eng.className='rest-en';eng.textContent=en;line.append(eng);qs.append(line)})}
 const render={6:draw6,7:draw7,8:draw8,9:draw9};
-const scores={6:()=>[state[6].matched.filter((v,i)=>v===matches[i][1]).length,matches.length,'Component answers require teacher review'],7:()=>[state[7].answers.filter((v,i)=>v===charRows.flatMap(q=>q.chars)[i]).length,charRows.flatMap(q=>q.chars).length,'Character writing checked by typed text'],8:()=>[state[8].filled.reduce((n,a,i)=>n+a.filter((v,j)=>v===fillGroups[i].rows[j][2]).length,0),fillGroups.reduce((n,g)=>n+g.rows.length,0),''],9:()=>[state[9].answers.filter((v,i)=>v===tf[i][1]).length,7,'']};
+const scores={6:()=>[state[6].matched.filter((v,i)=>matchedText6(v)===matches[i][1]).length,matches.length,'Component answers require teacher review'],7:()=>[state[7].answers.filter((v,i)=>v===charRows.flatMap(q=>q.chars)[i]).length,charRows.flatMap(q=>q.chars).length,'Character writing checked by typed text'],8:()=>[state[8].filled.reduce((n,a,i)=>n+a.filter((v,j)=>v===fillGroups[i].rows[j][2]).length,0),fillGroups.reduce((n,g)=>n+g.rows.length,0),''],9:()=>[state[9].answers.filter((v,i)=>v===tf[i][1]).length,7,'']};
 window.quizCapture[6]=()=>[
- ...matches.map((q,i)=>({question:'Match '+q[0],response:state[6].matched[i]||'(blank)',expected:q[1],correct:state[6].matched[i]===q[1]})),
+ ...matches.map((q,i)=>({question:'Match '+q[0],response:matchedText6(state[6].matched[i])??'(blank)',expected:q[1],correct:matchedText6(state[6].matched[i])===q[1]})),
  ...state[6].rad.map((r,i)=>({question:'Common radical '+(i+1),response:r||'(blank)',expected:window.QUIZ_DATA.answerKeys.page6_radicals[i],correct:false,review:true}))
 ];
 window.quizCapture[7]=()=>charRows.flatMap(q=>q.chars).map((expected,i)=>({question:'Writing character '+(i+1),response:state[7].answers[i]||'(blank)',expected,correct:state[7].answers[i]===expected}));
