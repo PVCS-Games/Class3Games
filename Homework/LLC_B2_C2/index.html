@@ -579,6 +579,7 @@ for(const n of [6,7,8,9]){
 <script type="text/quiz-deferred">
 (function(){
  const pinYinMap=window.QUIZ_DATA.content.pinyinDictionary;
+ Object.assign(pinYinMap,{"三":"sān","具":"jù","几":"jǐ","厅":"tīng","喝":"hē","四":"sì","奶":"nǎi","妹":"mèi","姓":"xìng","左":"zuǒ","机":"jī","林":"lín","照":"zhào","爷":"yé","片":"piàn","王":"wáng","玩":"wán","算":"suàn","计":"jì","边":"biān","里":"lǐ","面":"miàn"});
  const tabs=[document.getElementById('approvedTab1'),...Array.from({length:8},(_,i)=>document.getElementById('chapterTab'+(i+2)))];
  const skipSelector='ruby,rt,script,style,textarea,input,select,.instructions,.translation,.rest-instructions,.instruction,.mode-note,h2,h3,.rest-py,.rt3,.py5,.py-hint2,.letter,.mini-en2,.rest-en,.hint3,.hint5,.feedback3,.feedback5,.rest-meaning,.english,.hint-pinyin';
  function insertRuby(root){
@@ -878,7 +879,19 @@ header:has(select[id^="mode"] option[value="test"]:checked) button[id^="hide"] {
     }
     for(const element of document.querySelectorAll('[data-quiz-asset]')){
       const url=data.assets[element.dataset.quizAsset];
-      if(url)element.setAttribute('src',url);
+      if(!url)continue;
+      // Load the original embedded MP3 through a Blob URL; updating a <source>
+      // dynamically does not reliably restart its parent <audio> element.
+      if(typeof url==='string' && url.startsWith('data:audio/')){
+        try {
+          const b64=url.slice(url.indexOf(',')+1);
+          const binary=atob(b64);
+          const bytes=new Uint8Array(binary.length);
+          for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
+          element.src=URL.createObjectURL(new Blob([bytes],{type:'audio/mpeg'}));
+        }catch(err){console.warn('Embedded MP3 conversion failed',err);element.src=url;}
+      }else element.src=url;
+      element.parentElement?.load?.();
     }
     // Run original workbook scripts in order only after the external data is ready.
     for(const deferred of [...document.querySelectorAll('script[type="text/quiz-deferred"]')]){
@@ -891,6 +904,10 @@ header:has(select[id^="mode"] option[value="test"]:checked) button[id^="hide"] {
 })();
 </script>
 <!-- LLC_B2_C2 unified pinyin and layout fixes 2026-10-27 -->
+<style>/* Page 8: Pinyin labels are visible ONLY when its practice-mode toggle is on. */
+#chapterTab8 #filling8 .rest-bank ruby rt{display:none!important}
+#chapterTab8.showpy #filling8 .rest-bank ruby rt{display:revert!important}
+</style>
 <style>
 /* All word/choice Pinyin is placed above the Chinese, never beside or underneath. */
 #chapterTab2 .bankword2 .py-hint2,#chapterTab3 .rt3,#chapterTab4 .rt3,#chapterTab5 .py5,#chapterTab8 .rest-bank .rest-option>.rest-py{display:none!important}
