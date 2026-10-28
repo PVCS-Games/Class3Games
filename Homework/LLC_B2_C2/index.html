@@ -919,6 +919,24 @@ header:has(select[id^="mode"] option[value="test"]:checked) button[id^="hide"] {
 <style>/* Page 8: Pinyin labels are visible ONLY when its practice-mode toggle is on. */
 #chapterTab8 #filling8 .rest-bank ruby rt{display:none!important}
 #chapterTab8.showpy #filling8 .rest-bank ruby rt{display:revert!important}
+/* Center compact Pinyin directly above its Chinese word. */
+#chapterTab8 #filling8 .rest-bank .rest-option ruby{
+  ruby-position:over;
+  ruby-align:center;
+  white-space:nowrap;
+  font-size:29px;
+  line-height:1.4;
+}
+#chapterTab8 #filling8 .rest-bank .rest-option ruby rt{
+  font-family:Arial,system-ui,sans-serif;
+  font-size:11px!important;
+  font-weight:400;
+  letter-spacing:-0.45px;
+  text-align:center;
+  white-space:nowrap;
+  line-height:1.05;
+}
+
 </style>
 <style>
 /* All word/choice Pinyin is placed above the Chinese, never beside or underneath. */
