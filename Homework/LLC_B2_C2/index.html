@@ -890,4 +890,46 @@ header:has(select[id^="mode"] option[value="test"]:checked) button[id^="hide"] {
   }
 })();
 </script>
+<!-- LLC_B2_C2 unified pinyin and layout fixes 2026-10-27 -->
+<style>
+/* All word/choice Pinyin is placed above the Chinese, never beside or underneath. */
+#chapterTab2 .bankword2 .py-hint2,#chapterTab3 .rt3,#chapterTab4 .rt3,#chapterTab5 .py5,#chapterTab8 .rest-bank .rest-option>.rest-py{display:none!important}
+#chapterTab2 .bankword2,#chapterTab3 .choice3,#chapterTab4 .choice3,#chapterTab5 .choice5{line-height:1.55}
+#chapterTab2 .bankword2 ruby,#chapterTab3 .choice3 ruby,#chapterTab4 .choice3 ruby,#chapterTab5 .choice5 ruby{ruby-position:over}
+#chapterTab7 #writing7 .rest-panel{margin:8px 0!important;padding:10px 14px!important}
+#chapterTab7 #writing7 .rest-line{font-size:34px!important;line-height:1.45!important;gap:8px!important;padding:5px 0!important;border-bottom:0!important}
+#chapterTab7 #writing7 .rest-input{font-size:34px!important;width:80px;padding:5px 7px}
+#chapterTab7 #writing7 .rest-py{font-size:16px!important}
+#chapterTab9 #questions9 .rest-panel{margin:7px 0!important;padding:9px 14px!important}
+#chapterTab9 #questions9 .rest-line{padding:3px 0!important;border-bottom:0;line-height:1.4}
+#chapterTab9 #questions9 .rest-bank{margin:3px 0!important;padding:5px 0!important;gap:9px;background:transparent}
+#chapterTab9 #questions9 .rest-option{min-height:40px;padding:4px 12px;font-size:23px}
+@media(max-width:640px){#chapterTab7 #writing7 .rest-line{font-size:29px!important}#chapterTab7 #writing7 .rest-input{font-size:30px!important}}
+</style>
+<script>
+(function(){
+  const dictionary=()=>window.QUIZ_DATA?.content?.pinyinDictionary;
+  function alignBank(){
+    const root=document.getElementById('filling8'),groups=window.QUIZ_DATA?.content?.page8_fillGroups;
+    if(!root||!groups)return;
+    root.querySelectorAll(':scope > section').forEach((section,i)=>{
+      section.querySelectorAll('.rest-bank .rest-option').forEach((tile,j)=>{
+        const item=groups[i]?.bank?.[j],span=tile.querySelector(':scope > span');
+        if(!item||!span||span.dataset.pinyinAligned)return;
+        const ruby=document.createElement('ruby');ruby.textContent=item[0];
+        const rt=document.createElement('rt');rt.textContent=item[1];ruby.append(rt);
+        span.replaceChildren(ruby);span.dataset.pinyinAligned='1';
+      });
+    });
+  }
+  function normalize(){
+    alignBank();
+  }
+  const apply=()=>{
+    const root=document.getElementById('filling8');
+    if(root){const obs=new MutationObserver(()=>{obs.disconnect();normalize();obs.observe(root,{childList:true,subtree:true})});normalize();obs.observe(root,{childList:true,subtree:true})}
+  };
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
+})();
+</script>
 </body></html>
