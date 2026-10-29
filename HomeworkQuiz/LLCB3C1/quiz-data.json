@@ -1,0 +1,1301 @@
+{
+  "meta": {
+    "quizName": "LLC Book 3 · Lesson 1",
+    "title": "LLC Book 3 · 第一课 — Interactive Workbook",
+    "subtitle": "Book 3 Chapter 1 · textbook exercises · audio pending",
+    "chapter": "B3C1"
+  },
+  "pages": {
+    "page1": {
+      "data": [
+        {
+          "name": "A",
+          "bank": [
+            [
+              "a",
+              "下午",
+              "xià wǔ",
+              "afternoon"
+            ],
+            [
+              "b",
+              "放假",
+              "fàng jià",
+              "vacation"
+            ],
+            [
+              "c",
+              "回来",
+              "huí lái",
+              "come back"
+            ],
+            [
+              "d",
+              "天天",
+              "tiān tiān",
+              "every day"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "老师欢迎同学们",
+              "post": "上课。",
+              "en": "The teacher welcomes the students ____ to class."
+            },
+            {
+              "pre": "他",
+              "post": "的时候常练习写字。",
+              "en": "He often practices writing during ____."
+            },
+            {
+              "pre": "友朋上午在家练习写字，",
+              "post": "去游泳。",
+              "en": "Youpeng practices writing in the morning and swims in the ____."
+            },
+            {
+              "pre": "我",
+              "post": "都上课。",
+              "en": "I attend class ____."
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "bank": [
+            [
+              "a",
+              "书法",
+              "shū fǎ",
+              "calligraphy"
+            ],
+            [
+              "b",
+              "下棋",
+              "xià qí",
+              "play chess"
+            ],
+            [
+              "c",
+              "开始",
+              "kāi shǐ",
+              "begin"
+            ],
+            [
+              "d",
+              "游戏",
+              "yóu xì",
+              "game"
+            ],
+            [
+              "e",
+              "打开",
+              "dǎ kāi",
+              "open"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "张莉喜欢写",
+              "post": "，也喜欢跟爸爸下棋。",
+              "en": "Zhang Li likes practicing ____ and playing chess with Dad."
+            },
+            {
+              "pre": "张莉喜欢写书法，也喜欢跟爸爸",
+              "post": "。",
+              "en": "Zhang Li likes calligraphy and likes to ____ with Dad."
+            },
+            {
+              "pre": "老师要",
+              "post": "上课了。",
+              "en": "The teacher is going to ____ class."
+            },
+            {
+              "pre": "老师请大家",
+              "post": "课本。",
+              "en": "The teacher asks everyone to ____ their textbooks."
+            },
+            {
+              "pre": "大文想玩",
+              "post": "。",
+              "en": "Dawen wants to play a ____."
+            }
+          ]
+        }
+      ],
+      "charPinyin": {
+        "上": "shàng",
+        "下": "xià",
+        "也": "yě",
+        "习": "xí",
+        "书": "shū",
+        "了": "le",
+        "他": "tā",
+        "们": "men",
+        "候": "hou",
+        "假": "jià",
+        "写": "xiě",
+        "午": "wǔ",
+        "去": "qù",
+        "友": "yǒu",
+        "同": "tóng",
+        "喜": "xǐ",
+        "回": "huí",
+        "在": "zài",
+        "大": "dà",
+        "天": "tiān",
+        "始": "shǐ",
+        "字": "zì",
+        "学": "xué",
+        "家": "jiā",
+        "师": "shī",
+        "常": "cháng",
+        "开": "kāi",
+        "张": "zhāng",
+        "想": "xiǎng",
+        "戏": "xì",
+        "我": "wǒ",
+        "打": "dǎ",
+        "放": "fàng",
+        "文": "wén",
+        "时": "shí",
+        "朋": "péng",
+        "本": "běn",
+        "来": "lái",
+        "棋": "qí",
+        "欢": "huān",
+        "法": "fǎ",
+        "泳": "yǒng",
+        "游": "yóu",
+        "爸": "bà",
+        "玩": "wán",
+        "的": "de",
+        "练": "liàn",
+        "老": "lǎo",
+        "莉": "lì",
+        "要": "yào",
+        "请": "qǐng",
+        "课": "kè",
+        "跟": "gēn",
+        "迎": "yíng",
+        "都": "dōu"
+      }
+    },
+    "page2": {
+      "questions": [
+        {
+          "segments": [
+            "今天有几个人一起",
+            "CHOICE",
+            "？"
+          ],
+          "options": [
+            "玩游戏",
+            "做什么"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "play games",
+            "do what"
+          ]
+        },
+        {
+          "segments": [
+            "心美以前喜欢画图，可是现在最喜欢",
+            "CHOICE",
+            "。"
+          ],
+          "options": [
+            "写书法",
+            "打开"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "practice calligraphy",
+            "open"
+          ]
+        },
+        {
+          "segments": [
+            "大文本来想去",
+            "CHOICE",
+            "，可是现在不去了。"
+          ],
+          "options": [
+            "开始",
+            "游泳"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "begin",
+            "swim"
+          ]
+        },
+        {
+          "segments": [
+            "文文放暑假了，她",
+            "CHOICE",
+            "在家看电视。"
+          ],
+          "options": [
+            "回来",
+            "天天"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "come back",
+            "every day"
+          ]
+        },
+        {
+          "segments": [
+            "我弟弟比较喜欢",
+            "CHOICE",
+            "，可是我妹妹喜欢写书法。"
+          ],
+          "options": [
+            "等一下",
+            "下棋"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "wait a moment",
+            "play chess"
+          ]
+        }
+      ],
+      "py": {
+        "一": "yī",
+        "下": "xià",
+        "不": "bù",
+        "个": "gè",
+        "么": "me",
+        "书": "shū",
+        "了": "le",
+        "人": "rén",
+        "什": "shén",
+        "今": "jīn",
+        "以": "yǐ",
+        "假": "jià",
+        "做": "zuò",
+        "写": "xiě",
+        "几": "jǐ",
+        "前": "qián",
+        "去": "qù",
+        "可": "kě",
+        "喜": "xǐ",
+        "回": "huí",
+        "图": "tú",
+        "在": "zài",
+        "大": "dà",
+        "天": "tiān",
+        "她": "tā",
+        "妹": "mèi",
+        "始": "shǐ",
+        "家": "jiā",
+        "开": "kāi",
+        "弟": "dì",
+        "心": "xīn",
+        "想": "xiǎng",
+        "戏": "xì",
+        "我": "wǒ",
+        "打": "dǎ",
+        "放": "fàng",
+        "文": "wén",
+        "是": "shì",
+        "暑": "shǔ",
+        "最": "zuì",
+        "有": "yǒu",
+        "本": "běn",
+        "来": "lái",
+        "棋": "qí",
+        "欢": "huān",
+        "比": "bǐ",
+        "法": "fǎ",
+        "泳": "yǒng",
+        "游": "yóu",
+        "玩": "wán",
+        "现": "xiàn",
+        "电": "diàn",
+        "画": "huà",
+        "看": "kàn",
+        "等": "děng",
+        "美": "měi",
+        "视": "shì",
+        "起": "qǐ",
+        "较": "jiào"
+      }
+    },
+    "page3": {
+      "shorts": [
+        [
+          "1.",
+          "谁欢迎学生们回来上课？",
+          "Who welcomed the students back to class?"
+        ],
+        [
+          "2.",
+          "友朋放假的时候做了什么？",
+          "What did Youpeng do on vacation?"
+        ],
+        [
+          "3.",
+          "张莉放假的时候做了什么？",
+          "What did Zhang Li do on vacation?"
+        ],
+        [
+          "4.",
+          "大文今天上课想做什么？",
+          "What does Dawen want to do in class today?"
+        ],
+        [
+          "5.",
+          "老师请大家做什么？",
+          "What does the teacher ask everyone to do?"
+        ]
+      ],
+      "tfs": [
+        [
+          "同学们回学校上课了。",
+          "The students have returned to school for class."
+        ],
+        [
+          "友朋放假的时候常常在学校练习写字。",
+          "Youpeng often practiced writing at school during vacation."
+        ],
+        [
+          "张莉放假的时候常常跟妈妈下棋。",
+          "Zhang Li often played chess with Mom during vacation."
+        ],
+        [
+          "大文今天想玩游戏。",
+          "Dawen wants to play games today."
+        ],
+        [
+          "老师请大家打开课本一起念。",
+          "The teacher asks everyone to open their books and read together."
+        ]
+      ],
+      "py": {
+        "一": "yī",
+        "上": "shàng",
+        "下": "xià",
+        "么": "me",
+        "习": "xí",
+        "了": "le",
+        "什": "shén",
+        "今": "jīn",
+        "们": "men",
+        "候": "hou",
+        "假": "jià",
+        "做": "zuò",
+        "写": "xiě",
+        "友": "yǒu",
+        "同": "tóng",
+        "回": "huí",
+        "在": "zài",
+        "大": "dà",
+        "天": "tiān",
+        "妈": "mā",
+        "字": "zì",
+        "学": "xué",
+        "家": "jiā",
+        "师": "shī",
+        "常": "cháng",
+        "开": "kāi",
+        "张": "zhāng",
+        "念": "niàn",
+        "想": "xiǎng",
+        "戏": "xì",
+        "打": "dǎ",
+        "放": "fàng",
+        "文": "wén",
+        "时": "shí",
+        "朋": "péng",
+        "本": "běn",
+        "来": "lái",
+        "校": "xiào",
+        "棋": "qí",
+        "欢": "huān",
+        "游": "yóu",
+        "玩": "wán",
+        "生": "shēng",
+        "的": "de",
+        "练": "liàn",
+        "老": "lǎo",
+        "莉": "lì",
+        "请": "qǐng",
+        "课": "kè",
+        "谁": "shéi",
+        "起": "qǐ",
+        "跟": "gēn",
+        "迎": "yíng"
+      }
+    },
+    "page4": {
+      "sections": [
+        {
+          "title": "（一）请把听到的词圈出来。",
+          "instruction": "Circle the words you hear.",
+          "items": [
+            {
+              "label": "1.",
+              "options": [
+                "上午",
+                "上课"
+              ],
+              "english": [
+                "",
+                ""
+              ]
+            },
+            {
+              "label": "2.",
+              "options": [
+                "课本",
+                "书法"
+              ],
+              "english": [
+                "",
+                ""
+              ]
+            },
+            {
+              "label": "3.",
+              "options": [
+                "回来",
+                "打开"
+              ],
+              "english": [
+                "",
+                ""
+              ]
+            },
+            {
+              "label": "4.",
+              "options": [
+                "练习",
+                "游戏"
+              ],
+              "english": [
+                "",
+                ""
+              ]
+            },
+            {
+              "label": "5.",
+              "options": [
+                "放假",
+                "开始"
+              ],
+              "english": [
+                "",
+                ""
+              ]
+            },
+            {
+              "label": "6.",
+              "options": [
+                "下棋",
+                "下午"
+              ],
+              "english": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "instruction": "Listen and circle the correct answer.",
+          "items": [
+            {
+              "label": "A. 1.",
+              "segments": [
+                "友朋上午在家练习",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "下棋",
+                "写字"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "play chess",
+                "write characters"
+              ]
+            },
+            {
+              "label": "A. 2.",
+              "segments": [
+                "友朋下午去",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "游泳",
+                "看书"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "swimming",
+                "read"
+              ]
+            },
+            {
+              "label": "B. 1.",
+              "segments": [
+                "张莉",
+                "CHOICE",
+                "写书法。"
+              ],
+              "options": [
+                "常常",
+                "天天"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "often",
+                "every day"
+              ]
+            },
+            {
+              "label": "B. 2.",
+              "segments": [
+                "张莉",
+                "CHOICE",
+                "爸爸下棋。"
+              ],
+              "options": [
+                "跟",
+                "不跟"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "plays with",
+                "does not play with"
+              ]
+            },
+            {
+              "label": "C.",
+              "segments": [
+                "大文今天想",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "玩玩具",
+                "玩游戏"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "play with toys",
+                "play games"
+              ]
+            }
+          ]
+        }
+      ],
+      "audioUrl": "audio/B3-L01-Test.mp3"
+    },
+    "page5": {
+      "left": [
+        [
+          "上午我在家练习写字，",
+          "In the morning I practiced writing at home,"
+        ],
+        [
+          "等一下，我先洗手",
+          "Wait a minute; first I will wash my hands"
+        ],
+        [
+          "请你们现在",
+          "Please, right now,"
+        ],
+        [
+          "七点了，",
+          "It is seven o’clock,"
+        ]
+      ],
+      "right": [
+        [
+          "打开课本。",
+          "open your textbooks."
+        ],
+        [
+          "我该开始写功课了。",
+          "I should start doing homework."
+        ],
+        [
+          "再吃饭。",
+          "then eat."
+        ],
+        [
+          "下午在外面跑步。",
+          "and ran outside in the afternoon."
+        ]
+      ],
+      "py": {
+        "一": "yī",
+        "七": "qī",
+        "上": "shàng",
+        "下": "xià",
+        "习": "xí",
+        "了": "le",
+        "们": "men",
+        "你": "nǐ",
+        "先": "xiān",
+        "再": "zài",
+        "写": "xiě",
+        "功": "gōng",
+        "午": "wǔ",
+        "吃": "chī",
+        "在": "zài",
+        "外": "wài",
+        "始": "shǐ",
+        "字": "zì",
+        "家": "jiā",
+        "开": "kāi",
+        "我": "wǒ",
+        "手": "shǒu",
+        "打": "dǎ",
+        "本": "běn",
+        "步": "bù",
+        "洗": "xǐ",
+        "点": "diǎn",
+        "现": "xiàn",
+        "等": "děng",
+        "练": "liàn",
+        "该": "gāi",
+        "请": "qǐng",
+        "课": "kè",
+        "跑": "pǎo",
+        "面": "miàn",
+        "饭": "fàn"
+      }
+    },
+    "page6": {
+      "PY": {
+        "一": "yī",
+        "上": "shàng",
+        "下": "xià",
+        "东": "dōng",
+        "么": "me",
+        "也": "yě",
+        "习": "xí",
+        "书": "shū",
+        "了": "le",
+        "什": "shén",
+        "以": "yǐ",
+        "们": "men",
+        "你": "nǐ",
+        "候": "hou",
+        "假": "jià",
+        "做": "zuò",
+        "再": "zài",
+        "写": "xiě",
+        "友": "yǒu",
+        "可": "kě",
+        "同": "tóng",
+        "后": "hòu",
+        "呢": "ne",
+        "在": "zài",
+        "天": "tiān",
+        "始": "shǐ",
+        "学": "xué",
+        "家": "jiā",
+        "常": "cháng",
+        "开": "kāi",
+        "张": "zhāng",
+        "心": "xīn",
+        "我": "wǒ",
+        "放": "fàng",
+        "文": "wén",
+        "时": "shí",
+        "明": "míng",
+        "朋": "péng",
+        "来": "lái",
+        "法": "fǎ",
+        "泳": "yǒng",
+        "游": "yóu",
+        "现": "xiàn",
+        "的": "de",
+        "练": "liàn",
+        "美": "měi",
+        "莉": "lì",
+        "课": "kè",
+        "起": "qǐ",
+        "跟": "gēn",
+        "都": "dōu"
+      },
+      "writing": [
+        {
+          "parts": [
+            "同学们都",
+            "来上课了。"
+          ],
+          "clues": [
+            "huí"
+          ],
+          "en": "All the students came back to class."
+        },
+        {
+          "parts": [
+            "你们",
+            "",
+            "的时候做了什么？"
+          ],
+          "clues": [
+            "fàng",
+            "jià"
+          ],
+          "en": "What did you do during vacation?"
+        },
+        {
+          "parts": [
+            "友朋上",
+            "在家",
+            "写",
+            "。"
+          ],
+          "clues": [
+            "wǔ",
+            "liàn",
+            "xí",
+            "zì"
+          ],
+          "en": "Youpeng practiced writing at home in the morning."
+        },
+        {
+          "parts": [
+            "我们现在开",
+            "上课",
+            "？"
+          ],
+          "clues": [
+            "shǐ",
+            "ma"
+          ],
+          "en": "Shall we start class now?"
+        },
+        {
+          "parts": [
+            "我",
+            "一下再",
+            "课文。"
+          ],
+          "clues": [
+            "děng",
+            "niàn"
+          ],
+          "en": "I will wait a moment then read the lesson."
+        }
+      ],
+      "words": [
+        [
+          "一起",
+          "yì qǐ",
+          "together"
+        ],
+        [
+          "在",
+          "zài",
+          "at / in"
+        ],
+        [
+          "开始",
+          "kāi shǐ",
+          "start"
+        ],
+        [
+          "时候",
+          "shí hou",
+          "time / when"
+        ]
+      ],
+      "lines": [
+        {
+          "speaker": "东明",
+          "parts": [
+            "心美，你放假的",
+            3,
+            "做了什么？"
+          ],
+          "en": "Xinmei, what did you do during vacation?",
+          "say": "心美，你放假的时候做了什么？"
+        },
+        {
+          "speaker": "心美",
+          "parts": [
+            "我常常跟张莉一起练习写书法。你呢？"
+          ],
+          "en": "I often practice calligraphy with Zhang Li. How about you?",
+          "say": "我常常跟张莉一起练习写书法。你呢？"
+        },
+        {
+          "speaker": "东明",
+          "parts": [
+            "我天天",
+            1,
+            "家游泳，也",
+            2,
+            "上书法课了。"
+          ],
+          "en": "I swim at home every day, and I have also started taking calligraphy classes.",
+          "say": "我天天在家游泳，也开始上书法课了。"
+        },
+        {
+          "speaker": "心美",
+          "parts": [
+            "以后我们可以",
+            0,
+            "练习写书法。"
+          ],
+          "en": "We can practice calligraphy together in the future.",
+          "say": "以后我们可以一起练习写书法。"
+        }
+      ]
+    },
+    "page7": {
+      "PY": {
+        "一": "yī",
+        "上": "shàng",
+        "下": "xià",
+        "不": "bù",
+        "么": "me",
+        "也": "yě",
+        "习": "xí",
+        "书": "shū",
+        "了": "le",
+        "人": "rén",
+        "什": "shén",
+        "今": "jīn",
+        "以": "yǐ",
+        "们": "men",
+        "会": "huì",
+        "住": "zhù",
+        "信": "xìn",
+        "候": "hou",
+        "做": "zuò",
+        "六": "liù",
+        "写": "xiě",
+        "功": "gōng",
+        "午": "wǔ",
+        "可": "kě",
+        "后": "hòu",
+        "周": "zhōu",
+        "和": "hé",
+        "喜": "xǐ",
+        "在": "zài",
+        "天": "tiān",
+        "太": "tài",
+        "妈": "mā",
+        "妹": "mèi",
+        "字": "zì",
+        "家": "jiā",
+        "希": "xī",
+        "常": "cháng",
+        "弟": "dì",
+        "很": "hěn",
+        "忙": "máng",
+        "想": "xiǎng",
+        "我": "wǒ",
+        "打": "dǎ",
+        "时": "shí",
+        "星": "xīng",
+        "是": "shì",
+        "有": "yǒu",
+        "望": "wàng",
+        "期": "qī",
+        "末": "mò",
+        "来": "lái",
+        "棋": "qí",
+        "欢": "huān",
+        "没": "méi",
+        "法": "fǎ",
+        "泳": "yǒng",
+        "游": "yóu",
+        "漫": "màn",
+        "爷": "yé",
+        "爸": "bà",
+        "电": "diàn",
+        "画": "huà",
+        "的": "de",
+        "看": "kàn",
+        "真": "zhēn",
+        "知": "zhī",
+        "练": "liàn",
+        "给": "gěi",
+        "话": "huà",
+        "课": "kè",
+        "起": "qǐ",
+        "跟": "gēn",
+        "道": "dào",
+        "都": "dōu"
+      },
+      "passages": [
+        [
+          "今天我们打电话给爷爷，爷爷想知道我们周末常常做什么。",
+          "Today we called Grandpa. Grandpa wanted to know what we usually do on weekends."
+        ],
+        [
+          "弟弟周末的时候上午看漫画书，下午练习写字。妹妹星期六上午游泳，下午练习书法。",
+          "My younger brother reads comics on weekend mornings and practices writing in the afternoon. My younger sister swims on Saturday mornings and practices calligraphy in the afternoon."
+        ],
+        [
+          "我星期天写了功课以后，常常想下棋，可是弟弟和妹妹都不会。",
+          "On Sundays after finishing homework, I often want to play chess, but neither my brother nor sister knows how."
+        ],
+        [
+          "爸爸、妈妈太忙，没有人可以跟我一起下棋。",
+          "Dad and Mom are too busy, so no one can play chess with me."
+        ],
+        [
+          "我知道爷爷喜欢下棋，真希望周末的时候，爷爷可以来我们家跟我一起下棋。",
+          "I know Grandpa likes chess. I really hope Grandpa can come to our house this weekend to play chess with me."
+        ]
+      ],
+      "questions": [
+        [
+          "今天我们写信给爷爷。",
+          "Today we wrote a letter to Grandpa."
+        ],
+        [
+          "弟弟周末的时候上午练习写字，下午看漫画书。",
+          "On weekend mornings my brother practices writing and in the afternoon reads comics."
+        ],
+        [
+          "妹妹星期六上午游泳。",
+          "My sister swims on Saturday mornings."
+        ],
+        [
+          "我爸爸很忙，妈妈也很忙。",
+          "My dad is busy and my mom is busy too."
+        ],
+        [
+          "我星期天常常下棋。",
+          "I often play chess on Sundays."
+        ],
+        [
+          "爷爷不喜欢下棋。",
+          "Grandpa does not like playing chess."
+        ],
+        [
+          "爷爷跟我们住在一起。",
+          "Grandpa lives with us."
+        ]
+      ]
+    },
+    "pagelesson": {
+      "description": "第一课 · 老师和同学们的对话 · Lesson Dialogue",
+      "lines": [
+        {
+          "speaker": "老师",
+          "emoji": "👨‍🏫",
+          "text": "同学们，欢迎你们回来上课。",
+          "english": "Students, welcome back to class!"
+        },
+        {
+          "speaker": "学生",
+          "emoji": "🧑‍🎓",
+          "text": "老师好！",
+          "english": "Hello, teacher!"
+        },
+        {
+          "speaker": "老师",
+          "emoji": "👨‍🏫",
+          "text": "你们放假的时候做了什么？",
+          "english": "What did you do during vacation?"
+        },
+        {
+          "speaker": "友朋",
+          "emoji": "👦",
+          "text": "上午我在家练习写字，下午我去游泳。",
+          "english": "In the morning, I practiced writing at home; in the afternoon, I went swimming."
+        },
+        {
+          "speaker": "张莉",
+          "emoji": "👧",
+          "text": "我天天在家写书法，也跟爸爸下棋。",
+          "english": "I practiced calligraphy at home every day and also played chess with Dad."
+        },
+        {
+          "speaker": "老师",
+          "emoji": "👨‍🏫",
+          "text": "很好！很有意思！我们现在开始上课吧！",
+          "english": "Very good! Very interesting! Let’s begin class now!"
+        },
+        {
+          "speaker": "大文",
+          "emoji": "👦",
+          "text": "老师，我们今天会玩游戏吗？",
+          "english": "Teacher, will we play games today?"
+        },
+        {
+          "speaker": "老师",
+          "emoji": "👨‍🏫",
+          "text": "等一下。请先打开课本，大家跟我一起念。",
+          "english": "Wait a moment. Please open your textbooks first, and everyone read aloud with me."
+        }
+      ],
+      "pinyin": {
+        "一": "yī",
+        "上": "shàng",
+        "下": "xià",
+        "么": "me",
+        "也": "yě",
+        "习": "xí",
+        "书": "shū",
+        "了": "le",
+        "什": "shén",
+        "今": "jīn",
+        "们": "men",
+        "会": "huì",
+        "你": "nǐ",
+        "候": "hou",
+        "假": "jià",
+        "做": "zuò",
+        "先": "xiān",
+        "写": "xiě",
+        "午": "wǔ",
+        "去": "qù",
+        "友": "yǒu",
+        "同": "tóng",
+        "吗": "ma",
+        "吧": "ba",
+        "和": "hé",
+        "回": "huí",
+        "在": "zài",
+        "大": "dà",
+        "天": "tiān",
+        "好": "hǎo",
+        "始": "shǐ",
+        "字": "zì",
+        "学": "xué",
+        "家": "jiā",
+        "对": "duì",
+        "师": "shī",
+        "开": "kāi",
+        "张": "zhāng",
+        "很": "hěn",
+        "念": "niàn",
+        "思": "si",
+        "意": "yì",
+        "戏": "xì",
+        "我": "wǒ",
+        "打": "dǎ",
+        "放": "fàng",
+        "文": "wén",
+        "时": "shí",
+        "有": "yǒu",
+        "朋": "péng",
+        "本": "běn",
+        "来": "lái",
+        "棋": "qí",
+        "欢": "huān",
+        "法": "fǎ",
+        "泳": "yǒng",
+        "游": "yóu",
+        "爸": "bà",
+        "玩": "wán",
+        "现": "xiàn",
+        "生": "shēng",
+        "的": "de",
+        "第": "dì",
+        "等": "děng",
+        "练": "liàn",
+        "老": "lǎo",
+        "莉": "lì",
+        "话": "huà",
+        "请": "qǐng",
+        "课": "kè",
+        "起": "qǐ",
+        "跟": "gēn",
+        "迎": "yíng"
+      },
+      "title": "课文 · Lesson Dialogue"
+    }
+  },
+  "googleForm": {
+    "action": "https://docs.google.com/forms/d/e/1FAIpQLSfBKFS2NtxoYseb4fG46czemaZcUz2UiS9UmhsB5mseOg3d5A/formResponse",
+    "student": "entry.1075373571",
+    "classroom": "entry.95149830",
+    "quizName": "entry.1323832917",
+    "total": "entry.1630475119",
+    "correct": "entry.2010509959",
+    "details": "entry.1985964408",
+    "pages": {
+      "1": "entry.606366833",
+      "2": "entry.1723774158",
+      "3": "entry.1178395538",
+      "4": "entry.311041801",
+      "5": "entry.1575811922",
+      "6": "entry.1057969943",
+      "7": "entry.391842823"
+    }
+  },
+  "answers": {
+    "page1": {
+      "groups": [
+        {
+          "name": "A",
+          "correctLetters": [
+            "c",
+            "b",
+            "a",
+            "d"
+          ]
+        },
+        {
+          "name": "B",
+          "correctLetters": [
+            "a",
+            "b",
+            "c",
+            "e",
+            "d"
+          ]
+        }
+      ]
+    },
+    "page2": {
+      "correctOptionIndexes": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    "page3": {
+      "trueFalse": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ]
+    },
+    "page4": {
+      "parts": [
+        {
+          "title": "（一）请把听到的词圈出来。",
+          "correctOptionIndexes": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "correctOptionIndexes": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    "page5": {
+      "matchingRightIndexes": [
+        3,
+        2,
+        0,
+        1
+      ]
+    },
+    "page6": {
+      "writingCharacters": [
+        [
+          "回"
+        ],
+        [
+          "放",
+          "假"
+        ],
+        [
+          "午",
+          "练",
+          "习",
+          "字"
+        ],
+        [
+          "始",
+          "吗"
+        ],
+        [
+          "等",
+          "念"
+        ]
+      ],
+      "dialogueWordIndexes": [
+        3,
+        1,
+        2,
+        0
+      ]
+    },
+    "page7": {
+      "trueFalse": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
+    }
+  },
+  "validation": {
+    "listening": "unverified - MP3 recordings not uploaded",
+    "page1Pictures": "not applicable - no Page 1 picture pairs in this chapter",
+    "note": "Character-writing question 2 in the scanned PDF has incomplete/malformed wording. Reconstructed the sentence from its visible clues and the chapter dialogue."
+  }
+}
