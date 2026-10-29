@@ -1,0 +1,1224 @@
+{
+  "meta": {
+    "quizName": "LLC Book 3 · Lesson 3",
+    "title": "LLC Book 3 · 第三课 — Interactive Workbook",
+    "subtitle": "Book 3 Chapter 3 · textbook exercises pp.16–23 · lesson dialogue provided · listening audio unverified",
+    "chapter": "B3C3"
+  },
+  "pages": {
+    "page1": {
+      "data": [
+        {
+          "name": "A",
+          "bank": [
+            [
+              "a",
+              "贵",
+              "guì",
+              "expensive"
+            ],
+            [
+              "b",
+              "蓝色",
+              "lán sè",
+              "blue"
+            ],
+            [
+              "c",
+              "笔记本",
+              "bǐ jì běn",
+              "notebook"
+            ],
+            [
+              "d",
+              "选",
+              "xuǎn",
+              "choose"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "文文要买铅笔、蜡笔和",
+              "post": "。",
+              "en": "Wenwen wants pencils, crayons, and ____."
+            },
+            {
+              "pre": "爸爸说不要买太",
+              "post": "的东西。",
+              "en": "Dad says not to buy things that are too ____."
+            },
+            {
+              "pre": "爸爸要文文自己",
+              "post": "。",
+              "en": "Dad wants Wenwen to ____ for herself."
+            },
+            {
+              "pre": "文文还想买一个",
+              "post": "的背包。",
+              "en": "Wenwen also wants to buy a ____ backpack."
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "bank": [
+            [
+              "a",
+              "一共",
+              "yí gòng",
+              "altogether"
+            ],
+            [
+              "b",
+              "盒",
+              "hé",
+              "box"
+            ],
+            [
+              "c",
+              "块",
+              "kuài",
+              "yuan (colloquial)"
+            ],
+            [
+              "d",
+              "便宜",
+              "pián yi",
+              "inexpensive"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "蓝色的背包79",
+              "post": "，太贵了。",
+              "en": "The blue backpack costs 79 ____; too expensive."
+            },
+            {
+              "pre": "黄色的背包又",
+              "post": "又好看。",
+              "en": "The yellow backpack is both ____ and good-looking."
+            },
+            {
+              "pre": "两盒蜡笔、十枝铅笔，",
+              "post": "多少钱？",
+              "en": "Two boxes of crayons and ten pencils cost how much ____?"
+            },
+            {
+              "pre": "两",
+              "post": "蜡笔20块，贵不贵？",
+              "en": "Two ____ of crayons cost 20 yuan. Is that expensive?"
+            }
+          ]
+        }
+      ],
+      "charPinyin": {
+        "一": "yí",
+        "不": "bù",
+        "东": "dōng",
+        "两": "liǎng",
+        "个": "gè",
+        "买": "mǎi",
+        "了": "le",
+        "便": "pián",
+        "共": "gòng",
+        "包": "bāo",
+        "十": "shí",
+        "又": "yòu",
+        "和": "hé",
+        "块": "kuài",
+        "多": "duō",
+        "太": "tài",
+        "好": "hǎo",
+        "宜": "yi",
+        "少": "shǎo",
+        "己": "jǐ",
+        "想": "xiǎng",
+        "文": "wén",
+        "本": "běn",
+        "枝": "zhī",
+        "爸": "bà",
+        "的": "de",
+        "盒": "hé",
+        "看": "kàn",
+        "笔": "bǐ",
+        "背": "bēi",
+        "自": "zì",
+        "色": "sè",
+        "蓝": "lán",
+        "蜡": "là",
+        "西": "xi",
+        "要": "yào",
+        "记": "jì",
+        "说": "shuō",
+        "贵": "guì",
+        "还": "hái",
+        "选": "xuǎn",
+        "钱": "qián",
+        "铅": "qiān",
+        "黄": "huáng"
+      }
+    },
+    "page2": {
+      "questions": [
+        {
+          "segments": [
+            "我最喜欢爸爸给我买的",
+            "CHOICE",
+            "。"
+          ],
+          "options": [
+            "背包",
+            "便宜"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "backpack",
+            "cheap"
+          ]
+        },
+        {
+          "segments": [
+            "心美选了两",
+            "CHOICE",
+            "蜡笔。"
+          ],
+          "options": [
+            "个",
+            "盒"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "individual items",
+            "boxes"
+          ]
+        },
+        {
+          "segments": [
+            "友朋写的字很",
+            "CHOICE",
+            "。"
+          ],
+          "options": [
+            "好看",
+            "贵"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "good-looking",
+            "expensive"
+          ]
+        },
+        {
+          "segments": [
+            "文文给了大文三",
+            "CHOICE",
+            "铅笔。"
+          ],
+          "options": [
+            "块",
+            "枝"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "yuan",
+            "pencil classifiers"
+          ]
+        },
+        {
+          "segments": [
+            "爸爸说他今天很忙，现在他又累",
+            "CHOICE",
+            "饿。"
+          ],
+          "options": [
+            "又",
+            "可是"
+          ],
+          "english": [
+            "Complete the sentence: ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "and",
+            "but"
+          ]
+        }
+      ],
+      "py": {
+        "三": "sān",
+        "两": "liǎng",
+        "个": "gè",
+        "买": "mǎi",
+        "了": "le",
+        "今": "jīn",
+        "他": "tā",
+        "便": "pián",
+        "写": "xiě",
+        "包": "bāo",
+        "又": "yòu",
+        "友": "yǒu",
+        "可": "kě",
+        "喜": "xǐ",
+        "在": "zài",
+        "块": "kuài",
+        "大": "dà",
+        "天": "tiān",
+        "好": "hǎo",
+        "字": "zì",
+        "宜": "yi",
+        "很": "hěn",
+        "心": "xīn",
+        "忙": "máng",
+        "我": "wǒ",
+        "文": "wén",
+        "是": "shì",
+        "最": "zuì",
+        "朋": "péng",
+        "枝": "zhī",
+        "欢": "huān",
+        "爸": "bà",
+        "现": "xiàn",
+        "的": "de",
+        "盒": "hé",
+        "看": "kàn",
+        "笔": "bǐ",
+        "累": "lèi",
+        "给": "gěi",
+        "美": "měi",
+        "背": "bēi",
+        "蜡": "là",
+        "说": "shuō",
+        "贵": "guì",
+        "选": "xuǎn",
+        "铅": "qiān",
+        "饿": "è"
+      }
+    },
+    "page3": {
+      "shorts": [
+        [
+          "1.",
+          "文文要买什么？",
+          "What does Wenwen want to buy?"
+        ],
+        [
+          "2.",
+          "爸爸不喜欢文文买什么样的东西？",
+          "What kind of things does Dad dislike Wenwen buying?"
+        ],
+        [
+          "3.",
+          "文文还想买什么？",
+          "What else does Wenwen want to buy?"
+        ],
+        [
+          "4.",
+          "文文觉得黄色的背包怎么样？",
+          "What does Wenwen think of the yellow backpack?"
+        ],
+        [
+          "5.",
+          "文文买的背包多少钱？",
+          "How much does Wenwen’s backpack cost?"
+        ],
+        [
+          "6.",
+          "文文买了几盒蜡笔？",
+          "How many boxes of crayons did Wenwen buy?"
+        ],
+        [
+          "7.",
+          "文文买了背包、蜡笔，还买了什么东西？",
+          "Besides the backpack and crayons, what else did Wenwen buy?"
+        ],
+        [
+          "8.",
+          "文文买的东西一共多少钱？",
+          "How much did Wenwen spend altogether?"
+        ]
+      ],
+      "tfs": [
+        [
+          "文文要买铅笔，不买蜡笔。",
+          "Wenwen wants pencils, but not crayons."
+        ],
+        [
+          "爸爸要文文自己选要买的东西。",
+          "Dad wants Wenwen to choose the items herself."
+        ],
+        [
+          "爸爸不喜欢文文买太贵的东西。",
+          "Dad does not want Wenwen to buy overly expensive things."
+        ],
+        [
+          "文文买了一个背包。",
+          "Wenwen bought one backpack."
+        ],
+        [
+          "文文买了十本笔记本。",
+          "Wenwen bought ten notebooks."
+        ],
+        [
+          "文文买的东西不到100块钱。",
+          "Wenwen spent less than 100 yuan in total."
+        ]
+      ],
+      "py": {
+        "一": "yī",
+        "不": "bù",
+        "东": "dōng",
+        "个": "gè",
+        "么": "me",
+        "买": "mǎi",
+        "了": "le",
+        "什": "shén",
+        "共": "gòng",
+        "几": "jǐ",
+        "到": "dào",
+        "包": "bāo",
+        "十": "shí",
+        "喜": "xǐ",
+        "块": "kuài",
+        "多": "duō",
+        "太": "tài",
+        "少": "shǎo",
+        "己": "jǐ",
+        "得": "de",
+        "怎": "zěn",
+        "想": "xiǎng",
+        "文": "wén",
+        "本": "běn",
+        "样": "yàng",
+        "欢": "huān",
+        "爸": "bà",
+        "的": "de",
+        "盒": "hé",
+        "笔": "bǐ",
+        "背": "bēi",
+        "自": "zì",
+        "色": "sè",
+        "蜡": "là",
+        "西": "xi",
+        "要": "yào",
+        "觉": "jué",
+        "记": "jì",
+        "贵": "guì",
+        "还": "hái",
+        "选": "xuǎn",
+        "钱": "qián",
+        "铅": "qiān",
+        "黄": "huáng"
+      }
+    },
+    "page4": {
+      "sections": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "instruction": "Circle the vocabulary words you hear.",
+          "items": [
+            {
+              "label": "1.",
+              "options": [
+                "蜡笔",
+                "铅笔"
+              ],
+              "english": [
+                "crayon",
+                "pencil"
+              ]
+            },
+            {
+              "label": "2.",
+              "options": [
+                "笔记本",
+                "多少钱"
+              ],
+              "english": [
+                "notebook",
+                "how much money"
+              ]
+            },
+            {
+              "label": "3.",
+              "options": [
+                "贵",
+                "又"
+              ],
+              "english": [
+                "expensive",
+                "also / both"
+              ]
+            },
+            {
+              "label": "4.",
+              "options": [
+                "盒",
+                "枝"
+              ],
+              "english": [
+                "box",
+                "classifier for pencils"
+              ]
+            },
+            {
+              "label": "5.",
+              "options": [
+                "背包",
+                "蓝色"
+              ],
+              "english": [
+                "backpack",
+                "blue"
+              ]
+            },
+            {
+              "label": "6.",
+              "options": [
+                "选",
+                "块"
+              ],
+              "english": [
+                "choose",
+                "yuan"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "instruction": "Listen and circle the correct answer.",
+          "items": [
+            {
+              "label": "A. 1.",
+              "segments": [
+                "爸爸叫文文自己",
+                "CHOICE",
+                "要买的东西。"
+              ],
+              "options": [
+                "吃",
+                "选"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "eat",
+                "choose"
+              ]
+            },
+            {
+              "label": "A. 2.",
+              "segments": [
+                "爸爸叫文文不要买",
+                "CHOICE",
+                "的东西。"
+              ],
+              "options": [
+                "太贵",
+                "便宜"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "too expensive",
+                "cheap"
+              ]
+            },
+            {
+              "label": "B. 1.",
+              "segments": [
+                "文文买了一个",
+                "CHOICE",
+                "背包。"
+              ],
+              "options": [
+                "蓝色的",
+                "黄色的"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "blue",
+                "yellow"
+              ]
+            },
+            {
+              "label": "B. 2.",
+              "segments": [
+                "文文买的背包",
+                "CHOICE",
+                "块钱。"
+              ],
+              "options": [
+                "85",
+                "58"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "85 yuan",
+                "58 yuan"
+              ]
+            },
+            {
+              "label": "C.",
+              "segments": [
+                "文文买的东西",
+                "CHOICE",
+                "100块钱。"
+              ],
+              "options": [
+                "一共",
+                "不到"
+              ],
+              "english": [
+                "Listen and complete: ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "altogether",
+                "less than"
+              ]
+            }
+          ]
+        }
+      ],
+      "audioUrl": "audio/B3-L03-Listening.mp3"
+    },
+    "page5": {
+      "left": [
+        [
+          "张莉今天",
+          "Today Zhang Li"
+        ],
+        [
+          "我们班",
+          "Our class"
+        ],
+        [
+          "请问一共",
+          "May I ask, altogether"
+        ],
+        [
+          "那个蛋糕19块钱，",
+          "That cake is 19 yuan,"
+        ]
+      ],
+      "right": [
+        [
+          "多少钱？",
+          "how much does it cost?"
+        ],
+        [
+          "不到20块钱。",
+          "less than 20 yuan."
+        ],
+        [
+          "又累又饿。",
+          "is tired and hungry."
+        ],
+        [
+          "一共8个学生。",
+          "there are eight students in total."
+        ]
+      ],
+      "py": {
+        "一": "yī",
+        "不": "bù",
+        "个": "gè",
+        "今": "jīn",
+        "们": "men",
+        "共": "gòng",
+        "到": "dào",
+        "又": "yòu",
+        "块": "kuài",
+        "多": "duō",
+        "天": "tiān",
+        "学": "xué",
+        "少": "shǎo",
+        "张": "zhāng",
+        "我": "wǒ",
+        "班": "bān",
+        "生": "shēng",
+        "糕": "gāo",
+        "累": "lèi",
+        "莉": "lì",
+        "蛋": "dàn",
+        "请": "qǐng",
+        "那": "nà",
+        "钱": "qián",
+        "问": "wèn",
+        "饿": "è"
+      }
+    },
+    "page6": {
+      "PY": {
+        "一": "yī",
+        "三": "sān",
+        "不": "bù",
+        "个": "gè",
+        "买": "mǎi",
+        "了": "le",
+        "你": "nǐ",
+        "便": "pián",
+        "到": "dào",
+        "包": "bāo",
+        "又": "yòu",
+        "可": "kě",
+        "和": "hé",
+        "喜": "xǐ",
+        "块": "kuài",
+        "多": "duō",
+        "大": "dà",
+        "太": "tài",
+        "好": "hǎo",
+        "宜": "yi",
+        "己": "jǐ",
+        "很": "hěn",
+        "想": "xiǎng",
+        "我": "wǒ",
+        "文": "wén",
+        "是": "shì",
+        "有": "yǒu",
+        "本": "běn",
+        "欢": "huān",
+        "爸": "bà",
+        "的": "de",
+        "盒": "hé",
+        "看": "kàn",
+        "笔": "bǐ",
+        "红": "hóng",
+        "背": "bēi",
+        "自": "zì",
+        "色": "sè",
+        "蜡": "là",
+        "要": "yào",
+        "记": "jì",
+        "贵": "guì",
+        "还": "hái",
+        "这": "zhè",
+        "选": "xuǎn",
+        "钱": "qián",
+        "铅": "qiān"
+      },
+      "writing": [
+        {
+          "parts": [
+            "这盒蜡",
+            "",
+            "太",
+            "",
+            "了。"
+          ],
+          "clues": [
+            "bǐ",
+            "guì"
+          ],
+          "en": "This box of crayons is too expensive."
+        },
+        {
+          "parts": [
+            "文文买的背包又",
+            "",
+            "好看。"
+          ],
+          "clues": [
+            "pián",
+            "yi",
+            "yòu"
+          ],
+          "en": "Wenwen’s backpack is inexpensive and attractive."
+        },
+        {
+          "parts": [
+            "三",
+            "",
+            "铅笔一",
+            "",
+            "15块。"
+          ],
+          "clues": [
+            "zhī",
+            "gòng"
+          ],
+          "en": "Three pencils cost 15 yuan altogether."
+        },
+        {
+          "parts": [
+            "这个背包",
+            "",
+            "？"
+          ],
+          "clues": [
+            "duō",
+            "shǎo",
+            "qián"
+          ],
+          "en": "How much does this backpack cost?"
+        }
+      ],
+      "words": [
+        [
+          "贵",
+          "guì",
+          "expensive"
+        ],
+        [
+          "不到",
+          "bú dào",
+          "less than"
+        ],
+        [
+          "选",
+          "xuǎn",
+          "choose"
+        ],
+        [
+          "便宜",
+          "pián yi",
+          "inexpensive"
+        ]
+      ],
+      "lines": [
+        {
+          "speaker": "大文",
+          "parts": [
+            "爸爸，我要买铅笔和笔记本！"
+          ],
+          "en": "Dad, I want to buy pencils and a notebook!",
+          "say": "爸爸，我要买铅笔和笔记本！"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "你看，有很多你自己",
+            2,
+            "，好不好？"
+          ],
+          "en": "Look, there are many; choose for yourself, okay?",
+          "say": "你看，有很多你自己选，好不好？"
+        },
+        {
+          "speaker": "大文",
+          "parts": [
+            "我还想买一个背包，我喜欢红色的。"
+          ],
+          "en": "I also want a backpack; I like the red one.",
+          "say": "我还想买一个背包，我喜欢红色的。"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "好，可是不要买太",
+            0,
+            "的。"
+          ],
+          "en": "Okay, but do not buy one that is too expensive.",
+          "say": "好，可是不要买太贵的。"
+        },
+        {
+          "speaker": "大文",
+          "parts": [
+            "爸爸，你看，这个红色的背包",
+            1,
+            "50块钱，又好看又",
+            3,
+            "。"
+          ],
+          "en": "Dad, look, this red backpack costs under 50 yuan; it is attractive and inexpensive.",
+          "say": "爸爸，你看，这个红色的背包不到50块钱，又好看又便宜。"
+        }
+      ]
+    },
+    "page7": {
+      "PY": {
+        "一": "yī",
+        "上": "shàng",
+        "不": "bù",
+        "东": "dōng",
+        "个": "gè",
+        "也": "yě",
+        "习": "xí",
+        "买": "mǎi",
+        "了": "le",
+        "他": "tā",
+        "以": "yǐ",
+        "便": "pián",
+        "假": "jià",
+        "写": "xiě",
+        "到": "dào",
+        "功": "gōng",
+        "包": "bāo",
+        "去": "qù",
+        "又": "yòu",
+        "可": "kě",
+        "同": "tóng",
+        "块": "kuài",
+        "天": "tiān",
+        "太": "tài",
+        "她": "tā",
+        "好": "hǎo",
+        "始": "shǐ",
+        "字": "zì",
+        "学": "xué",
+        "宜": "yi",
+        "小": "xiǎo",
+        "常": "cháng",
+        "开": "kāi",
+        "很": "hěn",
+        "得": "de",
+        "想": "xiǎng",
+        "所": "suǒ",
+        "放": "fàng",
+        "文": "wén",
+        "是": "shì",
+        "本": "běn",
+        "校": "xiào",
+        "每": "měi",
+        "爸": "bà",
+        "的": "de",
+        "看": "kàn",
+        "笔": "bǐ",
+        "红": "hóng",
+        "练": "liàn",
+        "背": "bēi",
+        "色": "sè",
+        "蓝": "lán",
+        "蜡": "là",
+        "西": "xi",
+        "要": "yào",
+        "觉": "jué",
+        "记": "jì",
+        "课": "kè",
+        "贵": "guì",
+        "起": "qǐ",
+        "跟": "gēn",
+        "还": "hái",
+        "都": "dōu",
+        "钱": "qián",
+        "铅": "qiān",
+        "黄": "huáng"
+      },
+      "passages": [
+        [
+          "文文的学校开始上课了，她常常练习写字，每天都要写功课。",
+          "Wenwen’s school has started classes. She practices writing characters often and has homework every day."
+        ],
+        [
+          "天天她跟爸爸一起去买东西，文文要买铅笔、蜡笔、笔记本，还要买一个背包。",
+          "Every day she goes shopping with her dad. Wenwen wants pencils, crayons, a notebook, and a backpack."
+        ],
+        [
+          "文文的同学小红买了个蓝色的背包，她觉得很好看，也想买一个，可是蓝色的背包太小，也太贵。",
+          "Wenwen’s classmate Xiaohong bought a blue backpack. Wenwen thought it was pretty and wanted one too, but the blue backpack was too small and too expensive."
+        ],
+        [
+          "爸爸觉得蓝色的背包又小又贵。他要文文买黄色的，黄色的不到60块钱，又好看又便宜，所以文文买了黄色的包。",
+          "Dad thought the blue backpack was small and expensive. He wanted Wenwen to get a yellow one. The yellow backpack costs less than 60 yuan and is attractive and inexpensive, so Wenwen bought the yellow one."
+        ]
+      ],
+      "questions": [
+        [
+          "文文的学校放假。",
+          "Wenwen’s school is on vacation."
+        ],
+        [
+          "文文要买一个背包。",
+          "Wenwen wants to buy a backpack."
+        ],
+        [
+          "小红的背包是蓝色的。",
+          "Xiaohong’s backpack is blue."
+        ],
+        [
+          "蓝色的背包不小可是很贵。",
+          "The blue backpack is not small, but is expensive."
+        ],
+        [
+          "一个黄色的背包80块钱。",
+          "A yellow backpack costs 80 yuan."
+        ],
+        [
+          "文文买的背包是黄色的。",
+          "Wenwen bought a yellow backpack."
+        ]
+      ]
+    },
+    "pagelesson": {
+      "description": "文文和爸爸买文具、背包的对话 · Listen to each line or read the whole dialogue.",
+      "lines": [
+        {
+          "speaker": "爸爸",
+          "emoji": "👨",
+          "text": "你要买什么？",
+          "english": "What do you want to buy?",
+          "pinyinText": "nǐ yào mǎi shén me"
+        },
+        {
+          "speaker": "文文",
+          "emoji": "👧",
+          "text": "我要买铅笔、蜡笔和笔记本。",
+          "english": "I want to buy pencils, crayons, and notebooks.",
+          "pinyinText": "wǒ yào mǎi qiān bǐ là bǐ hé bǐ jì běn"
+        },
+        {
+          "speaker": "爸爸",
+          "emoji": "👨",
+          "text": "你自己选，不要买太贵的。",
+          "english": "Choose for yourself. Don’t buy anything too expensive.",
+          "pinyinText": "nǐ zì jǐ xuǎn bù yào mǎi tài guì de"
+        },
+        {
+          "speaker": "文文",
+          "emoji": "👧",
+          "text": "爸爸，我还想买这个蓝色的背包。",
+          "english": "Dad, I also want to buy this blue backpack.",
+          "pinyinText": "bà ba wǒ hái xiǎng mǎi zhè ge lán sè de bēi bāo"
+        },
+        {
+          "speaker": "爸爸",
+          "emoji": "👨",
+          "text": "这个背包79块，太贵了。",
+          "english": "This backpack is 79 yuan. It’s too expensive.",
+          "pinyinText": "zhè ge bēi bāo qī shí jiǔ kuài tài guì le"
+        },
+        {
+          "speaker": "文文",
+          "emoji": "👧",
+          "text": "爸爸，你看，那黄色的背包58块，又便宜又好看。",
+          "english": "Dad, look! That yellow backpack is 58 yuan. It’s both inexpensive and nice-looking.",
+          "pinyinText": "bà ba nǐ kàn nà huáng sè de bēi bāo wǔ shí bā kuài yòu pián yi yòu hǎo kàn"
+        },
+        {
+          "speaker": "爸爸",
+          "emoji": "👨",
+          "text": "好，一共多少钱？",
+          "english": "Okay, how much is it altogether?",
+          "pinyinText": "hǎo yí gòng duō shǎo qián"
+        },
+        {
+          "speaker": "文文",
+          "emoji": "👧",
+          "text": "一个背包58块、两盒蜡笔20块、三本笔记本12块、十枝铅笔9块，一共99块，不到100块钱。",
+          "english": "One backpack is 58 yuan, two boxes of crayons are 20 yuan, three notebooks are 12 yuan, and ten pencils are 9 yuan. That’s 99 yuan altogether, less than 100 yuan.",
+          "pinyinText": "yí ge bēi bāo wǔ shí bā kuài liǎng hé là bǐ èr shí kuài sān běn bǐ jì běn shí èr kuài shí zhī qiān bǐ jiǔ kuài yí gòng jiǔ shí jiǔ kuài bú dào yì bǎi kuài qián"
+        }
+      ],
+      "pinyin": {
+        "爸": "bà",
+        "你": "nǐ",
+        "要": "yào",
+        "买": "mǎi",
+        "什": "shén",
+        "么": "me",
+        "文": "wén",
+        "我": "wǒ",
+        "铅": "qiān",
+        "笔": "bǐ",
+        "蜡": "là",
+        "和": "hé",
+        "记": "jì",
+        "本": "běn",
+        "自": "zì",
+        "己": "jǐ",
+        "选": "xuǎn",
+        "不": "bù",
+        "太": "tài",
+        "贵": "guì",
+        "的": "de",
+        "还": "hái",
+        "想": "xiǎng",
+        "这": "zhè",
+        "个": "ge",
+        "蓝": "lán",
+        "色": "sè",
+        "背": "bēi",
+        "包": "bāo",
+        "块": "kuài",
+        "了": "le",
+        "看": "kàn",
+        "那": "nà",
+        "黄": "huáng",
+        "又": "yòu",
+        "便": "pián",
+        "宜": "yi",
+        "好": "hǎo",
+        "一": "yī",
+        "共": "gòng",
+        "多": "duō",
+        "少": "shǎo",
+        "钱": "qián",
+        "两": "liǎng",
+        "盒": "hé",
+        "三": "sān",
+        "十": "shí",
+        "枝": "zhī",
+        "到": "dào",
+        "百": "bǎi"
+      },
+      "title": "课文 · Lesson Dialogue"
+    }
+  },
+  "googleForm": {
+    "action": "https://docs.google.com/forms/d/e/1FAIpQLSfBKFS2NtxoYseb4fG46czemaZcUz2UiS9UmhsB5mseOg3d5A/formResponse",
+    "student": "entry.1075373571",
+    "classroom": "entry.95149830",
+    "quizName": "entry.1323832917",
+    "total": "entry.1630475119",
+    "correct": "entry.2010509959",
+    "details": "entry.1985964408",
+    "pages": {
+      "1": "entry.606366833",
+      "2": "entry.1723774158",
+      "3": "entry.1178395538",
+      "4": "entry.311041801",
+      "5": "entry.1575811922",
+      "6": "entry.1057969943",
+      "7": "entry.391842823"
+    }
+  },
+  "answers": {
+    "page1": {
+      "groups": [
+        {
+          "name": "A",
+          "correctLetters": [
+            "c",
+            "a",
+            "d",
+            "b"
+          ]
+        },
+        {
+          "name": "B",
+          "correctLetters": [
+            "c",
+            "d",
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    "page2": {
+      "correctOptionIndexes": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    "page3": {
+      "trueFalse": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ]
+    },
+    "page4": {
+      "parts": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "correctOptionIndexes": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "correctOptionIndexes": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    "page5": {
+      "matchingRightIndexes": [
+        2,
+        3,
+        0,
+        1
+      ]
+    },
+    "page6": {
+      "writingCharacters": [
+        [
+          "笔",
+          "贵"
+        ],
+        [
+          "便",
+          "宜",
+          "又"
+        ],
+        [
+          "枝",
+          "共"
+        ],
+        [
+          "多",
+          "少",
+          "钱"
+        ]
+      ],
+      "dialogueWordIndexes": [
+        2,
+        0,
+        1,
+        3
+      ]
+    },
+    "page7": {
+      "trueFalse": [
+        false,
+        true,
+        true,
+        false,
+        false,
+        true
+      ]
+    }
+  }
+}
