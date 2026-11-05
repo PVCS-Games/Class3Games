@@ -1,0 +1,1305 @@
+{
+  "meta": {
+    "quizName": "LLC Book 3 · Lesson 4",
+    "title": "LLC Book 3 · 第四课 — Interactive Workbook",
+    "subtitle": "Complete workbook · 7 exercise pages + lesson dialogue · Listening audio referenced separately."
+  },
+  "pages": {
+    "page1": {
+      "data": [
+        {
+          "name": "A",
+          "bank": [
+            [
+              "a",
+              "准备",
+              "zhǔn bèi",
+              "prepare"
+            ],
+            [
+              "b",
+              "生日会",
+              "shēng rì huì",
+              "birthday party"
+            ],
+            [
+              "c",
+              "洋芋片",
+              "yáng yù piàn",
+              "potato chips"
+            ],
+            [
+              "d",
+              "请",
+              "qǐng",
+              "invite"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "下个星期天是张莉的",
+              "post": "。",
+              "en": "Next Sunday is Zhang Li’s ____."
+            },
+            {
+              "pre": "张莉想",
+              "post": "朋友来家里玩。",
+              "en": "Zhang Li wants to ____ friends over."
+            },
+            {
+              "pre": "妈妈和张莉要",
+              "post": "一些吃的东西。",
+              "en": "Mom and Zhang Li need to ____ some food."
+            },
+            {
+              "pre": "张莉觉得如果有炸鸡和",
+              "post": "就太好了。",
+              "en": "Zhang Li thinks fried chicken and ____ would be great."
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "bank": [
+            [
+              "a",
+              "沙拉",
+              "shā lā",
+              "salad"
+            ],
+            [
+              "b",
+              "草莓",
+              "cǎo méi",
+              "strawberry"
+            ],
+            [
+              "c",
+              "能不能",
+              "néng bu néng",
+              "can / could"
+            ],
+            [
+              "d",
+              "可乐",
+              "kě lè",
+              "cola"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "饮料有汽水或是",
+              "post": "都很好。",
+              "en": "Soda or ____ would both be good drinks."
+            },
+            {
+              "pre": "张莉问妈妈",
+              "post": "帮他们做春卷和珍珠奶茶。",
+              "en": "Zhang Li asks if Mom ____ make spring rolls and bubble tea."
+            },
+            {
+              "pre": "妈妈还可以帮他们做一点",
+              "post": "。",
+              "en": "Mom can also prepare some ____."
+            },
+            {
+              "pre": "张莉还要一个",
+              "post": "蛋糕。",
+              "en": "Zhang Li also wants a ____ cake."
+            }
+          ]
+        }
+      ],
+      "charPinyin": {
+        "一": "yì",
+        "下": "xià",
+        "不": "bù",
+        "东": "dōng",
+        "个": "gè",
+        "乐": "lè",
+        "了": "le",
+        "些": "xiē",
+        "他": "tā",
+        "以": "yǐ",
+        "们": "men",
+        "会": "huì",
+        "做": "zuò",
+        "准": "zhǔn",
+        "卷": "juǎn",
+        "友": "yǒu",
+        "可": "kě",
+        "吃": "chī",
+        "和": "hé",
+        "备": "bèi",
+        "天": "tiān",
+        "太": "tài",
+        "奶": "nǎi",
+        "好": "hǎo",
+        "如": "rú",
+        "妈": "mā",
+        "家": "jiā",
+        "就": "jiù",
+        "帮": "bāng",
+        "张": "zhāng",
+        "很": "hěn",
+        "得": "de",
+        "想": "xiǎng",
+        "或": "huò",
+        "拉": "lā",
+        "料": "liào",
+        "日": "rì",
+        "星": "xīng",
+        "春": "chūn",
+        "是": "shì",
+        "有": "yǒu",
+        "朋": "péng",
+        "期": "qī",
+        "来": "lái",
+        "果": "guǒ",
+        "水": "shuǐ",
+        "汽": "qì",
+        "沙": "shā",
+        "洋": "yáng",
+        "炸": "zhá",
+        "点": "diǎn",
+        "片": "piàn",
+        "玩": "wán",
+        "珍": "zhēn",
+        "珠": "zhū",
+        "生": "shēng",
+        "的": "de",
+        "糕": "gāo",
+        "能": "néng",
+        "芋": "yù",
+        "茶": "chá",
+        "草": "cǎo",
+        "莉": "lì",
+        "莓": "méi",
+        "蛋": "dàn",
+        "西": "xi",
+        "要": "yào",
+        "觉": "jué",
+        "请": "qǐng",
+        "还": "hái",
+        "都": "dōu",
+        "里": "lǐ",
+        "问": "wèn",
+        "饮": "yǐn",
+        "鸡": "jī"
+      }
+    },
+    "page2": {
+      "questions": [
+        {
+          "segments": [
+            "张莉每个",
+            "CHOICE",
+            "都去游泳。"
+          ],
+          "options": [
+            "星期天",
+            "生日会"
+          ],
+          "english": [
+            "Every ",
+            "________",
+            " Zhang Li goes swimming."
+          ],
+          "optionEnglish": [
+            "Sunday",
+            "birthday party"
+          ]
+        },
+        {
+          "segments": [
+            "东明昨天请我吃",
+            "CHOICE",
+            "。"
+          ],
+          "options": [
+            "炸鸡",
+            "汽水"
+          ],
+          "english": [
+            "Yesterday Dongming treated me to ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "fried chicken",
+            "soda"
+          ]
+        },
+        {
+          "segments": [
+            "",
+            "CHOICE",
+            "是我最喜欢吃的水果。"
+          ],
+          "options": [
+            "春卷",
+            "草莓"
+          ],
+          "english": [
+            "",
+            "________",
+            " is my favorite fruit."
+          ],
+          "optionEnglish": [
+            "spring rolls",
+            "strawberries"
+          ]
+        },
+        {
+          "segments": [
+            "东明的妈妈在超级市场买了",
+            "CHOICE",
+            "吃的东西。"
+          ],
+          "options": [
+            "或是",
+            "一些"
+          ],
+          "english": [
+            "Dongming’s mom bought ",
+            "________",
+            " food at the supermarket."
+          ],
+          "optionEnglish": [
+            "or",
+            "some"
+          ]
+        },
+        {
+          "segments": [
+            "妈妈买的",
+            "CHOICE",
+            "真好喝。"
+          ],
+          "options": [
+            "洋芋片",
+            "珍珠奶茶"
+          ],
+          "english": [
+            "The ",
+            "________",
+            " Mom bought tastes delicious to drink."
+          ],
+          "optionEnglish": [
+            "potato chips",
+            "bubble tea"
+          ]
+        }
+      ],
+      "py": {
+        "一": "yì",
+        "东": "dōng",
+        "个": "gè",
+        "买": "mǎi",
+        "了": "le",
+        "些": "xiē",
+        "会": "huì",
+        "卷": "juǎn",
+        "去": "qù",
+        "吃": "chī",
+        "喜": "xǐ",
+        "喝": "hē",
+        "在": "zài",
+        "场": "chǎng",
+        "天": "tiān",
+        "奶": "nǎi",
+        "好": "hǎo",
+        "妈": "mā",
+        "市": "shì",
+        "张": "zhāng",
+        "我": "wǒ",
+        "或": "huò",
+        "日": "rì",
+        "明": "míng",
+        "星": "xīng",
+        "春": "chūn",
+        "昨": "zuó",
+        "是": "shì",
+        "最": "zuì",
+        "期": "qī",
+        "果": "guǒ",
+        "欢": "huān",
+        "每": "měi",
+        "水": "shuǐ",
+        "汽": "qì",
+        "泳": "yǒng",
+        "洋": "yáng",
+        "游": "yóu",
+        "炸": "zhá",
+        "片": "piàn",
+        "珍": "zhēn",
+        "珠": "zhū",
+        "生": "shēng",
+        "的": "de",
+        "真": "zhēn",
+        "级": "jí",
+        "芋": "yù",
+        "茶": "chá",
+        "草": "cǎo",
+        "莉": "lì",
+        "莓": "méi",
+        "西": "xi",
+        "请": "qǐng",
+        "超": "chāo",
+        "都": "dōu",
+        "鸡": "jī"
+      }
+    },
+    "page3": {
+      "shorts": [
+        [
+          "1.",
+          "张莉的生日会是什么时候？",
+          "When is Zhang Li’s birthday party?"
+        ],
+        [
+          "2.",
+          "张莉想请朋友做什么？",
+          "What does Zhang Li want to invite her friends to do?"
+        ],
+        [
+          "3.",
+          "张莉想要有什么吃的东西？",
+          "What food does Zhang Li want?"
+        ],
+        [
+          "4.",
+          "张莉的生日会，她想喝什么饮料？",
+          "What drinks does Zhang Li want at her party?"
+        ],
+        [
+          "5.",
+          "张莉请妈妈帮他们做什么吃的东西？什么喝的东西？",
+          "What food and drink does Zhang Li ask Mom to make?"
+        ],
+        [
+          "6.",
+          "张莉的妈妈还可以准备一点什么？",
+          "What else can Mom prepare?"
+        ],
+        [
+          "7.",
+          "张莉要妈妈别忘了买什么？",
+          "What does Zhang Li tell Mom not to forget to buy?"
+        ]
+      ],
+      "tfs": [
+        [
+          "下个星期天是张莉妈妈的生日会。",
+          "Next Sunday is Zhang Li’s mother’s birthday party."
+        ],
+        [
+          "张莉觉得生日会最好有炸鸡和洋芋片。",
+          "Zhang Li thinks fried chicken and potato chips would be best at the party."
+        ],
+        [
+          "生日会的饮料有汽水或是可乐都好。",
+          "Soda or cola would both be fine at the party."
+        ],
+        [
+          "妈妈要帮张莉做春卷、沙拉和珍珠奶茶。",
+          "Mom will help Zhang Li make spring rolls, salad, and bubble tea."
+        ],
+        [
+          "张莉想要一个巧克力蛋糕。",
+          "Zhang Li wants a chocolate cake."
+        ]
+      ],
+      "py": {
+        "一": "yì",
+        "下": "xià",
+        "东": "dōng",
+        "个": "gè",
+        "么": "me",
+        "乐": "lè",
+        "买": "mǎi",
+        "了": "le",
+        "什": "shén",
+        "他": "tā",
+        "以": "yǐ",
+        "们": "men",
+        "会": "huì",
+        "候": "hou",
+        "做": "zuò",
+        "克": "kè",
+        "准": "zhǔn",
+        "别": "bié",
+        "力": "lì",
+        "卷": "juǎn",
+        "友": "yǒu",
+        "可": "kě",
+        "吃": "chī",
+        "和": "hé",
+        "喝": "hē",
+        "备": "bèi",
+        "天": "tiān",
+        "奶": "nǎi",
+        "她": "tā",
+        "好": "hǎo",
+        "妈": "mā",
+        "巧": "qiǎo",
+        "帮": "bāng",
+        "张": "zhāng",
+        "得": "de",
+        "忘": "wàng",
+        "想": "xiǎng",
+        "或": "huò",
+        "拉": "lā",
+        "料": "liào",
+        "日": "rì",
+        "时": "shí",
+        "星": "xīng",
+        "春": "chūn",
+        "是": "shì",
+        "最": "zuì",
+        "有": "yǒu",
+        "朋": "péng",
+        "期": "qī",
+        "水": "shuǐ",
+        "汽": "qì",
+        "沙": "shā",
+        "洋": "yáng",
+        "炸": "zhá",
+        "点": "diǎn",
+        "片": "piàn",
+        "珍": "zhēn",
+        "珠": "zhū",
+        "生": "shēng",
+        "的": "de",
+        "糕": "gāo",
+        "芋": "yù",
+        "茶": "chá",
+        "莉": "lì",
+        "蛋": "dàn",
+        "西": "xi",
+        "要": "yào",
+        "觉": "jué",
+        "请": "qǐng",
+        "还": "hái",
+        "都": "dōu",
+        "饮": "yǐn",
+        "鸡": "jī"
+      }
+    },
+    "page4": {
+      "sections": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "instruction": "Circle the vocabulary words you hear.",
+          "items": [
+            {
+              "label": "1.",
+              "options": [
+                "星期天",
+                "洋芋片"
+              ],
+              "english": [
+                "Sunday",
+                "potato chips"
+              ]
+            },
+            {
+              "label": "2.",
+              "options": [
+                "炸鸡",
+                "春卷"
+              ],
+              "english": [
+                "fried chicken",
+                "spring roll"
+              ]
+            },
+            {
+              "label": "3.",
+              "options": [
+                "汽水",
+                "可乐"
+              ],
+              "english": [
+                "soda",
+                "cola"
+              ]
+            },
+            {
+              "label": "4.",
+              "options": [
+                "饮料",
+                "草莓"
+              ],
+              "english": [
+                "beverage",
+                "strawberry"
+              ]
+            },
+            {
+              "label": "5.",
+              "options": [
+                "一些",
+                "或是"
+              ],
+              "english": [
+                "some",
+                "or"
+              ]
+            },
+            {
+              "label": "6.",
+              "options": [
+                "能",
+                "请"
+              ],
+              "english": [
+                "can",
+                "invite"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "instruction": "Listen and circle the correct answer.",
+          "items": [
+            {
+              "label": "A. 1.",
+              "segments": [
+                "张莉的生日会是下个",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "星期三",
+                "星期天"
+              ],
+              "english": [
+                "Zhang Li’s birthday party is next ",
+                "________",
+                " ."
+              ],
+              "optionEnglish": [
+                "Wednesday",
+                "Sunday"
+              ]
+            },
+            {
+              "label": "A. 2.",
+              "segments": [
+                "张莉想请",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "朋友",
+                "老师"
+              ],
+              "english": [
+                "Zhang Li wants to invite ",
+                "________",
+                " ."
+              ],
+              "optionEnglish": [
+                "friends",
+                "teachers"
+              ]
+            },
+            {
+              "label": "B. 1.",
+              "segments": [
+                "妈妈和张莉要准备",
+                "CHOICE",
+                "吃的东西。"
+              ],
+              "options": [
+                "一些",
+                "一盒"
+              ],
+              "english": [
+                "Mom and Zhang Li will prepare ",
+                "________",
+                " food."
+              ],
+              "optionEnglish": [
+                "some",
+                "one box of"
+              ]
+            },
+            {
+              "label": "B. 2.",
+              "segments": [
+                "妈妈和张莉也要准备",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "可乐",
+                "饮料"
+              ],
+              "english": [
+                "Mom and Zhang Li also need to prepare ",
+                "________",
+                " ."
+              ],
+              "optionEnglish": [
+                "cola",
+                "drinks"
+              ]
+            },
+            {
+              "label": "C.",
+              "segments": [
+                "张莉要妈妈别忘了买",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "珍珠奶茶",
+                "草莓蛋糕"
+              ],
+              "english": [
+                "Zhang Li reminds Mom not to forget to buy ",
+                "________",
+                " ."
+              ],
+              "optionEnglish": [
+                "bubble tea",
+                "strawberry cake"
+              ]
+            }
+          ]
+        }
+      ],
+      "audioUrl": "audio/B3-L04-Listening.mp3"
+    },
+    "page5": {
+      "left": [
+        [
+          "妈妈想请阿姨",
+          "Mom wants to invite Auntie"
+        ],
+        [
+          "如果可以吃巧克力",
+          "If we could eat chocolate"
+        ],
+        [
+          "汽水或是可乐，",
+          "Soda or cola,"
+        ],
+        [
+          "我们",
+          "We"
+        ]
+      ],
+      "right": [
+        [
+          "我都喜欢。",
+          "I like both."
+        ],
+        [
+          "能不能去游泳？",
+          "can we go swimming?"
+        ],
+        [
+          "来我们家住。",
+          "to stay at our house."
+        ],
+        [
+          "就太好了。",
+          "that would be great."
+        ]
+      ],
+      "py": {
+        "不": "bù",
+        "乐": "lè",
+        "了": "le",
+        "以": "yǐ",
+        "们": "men",
+        "住": "zhù",
+        "克": "kè",
+        "力": "lì",
+        "去": "qù",
+        "可": "kě",
+        "吃": "chī",
+        "喜": "xǐ",
+        "太": "tài",
+        "好": "hǎo",
+        "如": "rú",
+        "妈": "mā",
+        "姨": "yí",
+        "家": "jiā",
+        "就": "jiù",
+        "巧": "qiǎo",
+        "想": "xiǎng",
+        "我": "wǒ",
+        "或": "huò",
+        "是": "shì",
+        "来": "lái",
+        "果": "guǒ",
+        "欢": "huān",
+        "水": "shuǐ",
+        "汽": "qì",
+        "泳": "yǒng",
+        "游": "yóu",
+        "能": "néng",
+        "请": "qǐng",
+        "都": "dōu",
+        "阿": "ā"
+      }
+    },
+    "page6": {
+      "PY": {
+        "一": "yì",
+        "不": "bù",
+        "东": "dōng",
+        "么": "me",
+        "乐": "lè",
+        "买": "mǎi",
+        "了": "le",
+        "些": "xiē",
+        "什": "shén",
+        "他": "tā",
+        "们": "men",
+        "会": "huì",
+        "你": "nǐ",
+        "做": "zuò",
+        "克": "kè",
+        "准": "zhǔn",
+        "到": "dào",
+        "力": "lì",
+        "友": "yǒu",
+        "可": "kě",
+        "吃": "chī",
+        "和": "hé",
+        "喜": "xǐ",
+        "喝": "hē",
+        "备": "bèi",
+        "大": "dà",
+        "天": "tiān",
+        "太": "tài",
+        "好": "hǎo",
+        "妈": "mā",
+        "家": "jiā",
+        "巧": "qiǎo",
+        "帮": "bāng",
+        "张": "zhāng",
+        "心": "xīn",
+        "快": "kuài",
+        "想": "xiǎng",
+        "我": "wǒ",
+        "或": "huò",
+        "拉": "lā",
+        "文": "wén",
+        "料": "liào",
+        "日": "rì",
+        "明": "míng",
+        "是": "shì",
+        "朋": "péng",
+        "来": "lái",
+        "杯": "bēi",
+        "格": "gé",
+        "欢": "huān",
+        "沙": "shā",
+        "炸": "zhá",
+        "点": "diǎn",
+        "爸": "bà",
+        "玩": "wán",
+        "珍": "zhēn",
+        "珠": "zhū",
+        "生": "shēng",
+        "的": "de",
+        "空": "kòng",
+        "糕": "gāo",
+        "美": "měi",
+        "莉": "lì",
+        "蛋": "dàn",
+        "西": "xi",
+        "请": "qǐng",
+        "那": "nà",
+        "都": "dōu",
+        "里": "lǐ",
+        "饮": "yǐn",
+        "鸡": "jī"
+      },
+      "writing": [
+        {
+          "parts": [
+            "妈妈",
+            "",
+            "",
+            "了一点沙拉。"
+          ],
+          "clues": [
+            "zhǔn",
+            "bèi"
+          ],
+          "en": "Mom prepared some salad."
+        },
+        {
+          "parts": [
+            "妈妈",
+            "",
+            "爸爸帮我们买了一",
+            "",
+            "饮料。"
+          ],
+          "clues": [
+            "hé",
+            "xiē"
+          ],
+          "en": "Mom and Dad helped us buy some drinks."
+        },
+        {
+          "parts": [
+            "",
+            "",
+            "或是可",
+            "",
+            "，他都喜欢。"
+          ],
+          "clues": [
+            "qì",
+            "shuǐ",
+            "lè"
+          ],
+          "en": "He likes both soda and cola."
+        },
+        {
+          "parts": [
+            "我",
+            "",
+            "不",
+            "",
+            "喝一杯珍珠",
+            "",
+            "",
+            "？"
+          ],
+          "clues": [
+            "néng",
+            "néng",
+            "nǎi",
+            "chá"
+          ],
+          "en": "Can I have a cup of bubble tea?"
+        }
+      ],
+      "words": [
+        [
+          "一些",
+          "yì xiē",
+          "some"
+        ],
+        [
+          "炸鸡",
+          "zhá jī",
+          "fried chicken"
+        ],
+        [
+          "来",
+          "lái",
+          "come"
+        ],
+        [
+          "生日会",
+          "shēng rì huì",
+          "birthday party"
+        ]
+      ],
+      "lines": [
+        {
+          "speaker": "大文",
+          "parts": [
+            "爸爸，我的",
+            3,
+            "快到了！"
+          ],
+          "en": "Dad, my ____ is coming soon!",
+          "say": "爸爸，我的（空格）快到了！"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "大文，你那天想做什么？"
+          ],
+          "en": "Dawen, what would you like to do that day?",
+          "say": "大文，你那天想做什么？"
+        },
+        {
+          "speaker": "大文",
+          "parts": [
+            "我想请东明、友朋、心美和张莉",
+            2,
+            "家里玩。"
+          ],
+          "en": "I want to invite Dongming, Youpeng, Xinmei, and Zhang Li to come to my house.",
+          "say": "我想请东明、友朋、心美和张莉（空格）家里玩。"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "好，我们准备",
+            0,
+            "好吃的东西和饮料。"
+          ],
+          "en": "Okay, we’ll prepare some delicious food and drinks.",
+          "say": "好，我们准备（空格）好吃的东西和饮料。"
+        },
+        {
+          "speaker": "大文",
+          "parts": [
+            "太好了！东明和友朋喜欢吃",
+            1,
+            "，心美和张莉喜欢吃巧克力蛋糕。我们都喜欢喝可乐。"
+          ],
+          "en": "Great! Dongming and Youpeng like fried chicken; Xinmei and Zhang Li like chocolate cake. We all like cola.",
+          "say": "太好了！东明和友朋喜欢吃（空格），心美和张莉喜欢吃巧克力蛋糕。我们都喜欢喝可乐。"
+        }
+      ]
+    },
+    "page7": {
+      "PY": {
+        "一": "yì",
+        "东": "dōng",
+        "个": "gè",
+        "为": "wèi",
+        "乐": "lè",
+        "也": "yě",
+        "书": "shū",
+        "了": "le",
+        "二": "èr",
+        "些": "xiē",
+        "人": "rén",
+        "他": "tā",
+        "以": "yǐ",
+        "们": "men",
+        "会": "huì",
+        "候": "hou",
+        "克": "kè",
+        "八": "bā",
+        "具": "jù",
+        "冰": "bīng",
+        "准": "zhǔn",
+        "力": "lì",
+        "十": "shí",
+        "卷": "juǎn",
+        "友": "yǒu",
+        "可": "kě",
+        "号": "hào",
+        "吃": "chī",
+        "和": "hé",
+        "喜": "xǐ",
+        "喝": "hē",
+        "因": "yīn",
+        "备": "bèi",
+        "大": "dà",
+        "家": "jiā",
+        "巧": "qiǎo",
+        "帮": "bāng",
+        "开": "kāi",
+        "很": "hěn",
+        "得": "de",
+        "心": "xīn",
+        "所": "suǒ",
+        "文": "wén",
+        "料": "liào",
+        "日": "rì",
+        "时": "shí",
+        "明": "míng",
+        "春": "chūn",
+        "是": "shì",
+        "最": "zuì",
+        "月": "yuè",
+        "有": "yǒu",
+        "朋": "péng",
+        "来": "lái",
+        "欢": "huān",
+        "每": "měi",
+        "水": "shuǐ",
+        "汽": "qì",
+        "没": "méi",
+        "淇": "qí",
+        "淋": "lín",
+        "漫": "màn",
+        "炸": "zhá",
+        "爸": "bà",
+        "物": "wù",
+        "玩": "wán",
+        "生": "shēng",
+        "画": "huà",
+        "的": "de",
+        "礼": "lǐ",
+        "糕": "gāo",
+        "给": "gěi",
+        "美": "měi",
+        "蛋": "dàn",
+        "请": "qǐng",
+        "还": "hái",
+        "送": "sòng",
+        "都": "dōu",
+        "里": "lǐ",
+        "饮": "yǐn",
+        "鸡": "jī"
+      },
+      "passages": [
+        [
+          "大文的生日是十一月二十八号，他请了心美、东明和一些朋友来家里玩，因为大家都喜欢吃冰淇淋蛋糕，所以大文请爸爸帮他们准备了一个冰淇淋蛋糕。",
+          "Dawen’s birthday is November 28. He invited Xinmei, Dongming, and some friends to his home. Because everyone likes ice cream cake, Dawen asked Dad to prepare one."
+        ],
+        [
+          "生日会的时候，他们还吃了炸鸡和春卷，喝了可乐和汽水。每个人都玩得很开心，大家都送了大文生日礼物，大文最喜欢心美给他的漫画书和东明给他的玩具。",
+          "At the birthday party, they also ate fried chicken and spring rolls and drank cola and soda. Everyone had fun. Everyone gave Dawen a birthday present. His favorites were Xinmei’s comic book and Dongming’s toy."
+        ]
+      ],
+      "questions": [
+        [
+          "大文的生日是十一月二十八号。",
+          "Dawen’s birthday is November 28."
+        ],
+        [
+          "大家都喜欢吃巧克力蛋糕。",
+          "Everyone likes chocolate cake."
+        ],
+        [
+          "大文的生日会有炸鸡和春卷。",
+          "There were fried chicken and spring rolls at Dawen’s party."
+        ],
+        [
+          "生日会的饮料有可乐，也有汽水。",
+          "The party had both cola and soda."
+        ],
+        [
+          "大文没有生日礼物。",
+          "Dawen did not receive birthday presents."
+        ],
+        [
+          "大文喜欢漫画书，也喜欢玩具。",
+          "Dawen likes comic books and toys."
+        ]
+      ]
+    },
+    "pagelesson": {
+      "description": "张莉和妈妈讨论生日会的食物和饮料 · Listen to each line or read the whole dialogue.",
+      "lines": [
+        {
+          "speaker": "妈妈",
+          "emoji": "👩",
+          "text": "你们要喝什么饮料？",
+          "english": "What drinks would you like?"
+        },
+        {
+          "speaker": "张莉",
+          "emoji": "👧",
+          "text": "汽水或是可乐。妈妈，能不能帮我们做春卷和珍珠奶茶？",
+          "english": "Soda or cola. Mom, could you make spring rolls and bubble tea for us?"
+        },
+        {
+          "speaker": "妈妈",
+          "emoji": "👩",
+          "text": "好，我还是可以准备一点沙拉。",
+          "english": "Sure, I can also prepare a little salad."
+        },
+        {
+          "speaker": "张莉",
+          "emoji": "👧",
+          "text": "谢谢妈妈。别忘了还要买草莓蛋糕。",
+          "english": "Thank you, Mom. Don’t forget we also need to buy strawberry cake."
+        }
+      ],
+      "pinyin": {
+        "一": "yì",
+        "不": "bù",
+        "么": "me",
+        "乐": "lè",
+        "买": "mǎi",
+        "了": "le",
+        "什": "shén",
+        "以": "yǐ",
+        "们": "men",
+        "会": "huì",
+        "你": "nǐ",
+        "做": "zuò",
+        "准": "zhǔn",
+        "别": "bié",
+        "卷": "juǎn",
+        "可": "kě",
+        "和": "hé",
+        "喝": "hē",
+        "备": "bèi",
+        "奶": "nǎi",
+        "好": "hǎo",
+        "妈": "mā",
+        "帮": "bāng",
+        "张": "zhāng",
+        "忘": "wàng",
+        "我": "wǒ",
+        "或": "huò",
+        "拉": "lā",
+        "文": "wén",
+        "料": "liào",
+        "日": "rì",
+        "春": "chūn",
+        "是": "shì",
+        "水": "shuǐ",
+        "汽": "qì",
+        "沙": "shā",
+        "点": "diǎn",
+        "物": "wù",
+        "珍": "zhēn",
+        "珠": "zhū",
+        "生": "shēng",
+        "的": "de",
+        "糕": "gāo",
+        "能": "néng",
+        "茶": "chá",
+        "草": "cǎo",
+        "莉": "lì",
+        "莓": "méi",
+        "蛋": "dàn",
+        "要": "yào",
+        "讨": "tǎo",
+        "论": "lùn",
+        "课": "kè",
+        "谢": "xiè",
+        "还": "hái",
+        "食": "shí",
+        "饮": "yǐn"
+      },
+      "title": "课文 · Lesson Dialogue"
+    }
+  },
+  "googleForm": {
+    "action": "https://docs.google.com/forms/d/e/1FAIpQLSfBKFS2NtxoYseb4fG46czemaZcUz2UiS9UmhsB5mseOg3d5A/formResponse",
+    "student": "entry.1075373571",
+    "classroom": "entry.95149830",
+    "quizName": "entry.1323832917",
+    "total": "entry.1630475119",
+    "correct": "entry.2010509959",
+    "details": "entry.1985964408",
+    "pages": {
+      "1": "entry.606366833",
+      "2": "entry.1723774158",
+      "3": "entry.1178395538",
+      "4": "entry.311041801",
+      "5": "entry.1575811922",
+      "6": "entry.1057969943",
+      "7": "entry.391842823"
+    }
+  },
+  "answers": {
+    "page1": {
+      "groups": [
+        {
+          "name": "A",
+          "correctLetters": [
+            "b",
+            "d",
+            "a",
+            "c"
+          ]
+        },
+        {
+          "name": "B",
+          "correctLetters": [
+            "d",
+            "c",
+            "a",
+            "b"
+          ]
+        }
+      ]
+    },
+    "page2": {
+      "correctOptionIndexes": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    "page3": {
+      "trueFalse": [
+        false,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    "page4": {
+      "parts": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "correctOptionIndexes": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "correctOptionIndexes": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ]
+    },
+    "page5": {
+      "matchingRightIndexes": [
+        2,
+        3,
+        0,
+        1
+      ]
+    },
+    "page6": {
+      "writingCharacters": [
+        [
+          "准",
+          "备"
+        ],
+        [
+          "和",
+          "些"
+        ],
+        [
+          "汽",
+          "水",
+          "乐"
+        ],
+        [
+          "能",
+          "能",
+          "奶",
+          "茶"
+        ]
+      ],
+      "dialogueWordIndexes": [
+        3,
+        2,
+        0,
+        1
+      ]
+    },
+    "page7": {
+      "trueFalse": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        true
+      ]
+    }
+  }
+}
