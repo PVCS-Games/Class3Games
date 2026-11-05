@@ -1725,7 +1725,7 @@ writing.forEach((w, j) => {
             row.append(a);
         }
         else {
-            let n = j === 0 ? 2 : (j === 1 ? (i === 1 ? 2 : 1) : 1);
+            let n = 1; // One character box per empty-string placeholder in quiz-data.json.
             for (let k = 0; k < n; k++) {
                 let b = document.createElement('label');
                 b.className = 'charbox';
@@ -1745,7 +1745,9 @@ writing.forEach((w, j) => {
             }
         }
     }
-    row.append(audio(j === 0 ? '你们放假的时候做了什么？' : j === 1 ? '友朋上午在家练习写字。' : j === 2 ? '我们现在开始上课吗？' : '我等一下再念课文。'));
+    let answerPos = 0;
+    const spokenSentence = w.parts.map(part => part === '' ? (w.answers[answerPos++] || '') : part).join('');
+    row.append(audio(spokenSentence));
     let e = document.createElement('div');
     e.className = 'roweng';
     e.textContent = w.en;
