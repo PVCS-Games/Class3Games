@@ -1,0 +1,1284 @@
+{
+  "meta": {
+    "quizName": "LLC Book 3 · Lesson 5",
+    "title": "LLC Book 3 · 第五课 — Interactive Workbook",
+    "subtitle": "Complete workbook · 7 exercise pages + lesson dialogue · Listening audio referenced separately."
+  },
+  "pages": {
+    "page1": {
+      "data": [
+        {
+          "name": "A",
+          "bank": [
+            [
+              "a",
+              "凉快",
+              "liáng kuai",
+              "cool"
+            ],
+            [
+              "b",
+              "温度",
+              "wēn dù",
+              "temperature"
+            ],
+            [
+              "c",
+              "下雪",
+              "xià xuě",
+              "snow"
+            ],
+            [
+              "d",
+              "零下",
+              "líng xià",
+              "below zero"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "现在",
+              "post": "大概是十八度。",
+              "en": "The ____ is about 18 degrees now."
+            },
+            {
+              "pre": "这里的气很",
+              "post": "，很舒服。",
+              "en": "The air here is very ____, very comfortable."
+            },
+            {
+              "pre": "现在的温度差不多是",
+              "post": "三度。",
+              "en": "The temperature is about three degrees ____."
+            },
+            {
+              "pre": "天气非常冷，已经开始",
+              "post": "了。",
+              "en": "It is very cold and has already started to ____."
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "bank": [
+            [
+              "a",
+              "暖和",
+              "nuǎn huo",
+              "warm"
+            ],
+            [
+              "b",
+              "不得了",
+              "bù dé liǎo",
+              "extremely"
+            ],
+            [
+              "c",
+              "下雨",
+              "xià yǔ",
+              "rain"
+            ],
+            [
+              "d",
+              "感冒",
+              "gǎn mào",
+              "catch a cold"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "你得多穿一点衣服，别",
+              "post": "了。",
+              "en": "You need to wear more clothes; do not ____. "
+            },
+            {
+              "pre": "这里的冬天冷得",
+              "post": "。",
+              "en": "Winter here is ____ cold."
+            },
+            {
+              "pre": "这里的春天很",
+              "post": "。",
+              "en": "Spring here is very ____."
+            },
+            {
+              "pre": "这里的春天常常",
+              "post": "。",
+              "en": "It often ____ here in spring."
+            }
+          ]
+        }
+      ],
+      "charPinyin": {
+        "一": "yì",
+        "三": "sān",
+        "下": "xià",
+        "不": "bù",
+        "了": "le",
+        "你": "nǐ",
+        "八": "bā",
+        "冒": "mào",
+        "冬": "dōng",
+        "冷": "lěng",
+        "凉": "liáng",
+        "别": "bié",
+        "十": "shí",
+        "和": "huo",
+        "在": "zài",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "始": "shǐ",
+        "差": "chà",
+        "已": "yǐ",
+        "常": "cháng",
+        "度": "dù",
+        "开": "kāi",
+        "很": "hěn",
+        "得": "děi",
+        "快": "kuài",
+        "感": "gǎn",
+        "春": "chūn",
+        "是": "shì",
+        "暖": "nuǎn",
+        "服": "fu",
+        "概": "gài",
+        "气": "qì",
+        "温": "wēn",
+        "点": "diǎn",
+        "现": "xiàn",
+        "的": "de",
+        "穿": "chuān",
+        "经": "jīng",
+        "舒": "shū",
+        "衣": "yī",
+        "这": "zhè",
+        "里": "lǐ",
+        "雨": "yǔ",
+        "雪": "xuě",
+        "零": "líng",
+        "非": "fēi"
+      }
+    },
+    "page2": {
+      "questions": [
+        {
+          "segments": [
+            "现在是十月，天气变",
+            "CHOICE",
+            "了。"
+          ],
+          "options": [
+            "快",
+            "凉"
+          ],
+          "english": [
+            "It is October; the weather has become ",
+            "________",
+            " ."
+          ],
+          "optionEnglish": [
+            "fast",
+            "cool"
+          ]
+        },
+        {
+          "segments": [
+            "如果温度是零下五度，",
+            "CHOICE",
+            "就下雪了。"
+          ],
+          "options": [
+            "大概",
+            "暖和"
+          ],
+          "english": [
+            "If the temperature is minus five degrees, it will ",
+            "________",
+            " snow."
+          ],
+          "optionEnglish": [
+            "probably",
+            "warm"
+          ]
+        },
+        {
+          "segments": [
+            "今天如果",
+            "CHOICE",
+            "，体育课就不跑步了。"
+          ],
+          "options": [
+            "下雨",
+            "凉快"
+          ],
+          "english": [
+            "If it ",
+            "________",
+            " today, we will not run in PE."
+          ],
+          "optionEnglish": [
+            "rains",
+            "is cool"
+          ]
+        },
+        {
+          "segments": [
+            "大文今天",
+            "CHOICE",
+            "了，不能去学校。"
+          ],
+          "options": [
+            "舒服",
+            "感冒"
+          ],
+          "english": [
+            "Dawen ",
+            "________",
+            " today and cannot go to school."
+          ],
+          "optionEnglish": [
+            "feels comfortable",
+            "has a cold"
+          ]
+        },
+        {
+          "segments": [
+            "妈妈做的菜好吃得",
+            "CHOICE",
+            "。"
+          ],
+          "options": [
+            "不得了",
+            "差不多"
+          ],
+          "english": [
+            "Mom’s cooking is ",
+            "________",
+            " delicious."
+          ],
+          "optionEnglish": [
+            "extremely",
+            "almost"
+          ]
+        }
+      ],
+      "py": {
+        "下": "xià",
+        "不": "bù",
+        "了": "le",
+        "五": "wǔ",
+        "今": "jīn",
+        "体": "tǐ",
+        "做": "zuò",
+        "冒": "mào",
+        "凉": "liáng",
+        "十": "shí",
+        "去": "qù",
+        "变": "biàn",
+        "吃": "chī",
+        "和": "huo",
+        "在": "zài",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "好": "hǎo",
+        "如": "rú",
+        "妈": "mā",
+        "学": "xué",
+        "就": "jiù",
+        "差": "chà",
+        "度": "dù",
+        "得": "de",
+        "快": "kuài",
+        "感": "gǎn",
+        "文": "wén",
+        "是": "shì",
+        "暖": "nuǎn",
+        "月": "yuè",
+        "服": "fu",
+        "果": "guǒ",
+        "校": "xiào",
+        "概": "gài",
+        "步": "bù",
+        "气": "qì",
+        "温": "wēn",
+        "现": "xiàn",
+        "的": "de",
+        "育": "yù",
+        "能": "néng",
+        "舒": "shū",
+        "菜": "cài",
+        "课": "kè",
+        "跑": "pǎo",
+        "雨": "yǔ",
+        "雪": "xuě",
+        "零": "líng"
+      }
+    },
+    "page3": {
+      "shorts": [
+        [
+          "1.",
+          "心美打电话给谁？",
+          "Who does Xinmei call?"
+        ],
+        [
+          "2.",
+          "奶奶家那里的天气怎么样？（温度、凉快）",
+          "What is the weather like where Grandma lives? (temperature, cool)"
+        ],
+        [
+          "3.",
+          "心美家那里的天气怎么样？（下雪、零下）",
+          "What is the weather like where Xinmei lives? (snow, below zero)"
+        ],
+        [
+          "4.",
+          "奶奶告诉心美什么？（得……、别……）",
+          "What does Grandma tell Xinmei? (must, do not)"
+        ],
+        [
+          "5.",
+          "心美为什么不喜欢冬天？（……不得了）",
+          "Why does Xinmei dislike winter? (extremely)"
+        ],
+        [
+          "6.",
+          "奶奶那里的春天怎么样？（……暖和、下雨）",
+          "What is spring like where Grandma lives? (warm, rain)"
+        ],
+        [
+          "7.",
+          "心美觉得夏天怎么样？（比较……）",
+          "What does Xinmei think of summer? (relatively)"
+        ]
+      ],
+      "tfs": [
+        [
+          "奶奶那里的天气现在很凉快。",
+          "The weather where Grandma lives is cool now."
+        ],
+        [
+          "奶奶那里的温度大概是八十度。",
+          "The temperature where Grandma lives is about 80 degrees."
+        ],
+        [
+          "心美这里的度差不多是十三度。",
+          "The temperature where Xinmei lives is about 13 degrees."
+        ],
+        [
+          "心美感冒了。",
+          "Xinmei has caught a cold."
+        ],
+        [
+          "奶奶那里的春天常常下雨。",
+          "It often rains where Grandma lives in spring."
+        ]
+      ],
+      "py": {
+        "三": "sān",
+        "下": "xià",
+        "不": "bù",
+        "为": "wèi",
+        "么": "me",
+        "了": "le",
+        "什": "shén",
+        "八": "bā",
+        "冒": "mào",
+        "冬": "dōng",
+        "凉": "liáng",
+        "别": "bié",
+        "十": "shí",
+        "告": "gào",
+        "和": "huo",
+        "喜": "xǐ",
+        "在": "zài",
+        "夏": "xià",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "奶": "nǎi",
+        "家": "jiā",
+        "差": "chà",
+        "常": "cháng",
+        "度": "dù",
+        "很": "hěn",
+        "得": "děi",
+        "心": "xīn",
+        "快": "kuai",
+        "怎": "zěn",
+        "感": "gǎn",
+        "打": "dǎ",
+        "春": "chūn",
+        "是": "shì",
+        "暖": "nuǎn",
+        "样": "yàng",
+        "概": "gài",
+        "欢": "huān",
+        "比": "bǐ",
+        "气": "qì",
+        "温": "wēn",
+        "现": "xiàn",
+        "电": "diàn",
+        "的": "de",
+        "给": "gěi",
+        "美": "měi",
+        "觉": "jué",
+        "诉": "su",
+        "话": "huà",
+        "谁": "shéi",
+        "较": "jiào",
+        "这": "zhè",
+        "那": "nà",
+        "里": "lǐ",
+        "雨": "yǔ",
+        "雪": "xuě",
+        "零": "líng"
+      }
+    },
+    "page4": {
+      "sections": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "instruction": "Circle the vocabulary words you hear.",
+          "items": [
+            {
+              "label": "1.",
+              "options": [
+                "差不多",
+                "不得了"
+              ],
+              "english": [
+                "approximately",
+                "extremely"
+              ]
+            },
+            {
+              "label": "2.",
+              "options": [
+                "衣服",
+                "感冒"
+              ],
+              "english": [
+                "clothes",
+                "catch a cold"
+              ]
+            },
+            {
+              "label": "3.",
+              "options": [
+                "凉快",
+                "暖和"
+              ],
+              "english": [
+                "cool",
+                "warm"
+              ]
+            },
+            {
+              "label": "4.",
+              "options": [
+                "大概",
+                "零下"
+              ],
+              "english": [
+                "about",
+                "below zero"
+              ]
+            },
+            {
+              "label": "5.",
+              "options": [
+                "下雨",
+                "下雪"
+              ],
+              "english": [
+                "rain",
+                "snow"
+              ]
+            },
+            {
+              "label": "6.",
+              "options": [
+                "穿",
+                "度"
+              ],
+              "english": [
+                "wear",
+                "degree"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "instruction": "Listen and circle the correct answer.",
+          "items": [
+            {
+              "segments": [
+                "天气变",
+                "CHOICE",
+                "了。"
+              ],
+              "options": [
+                "冷",
+                "凉"
+              ],
+              "english": [
+                "The weather has become ",
+                "________",
+                " ."
+              ],
+              "optionEnglish": [
+                "cold",
+                "cool"
+              ],
+              "label": "A. 1."
+            },
+            {
+              "segments": [
+                "温度大概是",
+                "CHOICE",
+                "度。"
+              ],
+              "options": [
+                "八",
+                "十八"
+              ],
+              "english": [
+                "The temperature is about ",
+                "________",
+                " degrees."
+              ],
+              "optionEnglish": [
+                "eight",
+                "eighteen"
+              ],
+              "label": "B. 2."
+            },
+            {
+              "segments": [
+                "现在差不多是零下",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "三十度",
+                "三度"
+              ],
+              "english": [
+                "It is now about ",
+                "________",
+                " below zero."
+              ],
+              "optionEnglish": [
+                "30 degrees",
+                "3 degrees"
+              ],
+              "label": "C. 1."
+            },
+            {
+              "segments": [
+                "天气很冷，开始",
+                "CHOICE",
+                "了。"
+              ],
+              "options": [
+                "下雪",
+                "下雨"
+              ],
+              "english": [
+                "It is very cold and has started to ",
+                "________",
+                " ."
+              ],
+              "optionEnglish": [
+                "snow",
+                "rain"
+              ],
+              "label": "C. 2."
+            },
+            {
+              "segments": [
+                "夏天比较",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "凉快",
+                "舒服"
+              ],
+              "english": [
+                "Summer is relatively ",
+                "________",
+                " ."
+              ],
+              "optionEnglish": [
+                "cool",
+                "comfortable"
+              ],
+              "label": "D."
+            }
+          ]
+        }
+      ],
+      "audioUrl": "audio/B3-L05-Test.mp3"
+    },
+    "page5": {
+      "left": [
+        [
+          "心美的新背包",
+          "Xinmei’s new backpack"
+        ],
+        [
+          "周末的时候",
+          "On the weekend"
+        ],
+        [
+          "天气很冷，",
+          "The weather is very cold,"
+        ],
+        [
+          "长颈鹿的脖子，",
+          "A giraffe’s neck"
+        ]
+      ],
+      "right": [
+        [
+          "你得多穿一点衣服。",
+          "you need to wear more clothes."
+        ],
+        [
+          "差不多是五块钱",
+          "costs about five dollars."
+        ],
+        [
+          "长得不得了。",
+          "is extremely long."
+        ],
+        [
+          "我们得学中文。",
+          "we need to study Chinese."
+        ]
+      ],
+      "py": {
+        "一": "yì",
+        "不": "bù",
+        "中": "zhōng",
+        "了": "le",
+        "五": "wǔ",
+        "们": "men",
+        "你": "nǐ",
+        "候": "hou",
+        "冷": "lěng",
+        "包": "bāo",
+        "周": "zhōu",
+        "块": "kuài",
+        "多": "duō",
+        "天": "tiān",
+        "子": "zi",
+        "学": "xué",
+        "差": "chà",
+        "很": "hěn",
+        "得": "děi",
+        "心": "xīn",
+        "我": "wǒ",
+        "文": "wén",
+        "新": "xīn",
+        "时": "shí",
+        "是": "shì",
+        "服": "fu",
+        "末": "mò",
+        "气": "qì",
+        "点": "diǎn",
+        "的": "de",
+        "穿": "chuān",
+        "美": "měi",
+        "背": "bēi",
+        "脖": "bó",
+        "衣": "yī",
+        "钱": "qián",
+        "长": "cháng",
+        "颈": "jǐng",
+        "鹿": "lù"
+      }
+    },
+    "page6": {
+      "writing": [
+        {
+          "parts": [
+            "天气变",
+            "",
+            "了，温度大",
+            "",
+            "是十八",
+            "",
+            "。"
+          ],
+          "clues": [
+            "liáng",
+            "gài",
+            "dù"
+          ],
+          "en": "The weather has become cool, and the temperature is about 18 degrees."
+        },
+        {
+          "parts": [
+            "天气非常冷，",
+            "",
+            "不多是零下三度。"
+          ],
+          "clues": [
+            "chà"
+          ],
+          "en": "It is very cold, about minus three degrees."
+        },
+        {
+          "parts": [
+            "天气冷得不得了，得多",
+            "",
+            "一点",
+            "",
+            "",
+            "。"
+          ],
+          "clues": [
+            "chuān",
+            "yī",
+            "fú"
+          ],
+          "en": "It is extremely cold; you must wear more clothes."
+        },
+        {
+          "parts": [
+            "你得多穿一点衣服，别",
+            "",
+            "",
+            "了。"
+          ],
+          "clues": [
+            "gǎn",
+            "mào"
+          ],
+          "en": "You must wear more clothes; do not catch a cold."
+        },
+        {
+          "parts": [
+            "台湾的春天常常下",
+            "",
+            "。"
+          ],
+          "clues": [
+            "yǔ"
+          ],
+          "en": "It often rains in Taiwan in spring."
+        }
+      ],
+      "words": [
+        [
+          "不得了",
+          "bù dé liǎo",
+          "extremely"
+        ],
+        [
+          "颜色",
+          "yán sè",
+          "color"
+        ],
+        [
+          "暖和",
+          "nuǎn huo",
+          "warm"
+        ],
+        [
+          "比较",
+          "bǐ jiào",
+          "relatively"
+        ]
+      ],
+      "lines": [
+        {
+          "speaker": "大文",
+          "parts": [
+            "爸爸，春天、夏天，你喜欢哪个？"
+          ],
+          "en": "Dad, which do you like, spring or summer?",
+          "say": "爸爸，春天、夏天，你喜欢哪个？"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "大文，我喜欢",
+            0,
+            "的春天。"
+          ],
+          "en": "Dawen, I like ____ spring.",
+          "say": "大文，我喜欢（空格）的春天。"
+        },
+        {
+          "speaker": "大文",
+          "parts": [
+            "你为什么喜欢春天？我觉得夏天",
+            1,
+            "好，游泳很舒服。"
+          ],
+          "en": "Why do you like spring? I think summer is ____ good; swimming is comfortable.",
+          "say": "你为什么喜欢春天？我觉得夏天（空格）好，游泳很舒服。"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "春天的时候，有很多",
+            2,
+            "的花，草也变绿了，院子里漂亮得",
+            3,
+            "。"
+          ],
+          "en": "In spring there are flowers of many ____; the grass turns green, and the yard is ____ beautiful.",
+          "say": "春天的时候，有很多（空格）的花，草也变绿了，院子里漂亮得（空格）。"
+        }
+      ],
+      "PY": {
+        "一": "yì",
+        "三": "sān",
+        "下": "xià",
+        "不": "bù",
+        "个": "ge",
+        "为": "wèi",
+        "么": "me",
+        "也": "yě",
+        "了": "le",
+        "亮": "liang",
+        "什": "shén",
+        "你": "nǐ",
+        "候": "hou",
+        "八": "bā",
+        "冷": "lěng",
+        "别": "bié",
+        "十": "shí",
+        "变": "biàn",
+        "台": "tái",
+        "和": "huo",
+        "哪": "nǎ",
+        "喜": "xǐ",
+        "夏": "xià",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "好": "hǎo",
+        "子": "zi",
+        "常": "cháng",
+        "度": "dù",
+        "很": "hěn",
+        "得": "děi",
+        "我": "wǒ",
+        "文": "wén",
+        "时": "shí",
+        "春": "chūn",
+        "是": "shì",
+        "暖": "nuǎn",
+        "有": "yǒu",
+        "服": "fu",
+        "格": "gé",
+        "欢": "huān",
+        "比": "bǐ",
+        "气": "qì",
+        "泳": "yǒng",
+        "温": "wēn",
+        "游": "yóu",
+        "湾": "wān",
+        "漂": "piào",
+        "点": "diǎn",
+        "爸": "bà",
+        "的": "de",
+        "空": "kòng",
+        "穿": "chuān",
+        "绿": "lǜ",
+        "舒": "shū",
+        "色": "sè",
+        "花": "huā",
+        "草": "cǎo",
+        "衣": "yī",
+        "觉": "jué",
+        "较": "jiào",
+        "里": "lǐ",
+        "院": "yuàn",
+        "零": "líng",
+        "非": "fēi",
+        "颜": "yán"
+      }
+    },
+    "page7": {
+      "passages": [
+        [
+          "春天的时候，天气不冷不热，有很多颜色的花。夏天很热，大概是摄氏（Celsius）三十五度，游泳最舒服了。秋天很凉快，有的叶子变黄了，有的叶子还是绿色的。台湾的冬天不下雪，可是常常下雨。",
+          "In spring the weather is neither cold nor hot, and there are flowers of many colors. Summer is hot, about 35 degrees Celsius; swimming is most comfortable. Autumn is cool; some leaves turn yellow and some remain green. In Taiwan it does not snow in winter, but it often rains."
+        ],
+        [
+          "王老师的爸爸妈妈都住在台湾，他们都喜欢春天，常常在春天的时候去旅行，王老师常常给我们看他爸爸妈妈旅行的照片。",
+          "Teacher Wang’s parents both live in Taiwan. They both like spring and often travel in spring. Teacher Wang often shows us photos of their travels."
+        ]
+      ],
+      "questions": [
+        [
+          "春天又冷又不舒服。",
+          "Spring is cold and uncomfortable."
+        ],
+        [
+          "春天的时候有红花、黄花和白花。",
+          "In spring there are red, yellow and white flowers."
+        ],
+        [
+          "夏天的温度差不多是摄氏（Celsius）十五度。",
+          "Summer temperatures are about 15 degrees Celsius."
+        ],
+        [
+          "秋天的叶子都是黄色的。",
+          "All autumn leaves are yellow."
+        ],
+        [
+          "台湾的冬天常常下雪。",
+          "It often snows in Taiwan in winter."
+        ],
+        [
+          "春天，王老师的爸爸妈妈喜欢去旅行。",
+          "Teacher Wang’s parents like to travel in spring."
+        ]
+      ],
+      "PY": {
+        "三": "sān",
+        "下": "xià",
+        "不": "bù",
+        "了": "le",
+        "五": "wǔ",
+        "他": "tā",
+        "们": "men",
+        "住": "zhù",
+        "候": "hou",
+        "冬": "dōng",
+        "冷": "lěng",
+        "凉": "liáng",
+        "十": "shí",
+        "去": "qù",
+        "又": "yòu",
+        "变": "biàn",
+        "可": "kě",
+        "台": "tái",
+        "叶": "yè",
+        "和": "hé",
+        "喜": "xǐ",
+        "在": "zài",
+        "夏": "xià",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "妈": "mā",
+        "子": "zi",
+        "差": "chà",
+        "师": "shī",
+        "常": "cháng",
+        "度": "dù",
+        "很": "hěn",
+        "快": "kuài",
+        "我": "wǒ",
+        "摄": "shè",
+        "旅": "lǚ",
+        "时": "shí",
+        "春": "chūn",
+        "是": "shì",
+        "最": "zuì",
+        "有": "yǒu",
+        "服": "fu",
+        "概": "gài",
+        "欢": "huān",
+        "氏": "shì",
+        "气": "qì",
+        "泳": "yǒng",
+        "温": "wēn",
+        "游": "yóu",
+        "湾": "wān",
+        "热": "rè",
+        "照": "zhào",
+        "爸": "bà",
+        "片": "piàn",
+        "王": "wáng",
+        "白": "bái",
+        "的": "de",
+        "看": "kàn",
+        "秋": "qiū",
+        "红": "hóng",
+        "给": "gěi",
+        "绿": "lǜ",
+        "老": "lǎo",
+        "舒": "shū",
+        "色": "sè",
+        "花": "huā",
+        "行": "xíng",
+        "还": "hái",
+        "都": "dōu",
+        "雨": "yǔ",
+        "雪": "xuě",
+        "颜": "yán",
+        "黄": "huáng"
+      }
+    },
+    "pagelesson": {
+      "description": "心美和奶奶谈天气 · Listen to each line or read the whole dialogue.",
+      "lines": [
+        {
+          "speaker": "心美",
+          "emoji": "👧",
+          "text": "喂，奶奶，我是心美，您好吗？您那里的天气变凉了吗？",
+          "english": "Hello, Grandma, this is Xinmei. How are you? Has the weather turned cool where you are?"
+        },
+        {
+          "speaker": "奶奶",
+          "emoji": "👵",
+          "text": "我很好。现在的温度大概是十八度，很凉快。你那里呢？",
+          "english": "I am fine. The temperature is about 18 degrees now, very cool. How about where you are?"
+        },
+        {
+          "speaker": "心美",
+          "emoji": "👧",
+          "text": "我们这里已经开始下雪了，天气非常冷，差不多是零下三度。",
+          "english": "It has already started snowing here. It is very cold, about minus three degrees."
+        },
+        {
+          "speaker": "奶奶",
+          "emoji": "👵",
+          "text": "你得多穿一点衣服，别感冒了！",
+          "english": "You need to wear more clothes. Do not catch a cold!"
+        },
+        {
+          "speaker": "心美",
+          "emoji": "👧",
+          "text": "我不喜欢冬天，冷得不得了！希望春天快点来。",
+          "english": "I do not like winter. It is extremely cold! I hope spring comes soon."
+        },
+        {
+          "speaker": "奶奶",
+          "emoji": "👵",
+          "text": "我们这里的春天很暖和，但是常常下雨。",
+          "english": "Spring here is warm, but it often rains."
+        },
+        {
+          "speaker": "心美",
+          "emoji": "👧",
+          "text": "还是夏天好，比较舒服。",
+          "english": "Summer is better; it is more comfortable."
+        }
+      ],
+      "title": "课文 · Lesson Dialogue",
+      "pinyin": {
+        "一": "yì",
+        "三": "sān",
+        "下": "xià",
+        "不": "bù",
+        "了": "le",
+        "们": "men",
+        "但": "dàn",
+        "你": "nǐ",
+        "八": "bā",
+        "冒": "mào",
+        "冬": "dōng",
+        "冷": "lěng",
+        "凉": "liáng",
+        "别": "bié",
+        "十": "shí",
+        "变": "biàn",
+        "吗": "ma",
+        "呢": "ne",
+        "和": "huo",
+        "喂": "wèi",
+        "喜": "xǐ",
+        "在": "zài",
+        "夏": "xià",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "奶": "nǎi",
+        "好": "hǎo",
+        "始": "shǐ",
+        "差": "chà",
+        "已": "yǐ",
+        "希": "xī",
+        "常": "cháng",
+        "度": "dù",
+        "开": "kāi",
+        "很": "hěn",
+        "得": "děi",
+        "心": "xīn",
+        "快": "kuài",
+        "您": "nín",
+        "感": "gǎn",
+        "我": "wǒ",
+        "文": "wén",
+        "春": "chūn",
+        "是": "shì",
+        "暖": "nuǎn",
+        "服": "fu",
+        "望": "wàng",
+        "来": "lái",
+        "概": "gài",
+        "欢": "huān",
+        "比": "bǐ",
+        "气": "qì",
+        "温": "wēn",
+        "点": "diǎn",
+        "现": "xiàn",
+        "的": "de",
+        "穿": "chuān",
+        "经": "jīng",
+        "美": "měi",
+        "舒": "shū",
+        "衣": "yī",
+        "课": "kè",
+        "谈": "tán",
+        "较": "jiào",
+        "还": "hái",
+        "这": "zhè",
+        "那": "nà",
+        "里": "lǐ",
+        "雨": "yǔ",
+        "雪": "xuě",
+        "零": "líng",
+        "非": "fēi"
+      }
+    }
+  },
+  "googleForm": {
+    "action": "https://docs.google.com/forms/d/e/1FAIpQLSfBKFS2NtxoYseb4fG46czemaZcUz2UiS9UmhsB5mseOg3d5A/formResponse",
+    "student": "entry.1075373571",
+    "classroom": "entry.95149830",
+    "quizName": "entry.1323832917",
+    "total": "entry.1630475119",
+    "correct": "entry.2010509959",
+    "details": "entry.1985964408",
+    "pages": {
+      "1": "entry.606366833",
+      "2": "entry.1723774158",
+      "3": "entry.1178395538",
+      "4": "entry.311041801",
+      "5": "entry.1575811922",
+      "6": "entry.1057969943",
+      "7": "entry.391842823"
+    }
+  },
+  "answers": {
+    "page1": {
+      "groups": [
+        {
+          "name": "A",
+          "correctLetters": [
+            "b",
+            "a",
+            "d",
+            "c"
+          ]
+        },
+        {
+          "name": "B",
+          "correctLetters": [
+            "d",
+            "b",
+            "a",
+            "c"
+          ]
+        }
+      ]
+    },
+    "page2": {
+      "correctOptionIndexes": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "page3": {
+      "trueFalse": [
+        true,
+        false,
+        false,
+        false,
+        true
+      ]
+    },
+    "page4": {
+      "parts": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "correctOptionIndexes": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "correctOptionIndexes": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "page5": {
+      "matchingRightIndexes": [
+        1,
+        3,
+        0,
+        2
+      ]
+    },
+    "page6": {
+      "writingCharacters": [
+        [
+          "凉",
+          "概",
+          "度"
+        ],
+        [
+          "差"
+        ],
+        [
+          "穿",
+          "衣",
+          "服"
+        ],
+        [
+          "感",
+          "冒"
+        ],
+        [
+          "雨"
+        ]
+      ],
+      "dialogueWordIndexes": [
+        2,
+        3,
+        1,
+        0
+      ]
+    },
+    "page7": {
+      "trueFalse": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        true
+      ]
+    }
+  }
+}
