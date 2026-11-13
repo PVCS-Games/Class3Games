@@ -1,0 +1,1322 @@
+{
+  "meta": {
+    "quizName": "LLC Book 3 · Lesson 6",
+    "title": "LLC Book 3 · 第六课 — Interactive Workbook",
+    "subtitle": "Complete workbook · 7 exercise pages + lesson dialogue · Listening audio referenced separately."
+  },
+  "pages": {
+    "page1": {
+      "data": [
+        {
+          "name": "A",
+          "bank": [
+            [
+              "a",
+              "棵",
+              "kē",
+              "measure word for trees"
+            ],
+            [
+              "b",
+              "彩色",
+              "cǎi sè",
+              "colorful"
+            ],
+            [
+              "c",
+              "平常",
+              "píng cháng",
+              "usual; normally"
+            ],
+            [
+              "d",
+              "就是",
+              "jiù shì",
+              "is precisely; will be"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "哇！人好多，跟",
+              "post": "不一样。",
+              "en": "Wow! There are so many people, different from ____. "
+            },
+            {
+              "pre": "下个月",
+              "post": "圣诞节了。",
+              "en": "Next month ____ Christmas."
+            },
+            {
+              "pre": "那",
+              "post": "圣诞树好漂亮！",
+              "en": "That ____ Christmas tree is so beautiful!"
+            },
+            {
+              "pre": "",
+              "post": "的灯挂在圣诞树上真好看。",
+              "en": "The ____ lights hanging on the Christmas tree look beautiful."
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "bank": [
+            [
+              "a",
+              "只",
+              "zhī",
+              "measure word for certain animals and objects"
+            ],
+            [
+              "b",
+              "寄",
+              "jì",
+              "mail; send"
+            ],
+            [
+              "c",
+              "听话",
+              "tīng huà",
+              "be obedient"
+            ],
+            [
+              "d",
+              "辆",
+              "liàng",
+              "measure word for vehicles"
+            ]
+          ],
+          "questions": [
+            {
+              "pre": "大文想要一",
+              "post": "玩具车。",
+              "en": "Dawen wants a ____ toy car."
+            },
+            {
+              "pre": "如果大文",
+              "post": "，圣诞老人就会送给他一个礼物。",
+              "en": "If Dawen ____, Santa Claus will give him a gift."
+            },
+            {
+              "pre": "文文要买一张卡片",
+              "post": "给外公、外婆。",
+              "en": "Wenwen wants to buy a card to ____ to her maternal grandparents."
+            },
+            {
+              "pre": "那",
+              "post": "圣诞袜可以挂在房间里。",
+              "en": "That ____ Christmas stocking can be hung in the room."
+            }
+          ]
+        }
+      ],
+      "charPinyin": {
+        "一": "yí",
+        "上": "shàng",
+        "下": "xià",
+        "不": "bù",
+        "个": "ge",
+        "买": "mǎi",
+        "了": "le",
+        "亮": "liang",
+        "人": "rén",
+        "他": "tā",
+        "以": "yǐ",
+        "会": "huì",
+        "公": "gōng",
+        "具": "jù",
+        "卡": "kǎ",
+        "只": "zhī",
+        "可": "kě",
+        "听": "tīng",
+        "哇": "wā",
+        "圣": "shèng",
+        "在": "zài",
+        "外": "wài",
+        "多": "duō",
+        "大": "dà",
+        "好": "hǎo",
+        "如": "rú",
+        "婆": "pó",
+        "寄": "jì",
+        "就": "jiù",
+        "常": "cháng",
+        "平": "píng",
+        "张": "zhāng",
+        "彩": "cǎi",
+        "想": "xiǎng",
+        "房": "fáng",
+        "挂": "guà",
+        "文": "wén",
+        "是": "shì",
+        "月": "yuè",
+        "果": "guǒ",
+        "树": "shù",
+        "样": "yàng",
+        "棵": "kē",
+        "漂": "piào",
+        "灯": "dēng",
+        "片": "piàn",
+        "物": "wù",
+        "玩": "wán",
+        "的": "de",
+        "看": "kàn",
+        "真": "zhēn",
+        "礼": "lǐ",
+        "给": "gěi",
+        "老": "lǎo",
+        "色": "sè",
+        "节": "jié",
+        "袜": "wà",
+        "要": "yào",
+        "话": "huà",
+        "诞": "dàn",
+        "跟": "gēn",
+        "车": "chē",
+        "辆": "liàng",
+        "送": "sòng",
+        "那": "nà",
+        "里": "lǐ",
+        "间": "jiān"
+      }
+    },
+    "page2": {
+      "questions": [
+        {
+          "segments": [
+            "大文的玩具车在",
+            "CHOICE",
+            "下面。"
+          ],
+          "options": [
+            "窗户",
+            "彩色"
+          ],
+          "english": [
+            "Dawen’s toy car is under the ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "window",
+            "colorful"
+          ]
+        },
+        {
+          "segments": [
+            "爷爷、奶奶常常告诉东明要",
+            "CHOICE",
+            "。"
+          ],
+          "options": [
+            "就是",
+            "听话"
+          ],
+          "english": [
+            "Grandpa and Grandma often tell Dongming to ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "be precisely",
+            "be obedient"
+          ]
+        },
+        {
+          "segments": [
+            "文文希望爸爸、妈妈送给她一个",
+            "CHOICE",
+            "。"
+          ],
+          "options": [
+            "洋娃娃",
+            "圣诞节"
+          ],
+          "english": [
+            "Wenwen hopes Dad and Mom will give her a ",
+            "________",
+            "."
+          ],
+          "optionEnglish": [
+            "doll",
+            "Christmas"
+          ]
+        },
+        {
+          "segments": [
+            "东明家",
+            "CHOICE",
+            "7点吃晚饭。"
+          ],
+          "options": [
+            "平常",
+            "所以"
+          ],
+          "english": [
+            "Dongming’s family ",
+            "________",
+            " has dinner at 7."
+          ],
+          "optionEnglish": [
+            "usually",
+            "therefore"
+          ]
+        },
+        {
+          "segments": [
+            "我",
+            "CHOICE",
+            "了一张卡片给王老师。"
+          ],
+          "options": [
+            "挂",
+            "寄"
+          ],
+          "english": [
+            "I ",
+            "________",
+            " a card to Teacher Wang."
+          ],
+          "optionEnglish": [
+            "hung",
+            "mailed"
+          ]
+        }
+      ],
+      "py": {
+        "一": "yí",
+        "下": "xià",
+        "东": "dōng",
+        "个": "ge",
+        "了": "le",
+        "以": "yǐ",
+        "具": "jù",
+        "卡": "kǎ",
+        "吃": "chī",
+        "听": "tīng",
+        "告": "gào",
+        "圣": "shèng",
+        "在": "zài",
+        "大": "dà",
+        "奶": "nǎi",
+        "她": "tā",
+        "妈": "mā",
+        "娃": "wá",
+        "家": "jiā",
+        "寄": "jì",
+        "就": "jiù",
+        "师": "shī",
+        "希": "xī",
+        "常": "cháng",
+        "平": "píng",
+        "张": "zhāng",
+        "彩": "cǎi",
+        "我": "wǒ",
+        "户": "hù",
+        "所": "suǒ",
+        "挂": "guà",
+        "文": "wén",
+        "明": "míng",
+        "是": "shì",
+        "晚": "wǎn",
+        "望": "wàng",
+        "洋": "yáng",
+        "点": "diǎn",
+        "爷": "yé",
+        "爸": "bà",
+        "片": "piàn",
+        "王": "wáng",
+        "玩": "wán",
+        "的": "de",
+        "窗": "chuāng",
+        "给": "gěi",
+        "老": "lǎo",
+        "色": "sè",
+        "节": "jié",
+        "要": "yào",
+        "诉": "su",
+        "话": "huà",
+        "诞": "dàn",
+        "车": "chē",
+        "送": "sòng",
+        "面": "miàn",
+        "饭": "fàn"
+      }
+    },
+    "page3": {
+      "shorts": [
+        [
+          "1.",
+          "买东西的人为什么那么多？（……就是……）",
+          "Why are there so many shoppers? (… will be …)"
+        ],
+        [
+          "2.",
+          "文文说什么好漂亮？（棵）",
+          "What does Wenwen say is beautiful? (measure word for trees)"
+        ],
+        [
+          "3.",
+          "爸爸要买什么挂在窗户上？",
+          "What does Dad want to buy to hang on the window?"
+        ],
+        [
+          "4.",
+          "大文今年想要什么圣诞礼物？",
+          "What Christmas gift does Dawen want this year?"
+        ],
+        [
+          "5.",
+          "如果大文听话，谁就会送给他礼物？",
+          "If Dawen behaves, who will give him a gift?"
+        ],
+        [
+          "6.",
+          "文文想买什么给自己？想买什么寄给外公和外婆？（个、张）",
+          "What does Wenwen want to buy for herself? What does she want to buy and mail to her maternal grandparents? (measure words 个, 张)"
+        ],
+        [
+          "7.",
+          "妈妈说还要买什么挂在房间里？（只）",
+          "What else does Mom say they should buy to hang in the room? (measure word 只)"
+        ]
+      ],
+      "tfs": [
+        [
+          "下个月就是圣诞节了。",
+          "Next month is Christmas."
+        ],
+        [
+          "文文觉得那棵圣诞树很好看。",
+          "Wenwen thinks that Christmas tree looks beautiful."
+        ],
+        [
+          "爸爸要买圣诞树挂在窗户上。",
+          "Dad wants to buy a Christmas tree to hang on the window."
+        ],
+        [
+          "大文希望今年圣诞老人送给他一个洋娃娃。",
+          "Dawen hopes Santa will give him a doll this year."
+        ],
+        [
+          "文文要买一张卡片寄给爷爷、奶奶。",
+          "Wenwen wants to buy a card to mail to her paternal grandparents."
+        ],
+        [
+          "妈妈说还要买一只圣诞袜挂在房间里。",
+          "Mom says they also need to buy a Christmas stocking to hang in the room."
+        ]
+      ],
+      "py": {
+        "一": "yí",
+        "上": "shàng",
+        "下": "xià",
+        "东": "dōng",
+        "个": "ge",
+        "为": "wèi",
+        "么": "me",
+        "买": "mǎi",
+        "了": "le",
+        "亮": "liang",
+        "人": "rén",
+        "什": "shén",
+        "今": "jīn",
+        "他": "tā",
+        "会": "huì",
+        "公": "gōng",
+        "卡": "kǎ",
+        "只": "zhī",
+        "听": "tīng",
+        "和": "huo",
+        "圣": "shèng",
+        "在": "zài",
+        "外": "wài",
+        "多": "duō",
+        "大": "dà",
+        "奶": "nǎi",
+        "好": "hǎo",
+        "如": "rú",
+        "妈": "mā",
+        "娃": "wá",
+        "婆": "pó",
+        "寄": "jì",
+        "就": "jiù",
+        "己": "jǐ",
+        "希": "xī",
+        "年": "nián",
+        "张": "zhāng",
+        "很": "hěn",
+        "得": "de",
+        "想": "xiǎng",
+        "户": "hù",
+        "房": "fáng",
+        "挂": "guà",
+        "文": "wén",
+        "是": "shì",
+        "月": "yuè",
+        "望": "wàng",
+        "果": "guǒ",
+        "树": "shù",
+        "棵": "kē",
+        "洋": "yáng",
+        "漂": "piào",
+        "爷": "yé",
+        "爸": "bà",
+        "片": "piàn",
+        "物": "wù",
+        "的": "de",
+        "看": "kàn",
+        "礼": "lǐ",
+        "窗": "chuāng",
+        "给": "gěi",
+        "老": "lǎo",
+        "自": "zì",
+        "节": "jié",
+        "袜": "wà",
+        "西": "xi",
+        "要": "yào",
+        "觉": "jué",
+        "话": "huà",
+        "诞": "dàn",
+        "说": "shuō",
+        "谁": "shéi",
+        "还": "hái",
+        "送": "sòng",
+        "那": "nà",
+        "里": "lǐ",
+        "间": "jiān"
+      }
+    },
+    "page4": {
+      "sections": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "instruction": "Circle the vocabulary words you hear.",
+          "items": [
+            {
+              "label": "1.",
+              "options": [
+                "平常",
+                "就是"
+              ],
+              "english": [
+                "usual",
+                "is precisely"
+              ]
+            },
+            {
+              "label": "2.",
+              "options": [
+                "彩色",
+                "卡片"
+              ],
+              "english": [
+                "colorful",
+                "card"
+              ]
+            },
+            {
+              "label": "3.",
+              "options": [
+                "听话",
+                "窗户"
+              ],
+              "english": [
+                "be obedient",
+                "window"
+              ]
+            },
+            {
+              "label": "4.",
+              "options": [
+                "灯",
+                "挂"
+              ],
+              "english": [
+                "light",
+                "hang"
+              ]
+            },
+            {
+              "label": "5.",
+              "options": [
+                "棵",
+                "只"
+              ],
+              "english": [
+                "measure word for trees",
+                "measure word for certain animals and objects"
+              ]
+            },
+            {
+              "label": "6.",
+              "options": [
+                "辆",
+                "寄"
+              ],
+              "english": [
+                "measure word for vehicles",
+                "mail"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "instruction": "Listen and circle the correct answer.",
+          "items": [
+            {
+              "label": "A. 1.",
+              "segments": [
+                "",
+                "CHOICE",
+                "就是圣诞节了。"
+              ],
+              "options": [
+                "下个月",
+                "一个月"
+              ],
+              "english": [
+                "",
+                "________",
+                " is Christmas."
+              ],
+              "optionEnglish": [
+                "next month",
+                "one month"
+              ]
+            },
+            {
+              "label": "A. 2.",
+              "segments": [
+                "大家都来",
+                "CHOICE",
+                "。"
+              ],
+              "options": [
+                "买卡片",
+                "买东西"
+              ],
+              "english": [
+                "Everyone comes to ",
+                "________",
+                "."
+              ],
+              "optionEnglish": [
+                "buy cards",
+                "shop"
+              ]
+            },
+            {
+              "label": "B. 1.",
+              "segments": [
+                "",
+                "CHOICE",
+                "的圣诞节，圣诞老人会给大文礼物。"
+              ],
+              "options": [
+                "今年",
+                "今天"
+              ],
+              "english": [
+                "At ",
+                "________",
+                " Christmas, Santa will give Dawen a gift."
+              ],
+              "optionEnglish": [
+                "this year’s",
+                "today’s"
+              ]
+            },
+            {
+              "label": "B. 2.",
+              "segments": [
+                "大文如果听话，圣诞老人会",
+                "CHOICE",
+                "他一辆玩具车。"
+              ],
+              "options": [
+                "寄给",
+                "送给"
+              ],
+              "english": [
+                "If Dawen behaves, Santa will ",
+                "________",
+                " him a toy car."
+              ],
+              "optionEnglish": [
+                "mail to",
+                "give to"
+              ]
+            },
+            {
+              "label": "C.",
+              "segments": [
+                "妈妈说",
+                "CHOICE",
+                "最好挂在房里。"
+              ],
+              "options": [
+                "圣诞树",
+                "圣诞灯",
+                "圣诞袜"
+              ],
+              "english": [
+                "Mom says the ",
+                "________",
+                " is best hung in the room."
+              ],
+              "optionEnglish": [
+                "Christmas tree",
+                "Christmas lights",
+                "Christmas stocking"
+              ]
+            }
+          ]
+        }
+      ],
+      "audioUrl": "audio/B3-L06-Test.mp3"
+    },
+    "page5": {
+      "left": [
+        [
+          "张莉家的狗",
+          "Zhang Li’s family dog"
+        ],
+        [
+          "下个星期三就是",
+          "Next Wednesday will be"
+        ],
+        [
+          "你的衣服",
+          "Your clothes"
+        ],
+        [
+          "我想养",
+          "I want to keep"
+        ]
+      ],
+      "right": [
+        [
+          "张莉的生日了。",
+          "Zhang Li’s birthday."
+        ],
+        [
+          "一只猫。",
+          "a cat."
+        ],
+        [
+          "好可爱。",
+          "is so cute."
+        ],
+        [
+          "要挂在哪里？",
+          "where should they be hung?"
+        ]
+      ],
+      "py": {
+        "一": "yí",
+        "三": "sān",
+        "下": "xià",
+        "个": "ge",
+        "了": "le",
+        "你": "nǐ",
+        "养": "yǎng",
+        "只": "zhī",
+        "可": "kě",
+        "哪": "nǎ",
+        "在": "zài",
+        "好": "hǎo",
+        "家": "jiā",
+        "就": "jiù",
+        "张": "zhāng",
+        "想": "xiǎng",
+        "我": "wǒ",
+        "挂": "guà",
+        "日": "rì",
+        "星": "xīng",
+        "是": "shì",
+        "服": "fu",
+        "期": "qī",
+        "爱": "ài",
+        "狗": "gǒu",
+        "猫": "māo",
+        "生": "shēng",
+        "的": "de",
+        "莉": "lì",
+        "衣": "yī",
+        "要": "yào",
+        "里": "lǐ"
+      }
+    },
+    "page6": {
+      "writing": [
+        {
+          "parts": [
+            "今天的人好多，跟",
+            "",
+            "常不一样。",
+            "",
+            "色的灯，",
+            "",
+            "挂在",
+            "",
+            "户上吧！"
+          ],
+          "clues": [
+            "píng",
+            "cǎi",
+            "jiù",
+            "chuāng"
+          ],
+          "en": "There are so many people today, different from usual. Let’s hang the colorful lights on the window!"
+        },
+        {
+          "parts": [
+            "圣诞树就",
+            "",
+            "在房间里吧！"
+          ],
+          "clues": [
+            "guà"
+          ],
+          "en": "Let’s hang the Christmas tree in the room!"
+        },
+        {
+          "parts": [
+            "爸爸常常告诉大文要",
+            "",
+            "话。"
+          ],
+          "clues": [
+            "tīng"
+          ],
+          "en": "Dad often tells Dawen to behave."
+        },
+        {
+          "parts": [
+            "文文要买一",
+            "",
+            "卡片",
+            "",
+            "给外公、外婆。"
+          ],
+          "clues": [
+            "zhāng",
+            "jì"
+          ],
+          "en": "Wenwen wants to buy a card and mail it to her maternal grandparents."
+        },
+        {
+          "parts": [
+            "文文很喜欢这张",
+            "",
+            "",
+            "。"
+          ],
+          "clues": [
+            "kǎ",
+            "piàn"
+          ],
+          "en": "Wenwen really likes this card."
+        }
+      ],
+      "words": [
+        [
+          "听话",
+          "tīng huà",
+          "be obedient"
+        ],
+        [
+          "希望",
+          "xī wàng",
+          "hope"
+        ],
+        [
+          "送给",
+          "sòng gěi",
+          "give to"
+        ],
+        [
+          "因为",
+          "yīn wèi",
+          "because"
+        ]
+      ],
+      "lines": [
+        {
+          "speaker": "东明",
+          "parts": [
+            "爸爸，今年的圣诞节，我",
+            0,
+            "圣诞老人送给我一个礼物。"
+          ],
+          "en": "Dad, this Christmas I ____ Santa will give me a gift.",
+          "say": "爸爸，今年的圣诞节，我（空格）圣诞老人送给我一个礼物。"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "东明，你想要什么礼物？"
+          ],
+          "en": "Dongming, what gift do you want?",
+          "say": "东明，你想要什么礼物？"
+        },
+        {
+          "speaker": "东明",
+          "parts": [
+            1,
+            "妈妈给我的糖果，我送给友朋了，所以我想要一盒糖果。"
+          ],
+          "en": "____ I gave the candy Mom gave me to Youpeng, I want a box of candy.",
+          "say": "（空格）妈妈给我的糖果，我送给友朋了，所以我想要一盒糖果。"
+        },
+        {
+          "speaker": "爸爸",
+          "parts": [
+            "如果你",
+            2,
+            "，圣诞老人就会",
+            3,
+            "你一盒糖果。"
+          ],
+          "en": "If you ____, Santa will ____ you a box of candy.",
+          "say": "如果你（空格），圣诞老人就会（空格）你一盒糖果。"
+        }
+      ],
+      "PY": {
+        "一": "yí",
+        "上": "shàng",
+        "不": "bù",
+        "东": "dōng",
+        "个": "ge",
+        "为": "wèi",
+        "么": "me",
+        "买": "mǎi",
+        "了": "le",
+        "人": "rén",
+        "什": "shén",
+        "今": "jīn",
+        "以": "yǐ",
+        "会": "huì",
+        "你": "nǐ",
+        "公": "gōng",
+        "卡": "kǎ",
+        "友": "yǒu",
+        "吧": "ba",
+        "听": "tīng",
+        "告": "gào",
+        "喜": "xǐ",
+        "因": "yīn",
+        "圣": "shèng",
+        "在": "zài",
+        "外": "wài",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "好": "hǎo",
+        "如": "rú",
+        "妈": "mā",
+        "婆": "pó",
+        "就": "jiù",
+        "希": "xī",
+        "常": "cháng",
+        "年": "nián",
+        "张": "zhāng",
+        "很": "hěn",
+        "想": "xiǎng",
+        "我": "wǒ",
+        "户": "hù",
+        "房": "fáng",
+        "所": "suǒ",
+        "挂": "guà",
+        "文": "wén",
+        "明": "míng",
+        "朋": "péng",
+        "望": "wàng",
+        "果": "guǒ",
+        "树": "shù",
+        "样": "yàng",
+        "格": "gé",
+        "欢": "huan",
+        "灯": "dēng",
+        "爸": "bà",
+        "片": "piàn",
+        "物": "wù",
+        "的": "de",
+        "盒": "hé",
+        "礼": "lǐ",
+        "空": "kòng",
+        "糖": "táng",
+        "给": "gěi",
+        "老": "lǎo",
+        "色": "sè",
+        "节": "jié",
+        "要": "yào",
+        "诉": "su",
+        "话": "huà",
+        "诞": "dàn",
+        "跟": "gēn",
+        "这": "zhè",
+        "送": "sòng",
+        "里": "lǐ",
+        "间": "jiān"
+      }
+    },
+    "page7": {
+      "passages": [
+        [
+          "圣诞节快到了，爸爸买一棵又漂亮又大的圣诞树。妈妈和心美想买一些彩色的灯挂在圣诞树上，还要买两只圣诞袜，一只挂在圣诞树上，一只挂在房间里。",
+          "Christmas is coming. Dad buys a beautiful, large Christmas tree. Mom and Xinmei want to buy colorful lights to hang on the Christmas tree, and two Christmas stockings, one to hang on the tree and one in the room."
+        ],
+        [
+          "去年圣诞节，心美的圣诞礼物是一个洋娃娃，今年她想要一盒巧克力糖，所以她写了一张卡片给圣诞老人，告诉圣诞老人她想要的礼物。这张卡片，心美请爸爸帮她寄给圣诞老人。",
+          "Last Christmas Xinmei’s gift was a doll. This year she wants a box of chocolates, so she writes a card to Santa Claus, telling him what gift she wants. Xinmei asks Dad to help her mail the card to Santa."
+        ]
+      ],
+      "questions": [
+        [
+          "爸爸买了一棵很漂亮也很大的圣诞树。",
+          "Dad bought a very beautiful and large Christmas tree."
+        ],
+        [
+          "妈妈和心美想买两只圣诞袜。",
+          "Mom and Xinmei want to buy two Christmas stockings."
+        ],
+        [
+          "两只圣诞袜，她们都要挂在房间里。",
+          "They want to hang both Christmas stockings in the room."
+        ],
+        [
+          "去年心美的圣诞礼物是一盒巧克力糖。",
+          "Last year Xinmei’s Christmas gift was a box of chocolates."
+        ],
+        [
+          "心美在卡片上告诉了圣诞老人自己要什么礼物。",
+          "In the card Xinmei told Santa what gift she wants."
+        ],
+        [
+          "心美的卡片要寄给爷爷。",
+          "Xinmei’s card is to be mailed to Grandpa."
+        ]
+      ],
+      "PY": {
+        "一": "yí",
+        "上": "shàng",
+        "两": "liǎng",
+        "个": "ge",
+        "么": "me",
+        "也": "yě",
+        "买": "mǎi",
+        "了": "le",
+        "些": "xiē",
+        "亮": "liang",
+        "人": "rén",
+        "什": "shén",
+        "今": "jīn",
+        "以": "yǐ",
+        "们": "men",
+        "克": "kè",
+        "写": "xiě",
+        "到": "dào",
+        "力": "lì",
+        "卡": "kǎ",
+        "去": "qù",
+        "又": "yòu",
+        "只": "zhī",
+        "告": "gào",
+        "和": "huo",
+        "圣": "shèng",
+        "在": "zài",
+        "大": "dà",
+        "她": "tā",
+        "妈": "mā",
+        "娃": "wá",
+        "寄": "jì",
+        "巧": "qiǎo",
+        "己": "jǐ",
+        "帮": "bāng",
+        "年": "nián",
+        "张": "zhāng",
+        "彩": "cǎi",
+        "很": "hěn",
+        "心": "xīn",
+        "快": "kuài",
+        "想": "xiǎng",
+        "房": "fáng",
+        "所": "suǒ",
+        "挂": "guà",
+        "是": "shì",
+        "树": "shù",
+        "棵": "kē",
+        "洋": "yáng",
+        "漂": "piào",
+        "灯": "dēng",
+        "爷": "yé",
+        "爸": "bà",
+        "片": "piàn",
+        "物": "wù",
+        "的": "de",
+        "盒": "hé",
+        "礼": "lǐ",
+        "糖": "táng",
+        "给": "gěi",
+        "美": "měi",
+        "老": "lǎo",
+        "自": "zì",
+        "色": "sè",
+        "节": "jié",
+        "袜": "wà",
+        "要": "yào",
+        "诉": "su",
+        "诞": "dàn",
+        "请": "qǐng",
+        "还": "hái",
+        "这": "zhè",
+        "都": "dōu",
+        "里": "lǐ",
+        "间": "jiān"
+      }
+    },
+    "pagelesson": {
+      "description": "大文一家买圣诞节礼物 · Listen to each line or read the whole dialogue.",
+      "lines": [
+        {
+          "speaker": "大文",
+          "emoji": "👦",
+          "text": "哇！今天人好多，跟平常不一样。",
+          "english": "Wow! There are so many people today, unlike usual."
+        },
+        {
+          "speaker": "妈妈",
+          "emoji": "👩",
+          "text": "下个月就是圣诞节了，大家都来买东西。",
+          "english": "Next month is Christmas, so everyone has come to shop."
+        },
+        {
+          "speaker": "文文",
+          "emoji": "👧",
+          "text": "妈妈，你看那棵圣诞树好漂亮！",
+          "english": "Mom, look at that beautiful Christmas tree!"
+        },
+        {
+          "speaker": "爸爸",
+          "emoji": "👨",
+          "text": "我们也要买一些彩色的灯挂在窗户上。今年你想要什么礼物？",
+          "english": "We also need to buy some colorful lights to hang on the window. What gift do you want this year?"
+        },
+        {
+          "speaker": "大文",
+          "emoji": "👦",
+          "text": "我想要一辆玩具车，圣诞老人会送给我吗？",
+          "english": "I want a toy car. Will Santa Claus give me one?"
+        }
+      ],
+      "title": "课文 · Lesson Dialogue",
+      "pinyin": {
+        "一": "yí",
+        "上": "shàng",
+        "下": "xià",
+        "不": "bù",
+        "东": "dōng",
+        "个": "ge",
+        "么": "me",
+        "也": "yě",
+        "买": "mǎi",
+        "了": "le",
+        "些": "xiē",
+        "亮": "liang",
+        "人": "rén",
+        "什": "shén",
+        "今": "jīn",
+        "们": "men",
+        "会": "huì",
+        "你": "nǐ",
+        "具": "jù",
+        "吗": "ma",
+        "哇": "wā",
+        "圣": "shèng",
+        "在": "zài",
+        "多": "duō",
+        "大": "dà",
+        "天": "tiān",
+        "好": "hǎo",
+        "妈": "mā",
+        "家": "jiā",
+        "就": "jiù",
+        "常": "cháng",
+        "平": "píng",
+        "年": "nián",
+        "彩": "cǎi",
+        "想": "xiǎng",
+        "我": "wǒ",
+        "户": "hù",
+        "挂": "guà",
+        "文": "wén",
+        "是": "shì",
+        "月": "yuè",
+        "来": "lái",
+        "树": "shù",
+        "样": "yàng",
+        "棵": "kē",
+        "漂": "piào",
+        "灯": "dēng",
+        "爸": "bà",
+        "物": "wù",
+        "玩": "wán",
+        "的": "de",
+        "看": "kàn",
+        "礼": "lǐ",
+        "窗": "chuāng",
+        "给": "gěi",
+        "老": "lǎo",
+        "色": "sè",
+        "节": "jié",
+        "西": "xi",
+        "要": "yào",
+        "诞": "dàn",
+        "课": "kè",
+        "跟": "gēn",
+        "车": "chē",
+        "辆": "liàng",
+        "送": "sòng",
+        "那": "nà",
+        "都": "dōu"
+      }
+    }
+  },
+  "googleForm": {
+    "action": "https://docs.google.com/forms/d/e/1FAIpQLSfBKFS2NtxoYseb4fG46czemaZcUz2UiS9UmhsB5mseOg3d5A/formResponse",
+    "student": "entry.1075373571",
+    "classroom": "entry.95149830",
+    "quizName": "entry.1323832917",
+    "total": "entry.1630475119",
+    "correct": "entry.2010509959",
+    "details": "entry.1985964408",
+    "pages": {
+      "1": "entry.606366833",
+      "2": "entry.1723774158",
+      "3": "entry.1178395538",
+      "4": "entry.311041801",
+      "5": "entry.1575811922",
+      "6": "entry.1057969943",
+      "7": "entry.391842823"
+    }
+  },
+  "answers": {
+    "page1": {
+      "groups": [
+        {
+          "name": "A",
+          "correctLetters": [
+            "c",
+            "d",
+            "a",
+            "b"
+          ]
+        },
+        {
+          "name": "B",
+          "correctLetters": [
+            "d",
+            "c",
+            "b",
+            "a"
+          ]
+        }
+      ]
+    },
+    "page2": {
+      "correctOptionIndexes": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    "page3": {
+      "trueFalse": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        true
+      ]
+    },
+    "page4": {
+      "parts": [
+        {
+          "title": "（一）请把听到的生词圈出来。",
+          "correctOptionIndexes": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "title": "（二）请听一听并圈出正确的答案。",
+          "correctOptionIndexes": [
+            0,
+            1,
+            0,
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "page5": {
+      "matchingRightIndexes": [
+        2,
+        0,
+        3,
+        1
+      ]
+    },
+    "page6": {
+      "writingCharacters": [
+        [
+          "平",
+          "彩",
+          "就",
+          "窗"
+        ],
+        [
+          "挂"
+        ],
+        [
+          "听"
+        ],
+        [
+          "张",
+          "寄"
+        ],
+        [
+          "卡",
+          "片"
+        ]
+      ],
+      "dialogueWordIndexes": [
+        1,
+        3,
+        0,
+        2
+      ]
+    },
+    "page7": {
+      "trueFalse": [
+        true,
+        true,
+        false,
+        false,
+        true,
+        false
+      ]
+    }
+  }
+}
